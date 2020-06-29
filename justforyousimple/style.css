@@ -52,8 +52,19 @@ nav {
     border-radius: 10px;
 }
 
+.reservez:hover {
+    background-color: #5D001E;
+    border-radius: 10px;
+    border-style: solid;
+    border-color: #ffd300;
+}
+
 .reservez a {
     color: #5D001E;
+}
+
+.reservez:hover a {
+    color: #ffd300;
 }
 
 .burger {
@@ -238,6 +249,10 @@ footer {
     padding-right: 50px;
 }
 
+.fab:hover {
+    color: #ffd300;
+}
+
 @media screen and (max-width: 768px) {
     .fab {
         padding-right: 16px;
@@ -250,7 +265,7 @@ footer {
 
 .presentation {
     display: flex;
-    width: 85%;
+    width: 80%;
     margin: auto;
     min-height: 80vh;
     align-items: center;
@@ -295,6 +310,12 @@ footer {
     cursor: pointer;
     font-size: 16px;
     border-radius: 25px;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.cta-select:hover {
+    background: #9a1750;
+    color: white;
 }
 
 .cta-add {
@@ -307,13 +328,21 @@ footer {
     color: white;
     margin: 30px 0px 0px 30px;
     border-radius: 25px;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.cta-add:hover {
+    border: 2px solid #9a1750;
+    background: transparent;
+    color: #9a1750;
 }
 
 .cover {
     flex: 1;
     display: flex;
     justify-content: center;
-    height: 60vh;
+    height: 45vh;
+    z-index: -1;
 }
 
 .cover img {
@@ -352,7 +381,8 @@ footer {
     display: flex;
     justify-content: space-around;
     position: absolute;
-    right: 21%;
+    right: 22%;
+    z-index: -1;
 }
 
 @keyframes drop {

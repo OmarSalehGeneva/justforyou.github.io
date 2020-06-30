@@ -48,6 +48,10 @@ nav {
     padding: 10px;
 }
 
+.nav-links li:hover a {
+    color: #ffd300;
+}
+
 .nav-links a {
     color: #E3E2DF;
     text-decoration: none;

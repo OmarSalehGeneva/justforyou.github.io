@@ -28,6 +28,15 @@ nav {
     font-weight: lighter;
 }
 
+.logo a {
+    text-decoration: none;
+    color: #E3E2DF;
+}
+
+.logo:hover a {
+    color: #ffd300;
+}
+
 .nav-links {
     display: flex;
     justify-content: space-around;

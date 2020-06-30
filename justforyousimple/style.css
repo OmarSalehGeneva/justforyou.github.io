@@ -9,7 +9,7 @@ body {
 }
 
 nav {
-    display: flex;
+    display: flex !important;
     justify-content: space-around;
     align-items: center;
     min-height: 8vh;
@@ -111,6 +111,36 @@ nav {
     }
 }
 
+.container {
+    width: 100%;
+    height: 92vh;
+    background: linear-gradient(-45deg, #E3E2DF, #FFAFBD, #e3afbc, #ffc3a0);
+    background-size: 400% 400%;
+    position: relative;
+    animation: change 10s ease-in-out infinite;
+    z-index: -1;
+}
+
+.container h1 {
+    text-align: center;
+    padding-top: 25%;
+    font-family: 'Montserrat', sans-serif;
+    color: #5D001E;
+    font-size: 50px;
+}
+
+@keyframes change {
+    0% {
+        background-position: 0 50%;
+    }
+    50% {
+        background-position: 100% 50%;
+    }
+    100% {
+        background-position: 0 50%;
+    }
+}
+
 .nav-active {
     transform: translateX(0%);
 }
@@ -190,7 +220,7 @@ nav {
     display: flex;
     align-items: flex-end;
     font-weight: bold;
-    color: #e3afbc;
+    color: #9a1750;
     font-size: 24px;
 }
 
@@ -232,7 +262,7 @@ footer {
     right: 0;
     background-color: #5D001E;
     min-height: 6vh;
-    display: flex;
+    display: flex!important;
     justify-content: space-around;
     align-items: center;
 }
@@ -427,4 +457,118 @@ footer {
     .big-circle {
         opacity: 0.2;
     }
+}
+
+.body-reservez {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(../justforyousimple/img/bgreserv.jpg);
+    background-size: cover;
+    background-position: center;
+}
+
+.booking-form-box {
+    max-width: 400px;
+    border: 1px solid #ced4da;
+    margin: 10% auto 0;
+}
+
+.radio-btn {
+    margin: 0 20px;
+}
+
+.radio-btn .btn {
+    margin: 20px 10px 20px 0;
+    box-shadow: none;
+}
+
+.radio-btn .btn::after {
+    content: '';
+    height: 15px;
+    width: 15px;
+    top: -2px;
+    left: -1px;
+    background-color: #fff;
+    position: relative;
+    display: inline-block;
+    border: 3px solid #fff;
+    visibility: visible;
+    border-radius: 50%;
+}
+
+.radio-btn .btn:checked::after {
+    content: '';
+    background-color: #000;
+    transition: 0.5s;
+}
+
+.radio-btn span {
+    color: #fff;
+    margin-right: 5px;
+    font-size: 12px;
+}
+
+.booking-form {
+    padding: 0 20px 20px;
+}
+
+.booking-form label {
+    margin-bottom: 5px;
+    margin-top: 10px;
+    font-size: 12px;
+    color: #fff;
+}
+
+input::placeholder {
+    color: #fff !important;
+}
+
+.input-grp {
+    width: 151px;
+    display: inline-block;
+}
+
+.form-control {
+    font-size: 12px !important;
+    border-radius: 0 !important;
+    color: #fff !important;
+    background: transparent !important;
+    box-shadow: none !important;
+}
+
+.select-date::-webkit-inner-spin-button,
+.select-date::-webkit-outter-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+
+.select-date::-webkit-calender-picker-indicator {
+    background: transparent !important;
+}
+
+.custom-select {
+    color: #fff !important;
+    font-size: 12px !important;
+    border: 1px solid #ced4da !important;
+    box-shadow: none !important;
+    border-radius: 0 !important;
+    background: transparent !important;
+}
+
+.custom-select option {
+    color: #333;
+}
+
+.flight {
+    width: 100%;
+    padding: 9px 0 !important;
+    font-size: 12px !important;
+    border: 1px solid #ced4da !important;
+    box-shadow: none !important;
+    border-radius: 0 !important;
+    background: transparent !important;
+}
+
+.flight:hover {
+    background-color: #ffd300 !important;
+    color: #000 !important;
+    transition: 0.5s;
 }

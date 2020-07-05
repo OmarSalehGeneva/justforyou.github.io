@@ -8,8 +8,7 @@ body {
 .skills {
     width: 80%;
     max-width: 960px;
-    height: 780px;
-    height: 788px;
+    height: 850px;
     margin: auto;
     position: relative;
 }
@@ -17,6 +16,7 @@ body {
 .lines {
     height: 100%;
     position: relative;
+    list-style: none;
 }
 
 .line {
@@ -91,6 +91,8 @@ body {
 
 .chart--horiz {
     overflow: hidden;
+    list-style: none;
+    padding: 0;
 }
 
 .chart__bar {

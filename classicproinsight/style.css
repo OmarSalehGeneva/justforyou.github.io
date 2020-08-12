@@ -392,6 +392,7 @@ p {
     z-index: -1;
 }
 
+
 #services .service-bottom .icon {
     height: 80px;
     width: 80px;
@@ -410,6 +411,28 @@ p {
     text-align: left;
 }
 
+#services .service-item span  {
+    color: white;
+    position: absolute;
+    top: 0;
+    right: 0;
+    background-color: rgba(255,0,0, 0.5);
+    margin: 10px;
+    padding: 3px;
+    border-radius: 3px;
+    text-transform: uppercase;
+}
+#services .service-item i  {
+    color: white;
+    position: absolute;
+    top: 0;
+    right: 0;
+    background-color: rgba(0, 255, 0, 0.5);
+    margin: 10px;
+    padding: 3px;
+    border-radius: 3px;
+    text-transform: uppercase;
+}
 
 /* End Services Section */
 

@@ -1547,6 +1547,12 @@ video {
         color: #89949B !important;
     }
 }
+@media screen and (max-width: 850px) {
+    .rad-info-box .heading {
+        display: none;
+    
+    }
+}
 
 .flat-theme.twitter.sticky .brand-icon,
 .flat-theme.twitter.sticky .rad-toggle-btn:hover {

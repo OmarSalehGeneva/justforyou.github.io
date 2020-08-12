@@ -13,7 +13,7 @@ $(function() {
         AZ: 52.17,
         BS: 7.54,
         IN: 4949,
-        US: 852
+        US: 852,
     };
     var settings = {
         map: "world_mill",
@@ -23,16 +23,16 @@ $(function() {
         zoomOnScroll: false,
         regionStyle: {
             initial: {
-                fill: "crimson"
-            }
+                fill: "crimson",
+            },
         },
         series: {
             regions: [{
                 values: mapSeries,
                 scale: ["#A8ECFF", "#FA71D4"],
-                normalizeFunction: "polynomial"
-            }]
-        }
+                normalizeFunction: "polynomial",
+            }, ],
+        },
     };
 
     function setFlatTheme() {
@@ -65,17 +65,17 @@ $(function() {
 
     $(".rad-chat-body").slimScroll({
         height: "450px",
-        color: "#c6c6c6"
+        color: "#c6c6c6",
     });
 
     $(".rad-timeline-body").slimScroll({
         height: "450px",
-        color: "#c6c6c6"
+        color: "#c6c6c6",
     });
 
     $(".rad-activity-body").slimScroll({
         height: "250px",
-        color: "#c6c6c6"
+        color: "#c6c6c6",
     });
 
     $(".rad-toggle-btn").on("click", function() {
@@ -133,15 +133,16 @@ $(function() {
             $ele.append(getTempl(img, value, "left"));
 
             setTimeout(function() {
-                img = "http://www.gravatar.com/avatar/9099c2946891970eb4739e6455400913.png";
+                img =
+                    "http://www.gravatar.com/avatar/9099c2946891970eb4739e6455400913.png";
                 $ele.append(getTempl(img, "Cool!!!", "right"));
                 $ele.slimScroll({
-                    scrollTo: $ele[0].scrollHeight
+                    scrollTo: $ele[0].scrollHeight,
                 });
             }, 2000);
 
             $ele.slimScroll({
-                scrollTo: $ele[0].scrollHeight
+                scrollTo: $ele[0].scrollHeight,
             });
         }
     });
@@ -150,7 +151,7 @@ $(function() {
         $("body").toggleClass("flat-theme");
         $("#rad-color-opts").toggleClass("hide");
         var selectedTheme = $(".rad-color-swatch input[type=radio]:checked");
-        var fillColor = '#C6C6C6';
+        var fillColor = "#C6C6C6";
         var scale = ["#C8EEFF", "#0071A4"];
 
         if (this.checked) {
@@ -173,7 +174,7 @@ $(function() {
         teal: "#1fb5ad",
         orange: "#ff503f",
         purple: "rebeccapurple",
-        twitter: "#55acee"
+        twitter: "#55acee",
     };
 
     $(".rad-color-swatch input[type=radio]").change(function(e) {
@@ -201,63 +202,63 @@ $(function() {
     var data = [{
             y: "Jan",
             a: 50,
-            b: 90
+            b: 90,
         },
         {
             y: "Feb",
             a: 75,
-            b: 65
+            b: 65,
         },
         {
             y: "Mar",
             a: 50,
-            b: 40
+            b: 40,
         },
         {
             y: "Apr",
             a: 10,
-            b: 20
+            b: 20,
         },
         {
             y: "May",
             a: 95,
-            b: 65
+            b: 65,
         },
         {
             y: "Jun",
             a: 50,
-            b: 40
+            b: 40,
         },
         {
             y: "Jul",
             a: 75,
-            b: 65
+            b: 65,
         },
         {
             y: "Aug",
             a: 100,
-            b: 90
+            b: 90,
         },
         {
             y: "Sep",
             a: 15,
-            b: 65
+            b: 65,
         },
         {
             y: "Oct",
             a: 75,
-            b: 65
+            b: 65,
         },
         {
             y: "Nov",
             a: 15,
-            b: 65
+            b: 65,
         },
         {
             y: "Dec",
             a: 95,
-            b: 65
-        }
+            b: 65,
+        },
     ];
 
     function initializeCharts() {
@@ -271,45 +272,45 @@ $(function() {
                     year: "2008",
                     value: 45,
                     value2: 15,
-                    value3: 95
+                    value3: 95,
                 },
                 {
                     year: "2009",
                     value: 10,
                     value2: 40,
-                    value3: 80
+                    value3: 80,
                 },
                 {
                     year: "2010",
                     value: 45,
                     value2: 95,
-                    value3: 5
+                    value3: 5,
                 },
                 {
                     year: "2011",
                     value: 20,
                     value2: 60,
-                    value3: 40
+                    value3: 40,
                 },
                 {
                     year: "2012",
                     value: 45,
                     value2: 0,
-                    value3: 90
-                }
+                    value3: 90,
+                },
             ],
             xkey: "year",
             ykeys: ["value", "value2", "value3"],
             labels: ["Value", "value2", "value3"],
             pointSize: 0,
-            hideHover: "auto"
+            hideHover: "auto",
         });
 
         Morris.Donut({
             element: "donutChart",
             data: getDonutData("Sector", "Country"),
             labelColor: "#23AE89",
-            colors: ["#E67A77", "#D9DD81", "#79D1CF", "#95D7BB"]
+            colors: ["#E67A77", "#D9DD81", "#79D1CF", "#95D7BB"],
         });
 
         Morris.Bar({
@@ -318,7 +319,7 @@ $(function() {
             xkey: "y",
             ykeys: ["a", "b"],
             barColors: ["#95D7BB", "#79D1CF"],
-            labels: ["Series A", "Series B"]
+            labels: ["Series A", "Series B"],
         });
 
         Morris.Bar({
@@ -327,7 +328,7 @@ $(function() {
             xkey: "label",
             ykeys: ["value"],
             barColors: ["#D9DD81", "#79D1CF", "#95D7BB"],
-            labels: ["Sector by Volume"]
+            labels: ["Sector by Volume"],
         });
 
         Morris.Bar({
@@ -336,7 +337,7 @@ $(function() {
             xkey: "y",
             ykeys: ["a", "b"],
             barColors: ["#E67A77", "#79D1CF"],
-            labels: ["Series A", "Series B"]
+            labels: ["Series A", "Series B"],
         });
 
         Morris.Area({
@@ -351,45 +352,45 @@ $(function() {
             data: [{
                     y: "2014",
                     a: 97,
-                    c: 22
+                    c: 22,
                 },
                 {
                     y: "2015",
                     a: 111,
-                    c: 29
+                    c: 29,
                 },
                 {
                     y: "2016",
                     a: 139,
-                    c: 34
+                    c: 34,
                 },
                 {
                     y: "2017",
                     a: 167,
-                    c: 25
+                    c: 25,
                 },
                 {
                     y: "2018",
                     a: 278,
-                    c: 27
+                    c: 27,
                 },
                 {
                     y: "2019",
                     a: 344,
-                    c: 22
+                    c: 22,
                 },
                 {
                     y: "2020",
                     a: 387,
-                    c: 7
-                }
+                    c: 7,
+                },
             ],
             xkey: "y",
             ykeys: ["a", "c"],
             labels: ["Participants", "Burn-out rate"],
             pointSize: 0,
             lineWidth: 0,
-            hideHover: "auto"
+            hideHover: "auto",
         });
 
         Morris.Area({
@@ -404,62 +405,62 @@ $(function() {
                     period: "2015 Q1",
                     BED: 17,
                     Stress: 70,
-                    Engagement: 26
+                    Engagement: 26,
                 },
                 {
                     period: "2015 Q2",
                     BED: 22,
                     Stress: 62,
-                    Engagement: 32
+                    Engagement: 32,
                 },
                 {
                     period: "2015 Q3",
                     BED: 20,
                     Stress: 55,
-                    Engagement: 30
+                    Engagement: 30,
                 },
                 {
                     period: "2015 Q4",
                     BED: 15,
                     Stress: 47,
-                    Engagement: 34
+                    Engagement: 34,
                 },
                 {
                     period: "2016 Q1",
                     BED: 10,
                     Stress: 45,
-                    Engagement: 36
+                    Engagement: 36,
                 },
                 {
                     period: "2016 Q2",
                     BED: 8,
                     Stress: 43,
-                    Engagement: 40
+                    Engagement: 40,
                 },
                 {
                     period: "2016 Q3",
                     BED: 6,
                     Stress: 41,
-                    Engagement: 38
+                    Engagement: 38,
                 },
                 {
                     period: "2016 Q4",
                     BED: 4,
                     Stress: 37,
-                    Engagement: 42
+                    Engagement: 42,
                 },
                 {
                     period: "2017 Q1",
                     BED: 2,
                     Stress: 32,
-                    Engagement: 44
+                    Engagement: 44,
                 },
                 {
                     period: "2017 Q2",
                     BED: 1,
                     Stress: 27,
-                    Engagement: 46
-                }
+                    Engagement: 46,
+                },
             ],
             lineColors: ["#ED5D5D", "#D6D23A", "#32D2C9"],
             xkey: "period",
@@ -467,7 +468,7 @@ $(function() {
             labels: ["BED", "Stress", "Engagement"],
             pointSize: 0,
             lineWidth: 0,
-            hideHover: "auto"
+            hideHover: "auto",
         });
     }
 
@@ -516,29 +517,29 @@ var monthNames = [
     "Sep",
     "Oct",
     "Nov",
-    "Dec"
+    "Dec",
 ];
 
 var data = [{
         label: "Technology",
-        value: 20
+        value: 20,
     },
     {
         label: "Financial",
-        value: 45
+        value: 45,
     },
     {
         label: "Industrial Goods",
-        value: 30
+        value: 30,
     },
     {
         label: "Consumer Goods",
-        value: 10
+        value: 10,
     },
     {
         label: "Basic Materials",
-        value: 5
-    }
+        value: 5,
+    },
 ];
 
 function getDonutData(group, column) {
@@ -556,7 +557,7 @@ function getDonutData(group, column) {
         .map(function(value, key) {
             return {
                 label: key,
-                value: sum(_.pluck(value, column))
+                value: sum(_.pluck(value, column)),
             };
         })
         .value();
@@ -567,7 +568,7 @@ function getDonutData(group, column) {
 function getChartData() {
     return [{
             _id: {
-                $oid: "52853800bb1177ca391c17ff"
+                $oid: "52853800bb1177ca391c17ff",
             },
             Ticker: "A",
             "Profit Margin": 0.137,
@@ -592,7 +593,7 @@ function getChartData() {
             "200-Day Simple Moving Average": 0.1062,
             "Shares Outstanding": 339,
             "Earnings Date": {
-                $date: 1384464600000
+                $date: 1384464600000,
             },
             "52-Week High": -0.0544,
             "P/Cash": 7.45,
@@ -638,11 +639,11 @@ function getChartData() {
             "LT Debt/Equity": 0.5600000000000001,
             "Average Volume": 2569.36,
             "EPS growth this year": 0.147,
-            "50-Day Simple Moving Average": -0.0055
+            "50-Day Simple Moving Average": -0.0055,
         },
         {
             _id: {
-                $oid: "52853800bb1177ca391c1800"
+                $oid: "52853800bb1177ca391c1800",
             },
             Ticker: "AA",
             "Profit Margin": 0.013,
@@ -667,7 +668,7 @@ function getChartData() {
             "200-Day Simple Moving Average": 0.0823,
             "Shares Outstanding": 1070,
             "Earnings Date": {
-                $date: 1381264200000
+                $date: 1381264200000,
             },
             "52-Week High": -0.0925,
             "P/Cash": 9.460000000000001,
@@ -713,11 +714,11 @@ function getChartData() {
             "LT Debt/Equity": 0.6,
             "Average Volume": 26728.11,
             "EPS growth this year": -0.673,
-            "50-Day Simple Moving Average": 0.052
+            "50-Day Simple Moving Average": 0.052,
         },
         {
             _id: {
-                $oid: "52853800bb1177ca391c1801"
+                $oid: "52853800bb1177ca391c1801",
             },
             Ticker: "AADR",
             Sector: "Financial",
@@ -748,11 +749,11 @@ function getChartData() {
             "Performance (Month)": 0.0183,
             "Performance (Year)": 0.229,
             "Average Volume": 10.07,
-            "50-Day Simple Moving Average": 0.0158
+            "50-Day Simple Moving Average": 0.0158,
         },
         {
             _id: {
-                $oid: "52853800bb1177ca391c1802"
+                $oid: "52853800bb1177ca391c1802",
             },
             Ticker: "AAIT",
             Sector: "Financial",
@@ -784,11 +785,11 @@ function getChartData() {
             "Performance (Month)": 0.003,
             "Performance (Year)": 0.1947,
             "Average Volume": 1.64,
-            "50-Day Simple Moving Average": -0.0065
+            "50-Day Simple Moving Average": -0.0065,
         },
         {
             _id: {
-                $oid: "52853800bb1177ca391c1803"
+                $oid: "52853800bb1177ca391c1803",
             },
             Ticker: "AAMC",
             "Institutional Ownership": 0.153,
@@ -826,11 +827,11 @@ function getChartData() {
             "Performance (Month)": 0.0631,
             "Institutional Transactions": 0.1176,
             "Average Volume": 4.94,
-            "50-Day Simple Moving Average": 0.1281
+            "50-Day Simple Moving Average": 0.1281,
         },
         {
             _id: {
-                $oid: "52853800bb1177ca391c1804"
+                $oid: "52853800bb1177ca391c1804",
             },
             Ticker: "AAME",
             "Profit Margin": 0.056,
@@ -851,7 +852,7 @@ function getChartData() {
             "200-Day Simple Moving Average": 0.08450000000000001,
             "Shares Outstanding": 21.27,
             "Earnings Date": {
-                $date: 1383541200000
+                $date: 1383541200000,
             },
             "52-Week High": -0.0382,
             "P/Cash": 1.82,
@@ -892,11 +893,11 @@ function getChartData() {
             "LT Debt/Equity": 0.42,
             "Average Volume": 9.51,
             "EPS growth this year": 0.5,
-            "50-Day Simple Moving Average": 0.0038
+            "50-Day Simple Moving Average": 0.0038,
         },
         {
             _id: {
-                $oid: "52853800bb1177ca391c1805"
+                $oid: "52853800bb1177ca391c1805",
             },
             Ticker: "AAN",
             "Profit Margin": 0.06,
@@ -919,7 +920,7 @@ function getChartData() {
             "200-Day Simple Moving Average": 0.0653,
             "Shares Outstanding": 76.09999999999999,
             "Earnings Date": {
-                $date: 1382646600000
+                $date: 1382646600000,
             },
             "52-Week High": -0.023,
             "P/Cash": 10.88,
@@ -964,11 +965,11 @@ function getChartData() {
             "LT Debt/Equity": 0.12,
             "Average Volume": 763.14,
             "EPS growth this year": 0.573,
-            "50-Day Simple Moving Average": 0.0742
+            "50-Day Simple Moving Average": 0.0742,
         },
         {
             _id: {
-                $oid: "52853800bb1177ca391c1806"
+                $oid: "52853800bb1177ca391c1806",
             },
             Ticker: "AAOI",
             "Profit Margin": -0.023,
@@ -1019,11 +1020,11 @@ function getChartData() {
             "Performance (Month)": 0.2397,
             "Average Volume": 110.95,
             "EPS growth this year": 0.833,
-            "50-Day Simple Moving Average": 0.0654
+            "50-Day Simple Moving Average": 0.0654,
         },
         {
             _id: {
-                $oid: "52853800bb1177ca391c1807"
+                $oid: "52853800bb1177ca391c1807",
             },
             Ticker: "AAON",
             "Profit Margin": 0.105,
@@ -1048,7 +1049,7 @@ function getChartData() {
             "200-Day Simple Moving Average": 0.2614,
             "Shares Outstanding": 55.14,
             "Earnings Date": {
-                $date: 1383859800000
+                $date: 1383859800000,
             },
             "52-Week High": -0.054,
             "P/Cash": 49.53,
@@ -1094,11 +1095,11 @@ function getChartData() {
             "LT Debt/Equity": 0,
             "Average Volume": 90.54000000000001,
             "EPS growth this year": 1,
-            "50-Day Simple Moving Average": 0.0389
+            "50-Day Simple Moving Average": 0.0389,
         },
         {
             _id: {
-                $oid: "52853800bb1177ca391c1808"
+                $oid: "52853800bb1177ca391c1808",
             },
             Ticker: "AAP",
             "Profit Margin": 0.063,
@@ -1123,7 +1124,7 @@ function getChartData() {
             "200-Day Simple Moving Average": 0.1903,
             "Shares Outstanding": 72.75,
             "Earnings Date": {
-                $date: 1383222600000
+                $date: 1383222600000,
             },
             "52-Week High": -0.038,
             "P/Cash": 12.78,
@@ -1169,11 +1170,11 @@ function getChartData() {
             "LT Debt/Equity": 0.41,
             "Average Volume": 749.1,
             "EPS growth this year": 0.022,
-            "50-Day Simple Moving Average": 0.1151
+            "50-Day Simple Moving Average": 0.1151,
         },
         {
             _id: {
-                $oid: "52853800bb1177ca391c1809"
+                $oid: "52853800bb1177ca391c1809",
             },
             Ticker: "AAPL",
             "Profit Margin": 0.217,
@@ -1198,7 +1199,7 @@ function getChartData() {
             "200-Day Simple Moving Average": 0.1672,
             "Shares Outstanding": 904.16,
             "Earnings Date": {
-                $date: 1382992200000
+                $date: 1382992200000,
             },
             "52-Week High": -0.08989999999999999,
             "P/Cash": 11.61,
@@ -1244,11 +1245,11 @@ function getChartData() {
             "LT Debt/Equity": 0.14,
             "Average Volume": 12913.68,
             "EPS growth this year": -0.1,
-            "50-Day Simple Moving Average": 0.0649
+            "50-Day Simple Moving Average": 0.0649,
         },
         {
             _id: {
-                $oid: "52853800bb1177ca391c180a"
+                $oid: "52853800bb1177ca391c180a",
             },
             Ticker: "AAT",
             "Profit Margin": 0.155,
@@ -1271,7 +1272,7 @@ function getChartData() {
             "200-Day Simple Moving Average": 0.0144,
             "Shares Outstanding": 39.82,
             "Earnings Date": {
-                $date: 1383687000000
+                $date: 1383687000000,
             },
             "52-Week High": -0.1008,
             "P/Cash": 19.39,
@@ -1315,11 +1316,11 @@ function getChartData() {
             "LT Debt/Equity": 1.6,
             "Average Volume": 279.14,
             "EPS growth this year": 0,
-            "50-Day Simple Moving Average": 0.014
+            "50-Day Simple Moving Average": 0.014,
         },
         {
             _id: {
-                $oid: "52853800bb1177ca391c180b"
+                $oid: "52853800bb1177ca391c180b",
             },
             Ticker: "AAU",
             "Institutional Ownership": 0.059,
@@ -1373,11 +1374,11 @@ function getChartData() {
             "LT Debt/Equity": 0,
             "Average Volume": 119.04,
             "EPS growth this year": -2.417,
-            "50-Day Simple Moving Average": -0.1017
+            "50-Day Simple Moving Average": -0.1017,
         },
         {
             _id: {
-                $oid: "52853800bb1177ca391c180c"
+                $oid: "52853800bb1177ca391c180c",
             },
             Ticker: "AAV",
             "Profit Margin": -0.232,
@@ -1398,7 +1399,7 @@ function getChartData() {
             "200-Day Simple Moving Average": 0.0569,
             "Shares Outstanding": 168.38,
             "Earnings Date": {
-                $date: 1300248000000
+                $date: 1300248000000,
             },
             "52-Week High": -0.1242,
             Change: 0.0233,
@@ -1439,11 +1440,11 @@ function getChartData() {
             "LT Debt/Equity": 0.32,
             "Average Volume": 149.81,
             "EPS growth this year": 0.42,
-            "50-Day Simple Moving Average": 0.023
+            "50-Day Simple Moving Average": 0.023,
         },
         {
             _id: {
-                $oid: "52853800bb1177ca391c180d"
+                $oid: "52853800bb1177ca391c180d",
             },
             Ticker: "AAWW",
             "Profit Margin": 0.07099999999999999,
@@ -1468,7 +1469,7 @@ function getChartData() {
             "200-Day Simple Moving Average": -0.1401,
             "Shares Outstanding": 25.12,
             "Earnings Date": {
-                $date: 1383831000000
+                $date: 1383831000000,
             },
             "52-Week High": -0.2558,
             "P/Cash": 3.25,
@@ -1512,11 +1513,11 @@ function getChartData() {
             "LT Debt/Equity": 1.15,
             "Average Volume": 272.88,
             "EPS growth this year": 0.343,
-            "50-Day Simple Moving Average": -0.1496
+            "50-Day Simple Moving Average": -0.1496,
         },
         {
             _id: {
-                $oid: "52853800bb1177ca391c180e"
+                $oid: "52853800bb1177ca391c180e",
             },
             Ticker: "AAXJ",
             Sector: "Financial",
@@ -1553,11 +1554,11 @@ function getChartData() {
             "Performance (Month)": -0.0316,
             "Performance (Year)": 0.0629,
             "Average Volume": 710.22,
-            "50-Day Simple Moving Average": -0.0106
+            "50-Day Simple Moving Average": -0.0106,
         },
         {
             _id: {
-                $oid: "52853800bb1177ca391c180f"
+                $oid: "52853800bb1177ca391c180f",
             },
             Ticker: "AB",
             "Profit Margin": 0.896,
@@ -1580,7 +1581,7 @@ function getChartData() {
             "200-Day Simple Moving Average": 0.0159,
             "Shares Outstanding": 92.26000000000001,
             "Earnings Date": {
-                $date: 1382617800000
+                $date: 1382617800000,
             },
             "52-Week High": -0.1859,
             Change: -0.0009,
@@ -1623,11 +1624,11 @@ function getChartData() {
             "LT Debt/Equity": 0,
             "Average Volume": 348.08,
             "EPS growth this year": 1.567,
-            "50-Day Simple Moving Average": 0.0458
+            "50-Day Simple Moving Average": 0.0458,
         },
         {
             _id: {
-                $oid: "52853800bb1177ca391c1810"
+                $oid: "52853800bb1177ca391c1810",
             },
             Ticker: "ABAX",
             "Profit Margin": 0.1,
@@ -1652,7 +1653,7 @@ function getChartData() {
             "200-Day Simple Moving Average": -0.1784,
             "Shares Outstanding": 22.31,
             "Earnings Date": {
-                $date: 1382473800000
+                $date: 1382473800000,
             },
             "52-Week High": -0.3158,
             "P/Cash": 9.199999999999999,
@@ -1696,11 +1697,11 @@ function getChartData() {
             "LT Debt/Equity": 0,
             "Average Volume": 161.44,
             "EPS growth this year": 1.121,
-            "50-Day Simple Moving Average": -0.08210000000000001
+            "50-Day Simple Moving Average": -0.08210000000000001,
         },
         {
             _id: {
-                $oid: "52853800bb1177ca391c1811"
+                $oid: "52853800bb1177ca391c1811",
             },
             Ticker: "ABB",
             "Profit Margin": 0.06900000000000001,
@@ -1724,7 +1725,7 @@ function getChartData() {
             "200-Day Simple Moving Average": 0.1223,
             "Shares Outstanding": 2297,
             "Earnings Date": {
-                $date: 1297918800000
+                $date: 1297918800000,
             },
             "52-Week High": -0.0304,
             "P/Cash": 12.33,
@@ -1769,11 +1770,11 @@ function getChartData() {
             "LT Debt/Equity": 0.43,
             "Average Volume": 1315.6,
             "EPS growth this year": -0.145,
-            "50-Day Simple Moving Average": 0.0505
+            "50-Day Simple Moving Average": 0.0505,
         },
         {
             _id: {
-                $oid: "52853800bb1177ca391c1812"
+                $oid: "52853800bb1177ca391c1812",
             },
             Ticker: "ABBV",
             "Profit Margin": 0.24,
@@ -1798,7 +1799,7 @@ function getChartData() {
             "200-Day Simple Moving Average": 0.1267,
             "Shares Outstanding": 1605,
             "Earnings Date": {
-                $date: 1382704200000
+                $date: 1382704200000,
             },
             "52-Week High": -0.0416,
             "P/Cash": 8.77,
@@ -1840,11 +1841,11 @@ function getChartData() {
             "LT Debt/Equity": 4.03,
             "Average Volume": 4582.23,
             "EPS growth this year": 0.539,
-            "50-Day Simple Moving Average": 0.0325
+            "50-Day Simple Moving Average": 0.0325,
         },
         {
             _id: {
-                $oid: "52853800bb1177ca391c1813"
+                $oid: "52853800bb1177ca391c1813",
             },
             Ticker: "ABC",
             "Profit Margin": 0.005,
@@ -1869,7 +1870,7 @@ function getChartData() {
             "200-Day Simple Moving Average": 0.2415,
             "Shares Outstanding": 230.48,
             "Earnings Date": {
-                $date: 1383222600000
+                $date: 1383222600000,
             },
             "52-Week High": 0.0111,
             "P/Cash": 12.82,
@@ -1915,11 +1916,11 @@ function getChartData() {
             "LT Debt/Equity": 0.6,
             "Average Volume": 1359.71,
             "EPS growth this year": -0.239,
-            "50-Day Simple Moving Average": 0.09660000000000001
+            "50-Day Simple Moving Average": 0.09660000000000001,
         },
         {
             _id: {
-                $oid: "52853800bb1177ca391c1814"
+                $oid: "52853800bb1177ca391c1814",
             },
             Ticker: "ABCB",
             "Profit Margin": 0.166,
@@ -1942,7 +1943,7 @@ function getChartData() {
             "200-Day Simple Moving Average": 0.1639,
             "Shares Outstanding": 23.9,
             "Earnings Date": {
-                $date: 1382673600000
+                $date: 1382673600000,
             },
             "52-Week High": -0.0237,
             "P/Cash": 3.42,
@@ -1985,11 +1986,11 @@ function getChartData() {
             "LT Debt/Equity": 0.16,
             "Average Volume": 104.42,
             "EPS growth this year": -0.395,
-            "50-Day Simple Moving Average": 0.0467
+            "50-Day Simple Moving Average": 0.0467,
         },
         {
             _id: {
-                $oid: "52853800bb1177ca391c1815"
+                $oid: "52853800bb1177ca391c1815",
             },
             Ticker: "ABCD",
             "Profit Margin": -0.645,
@@ -2009,7 +2010,7 @@ function getChartData() {
             "200-Day Simple Moving Average": 0.0446,
             "Shares Outstanding": 47.36,
             "Earnings Date": {
-                $date: 1383859800000
+                $date: 1383859800000,
             },
             "52-Week High": -0.2757,
             "P/Cash": 1.37,
@@ -2050,11 +2051,11 @@ function getChartData() {
             "Performance (Year)": 0.6543,
             "Average Volume": 48.58,
             "EPS growth this year": -1.533,
-            "50-Day Simple Moving Average": -0.064
+            "50-Day Simple Moving Average": -0.064,
         },
         {
             _id: {
-                $oid: "52853800bb1177ca391c1816"
+                $oid: "52853800bb1177ca391c1816",
             },
             Ticker: "ABCO",
             "Profit Margin": 0.055,
@@ -2079,7 +2080,7 @@ function getChartData() {
             "200-Day Simple Moving Average": 0.1309,
             "Shares Outstanding": 35.49,
             "Earnings Date": {
-                $date: 1383600600000
+                $date: 1383600600000,
             },
             "52-Week High": -0.1147,
             "P/Cash": 54.75,
@@ -2124,11 +2125,11 @@ function getChartData() {
             "LT Debt/Equity": 0,
             "Average Volume": 156.83,
             "EPS growth this year": -0.076,
-            "50-Day Simple Moving Average": -0.0031
+            "50-Day Simple Moving Average": -0.0031,
         },
         {
             _id: {
-                $oid: "52853800bb1177ca391c1817"
+                $oid: "52853800bb1177ca391c1817",
             },
             Ticker: "ABFS",
             "Profit Margin": -0.005,
@@ -2151,7 +2152,7 @@ function getChartData() {
             "200-Day Simple Moving Average": 0.6449,
             "Shares Outstanding": 25.69,
             "Earnings Date": {
-                $date: 1384176600000
+                $date: 1384176600000,
             },
             "52-Week High": -0.0166,
             "P/Cash": 6.87,
@@ -2196,11 +2197,11 @@ function getChartData() {
             "LT Debt/Equity": 0.2,
             "Average Volume": 525.42,
             "EPS growth this year": -2.348,
-            "50-Day Simple Moving Average": 0.1974
+            "50-Day Simple Moving Average": 0.1974,
         },
         {
             _id: {
-                $oid: "52853800bb1177ca391c1818"
+                $oid: "52853800bb1177ca391c1818",
             },
             Ticker: "ABG",
             "Profit Margin": 0.02,
@@ -2225,7 +2226,7 @@ function getChartData() {
             "200-Day Simple Moving Average": 0.1535,
             "Shares Outstanding": 30.7,
             "Earnings Date": {
-                $date: 1382445000000
+                $date: 1382445000000,
             },
             "52-Week High": -0.0992,
             "P/Cash": 1196.12,
@@ -2269,11 +2270,11 @@ function getChartData() {
             "LT Debt/Equity": 1.09,
             "Average Volume": 327.77,
             "EPS growth this year": 0.846,
-            "50-Day Simple Moving Average": -0.0284
+            "50-Day Simple Moving Average": -0.0284,
         },
         {
             _id: {
-                $oid: "52853800bb1177ca391c1819"
+                $oid: "52853800bb1177ca391c1819",
             },
             Ticker: "ABIO",
             "Institutional Ownership": 0.156,
@@ -2293,7 +2294,7 @@ function getChartData() {
             "200-Day Simple Moving Average": -0.2499,
             "Shares Outstanding": 4.94,
             "Earnings Date": {
-                $date: 1384146000000
+                $date: 1384146000000,
             },
             "52-Week High": -0.7542,
             "P/Cash": 0.35,
@@ -2330,11 +2331,11 @@ function getChartData() {
             "LT Debt/Equity": 0,
             "Average Volume": 721.78,
             "EPS growth this year": 0.396,
-            "50-Day Simple Moving Average": -0.0186
+            "50-Day Simple Moving Average": -0.0186,
         },
         {
             _id: {
-                $oid: "52853800bb1177ca391c181a"
+                $oid: "52853800bb1177ca391c181a",
             },
             Ticker: "ABM",
             "Profit Margin": 0.016,
@@ -2359,7 +2360,7 @@ function getChartData() {
             "200-Day Simple Moving Average": 0.1586,
             "Shares Outstanding": 54.95,
             "Earnings Date": {
-                $date: 1386565200000
+                $date: 1386565200000,
             },
             "52-Week High": -0.0414,
             "P/Cash": 39.57,
@@ -2405,11 +2406,11 @@ function getChartData() {
             "LT Debt/Equity": 0.39,
             "Average Volume": 192.29,
             "EPS growth this year": -0.102,
-            "50-Day Simple Moving Average": 0.0412
+            "50-Day Simple Moving Average": 0.0412,
         },
         {
             _id: {
-                $oid: "52853800bb1177ca391c181b"
+                $oid: "52853800bb1177ca391c181b",
             },
             Ticker: "ABMC",
             "Profit Margin": -0.09660000000000001,
@@ -2430,7 +2431,7 @@ function getChartData() {
             "200-Day Simple Moving Average": 0.0413,
             "Shares Outstanding": 21.74,
             "Earnings Date": {
-                $date: 1384146000000
+                $date: 1384146000000,
             },
             "52-Week High": -0.3929,
             "P/Cash": 6.26,
@@ -2470,11 +2471,11 @@ function getChartData() {
             "LT Debt/Equity": 0.2,
             "Average Volume": 13.73,
             "EPS growth this year": 0.1416,
-            "50-Day Simple Moving Average": 0.1502
+            "50-Day Simple Moving Average": 0.1502,
         },
         {
             _id: {
-                $oid: "52853800bb1177ca391c181c"
+                $oid: "52853800bb1177ca391c181c",
             },
             Ticker: "ABMD",
             "Profit Margin": 0.063,
@@ -2499,7 +2500,7 @@ function getChartData() {
             "200-Day Simple Moving Average": 0.3335,
             "Shares Outstanding": 38.68,
             "Earnings Date": {
-                $date: 1383744600000
+                $date: 1383744600000,
             },
             "52-Week High": -0.0148,
             "P/Cash": 15.88,
@@ -2544,11 +2545,11 @@ function getChartData() {
             "LT Debt/Equity": 0,
             "Average Volume": 429.23,
             "EPS growth this year": 8.25,
-            "50-Day Simple Moving Average": 0.2441
+            "50-Day Simple Moving Average": 0.2441,
         },
         {
             _id: {
-                $oid: "52853800bb1177ca391c181d"
+                $oid: "52853800bb1177ca391c181d",
             },
             Ticker: "ABR",
             "Profit Margin": 0.093,
@@ -2571,7 +2572,7 @@ function getChartData() {
             "200-Day Simple Moving Average": -0.0356,
             "Shares Outstanding": 43.11,
             "Earnings Date": {
-                $date: 1383917400000
+                $date: 1383917400000,
             },
             "52-Week High": -0.1824,
             "P/Cash": 5.68,
@@ -2615,11 +2616,11 @@ function getChartData() {
             "LT Debt/Equity": 4.19,
             "Average Volume": 238.76,
             "EPS growth this year": 1.393,
-            "50-Day Simple Moving Average": -0.0105
+            "50-Day Simple Moving Average": -0.0105,
         },
         {
             _id: {
-                $oid: "52853800bb1177ca391c181e"
+                $oid: "52853800bb1177ca391c181e",
             },
             Ticker: "ABT",
             "Profit Margin": 0.139,
@@ -2644,7 +2645,7 @@ function getChartData() {
             "200-Day Simple Moving Average": 0.06850000000000001,
             "Shares Outstanding": 1567,
             "Earnings Date": {
-                $date: 1381926600000
+                $date: 1381926600000,
             },
             "52-Week High": -0.0183,
             "P/Cash": 6.3,
@@ -2689,11 +2690,11 @@ function getChartData() {
             "LT Debt/Equity": 0.15,
             "Average Volume": 7776.95,
             "EPS growth this year": -0.881,
-            "50-Day Simple Moving Average": 0.0688
+            "50-Day Simple Moving Average": 0.0688,
         },
         {
             _id: {
-                $oid: "52853800bb1177ca391c181f"
+                $oid: "52853800bb1177ca391c181f",
             },
             Ticker: "ABTL",
             "Profit Margin": 0.024,
@@ -2718,7 +2719,7 @@ function getChartData() {
             "200-Day Simple Moving Average": 0.9989,
             "Shares Outstanding": 8.869999999999999,
             "Earnings Date": {
-                $date: 1383859800000
+                $date: 1383859800000,
             },
             "52-Week High": -0.0124,
             "P/Cash": 6.07,
@@ -2763,11 +2764,11 @@ function getChartData() {
             "LT Debt/Equity": 0.19,
             "Average Volume": 112.32,
             "EPS growth this year": 2.75,
-            "50-Day Simple Moving Average": 0.3989
+            "50-Day Simple Moving Average": 0.3989,
         },
         {
             _id: {
-                $oid: "52853800bb1177ca391c1820"
+                $oid: "52853800bb1177ca391c1820",
             },
             Ticker: "ABV",
             "Profit Margin": 0.315,
@@ -2791,7 +2792,7 @@ function getChartData() {
             "200-Day Simple Moving Average": -0.0544,
             "Shares Outstanding": 3128.3,
             "Earnings Date": {
-                $date: 1299159000000
+                $date: 1299159000000,
             },
             "52-Week High": -0.1991,
             "P/Cash": 54.3,
@@ -2836,11 +2837,11 @@ function getChartData() {
             "LT Debt/Equity": 0.07000000000000001,
             "Average Volume": 2591.05,
             "EPS growth this year": 0.217,
-            "50-Day Simple Moving Average": -0.0168
+            "50-Day Simple Moving Average": -0.0168,
         },
         {
             _id: {
-                $oid: "52853800bb1177ca391c1821"
+                $oid: "52853800bb1177ca391c1821",
             },
             Ticker: "ABX",
             "Profit Margin": -0.769,
@@ -2862,7 +2863,7 @@ function getChartData() {
             "200-Day Simple Moving Average": -0.1368,
             "Shares Outstanding": 1001,
             "Earnings Date": {
-                $date: 1297949400000
+                $date: 1297949400000,
             },
             "52-Week High": -0.4877,
             "P/Cash": 7.94,
@@ -2905,11 +2906,11 @@ function getChartData() {
             "LT Debt/Equity": 1.07,
             "Average Volume": 17602.98,
             "EPS growth this year": -1.147,
-            "50-Day Simple Moving Average": -0.0239
+            "50-Day Simple Moving Average": -0.0239,
         },
         {
             _id: {
-                $oid: "52853800bb1177ca391c1822"
+                $oid: "52853800bb1177ca391c1822",
             },
             Ticker: "ACAD",
             "Institutional Ownership": 0.929,
@@ -2930,7 +2931,7 @@ function getChartData() {
             "200-Day Simple Moving Average": 0.4127,
             "Shares Outstanding": 83.41,
             "Earnings Date": {
-                $date: 1383773400000
+                $date: 1383773400000,
             },
             "52-Week High": -0.2311,
             "P/Cash": 9.33,
@@ -2971,11 +2972,11 @@ function getChartData() {
             "LT Debt/Equity": 0,
             "Average Volume": 2558.02,
             "EPS growth this year": 0.136,
-            "50-Day Simple Moving Average": -0.0391
+            "50-Day Simple Moving Average": -0.0391,
         },
         {
             _id: {
-                $oid: "52853800bb1177ca391c1823"
+                $oid: "52853800bb1177ca391c1823",
             },
             Ticker: "ACAS",
             "Institutional Ownership": 0.592,
@@ -2997,7 +2998,7 @@ function getChartData() {
             "200-Day Simple Moving Average": 0.0491,
             "Shares Outstanding": 297.5,
             "Earnings Date": {
-                $date: 1383687000000
+                $date: 1383687000000,
             },
             "52-Week High": -0.0583,
             "P/Cash": 13.75,
@@ -3042,11 +3043,11 @@ function getChartData() {
             "LT Debt/Equity": 0.08,
             "Average Volume": 2105.94,
             "EPS growth this year": 0.255,
-            "50-Day Simple Moving Average": 0.0463
+            "50-Day Simple Moving Average": 0.0463,
         },
         {
             _id: {
-                $oid: "52853800bb1177ca391c1824"
+                $oid: "52853800bb1177ca391c1824",
             },
             Ticker: "ACAT",
             "Profit Margin": 0.06,
@@ -3071,7 +3072,7 @@ function getChartData() {
             "200-Day Simple Moving Average": 0.1216,
             "Shares Outstanding": 13.38,
             "Earnings Date": {
-                $date: 1382617800000
+                $date: 1382617800000,
             },
             "52-Week High": -0.1127,
             "P/Cash": 15.01,
@@ -3116,11 +3117,11 @@ function getChartData() {
             "LT Debt/Equity": 0,
             "Average Volume": 104.22,
             "EPS growth this year": 0.68,
-            "50-Day Simple Moving Average": -0.0285
+            "50-Day Simple Moving Average": -0.0285,
         },
         {
             _id: {
-                $oid: "52853800bb1177ca391c1825"
+                $oid: "52853800bb1177ca391c1825",
             },
             Ticker: "ACC",
             "Profit Margin": 0.156,
@@ -3143,7 +3144,7 @@ function getChartData() {
             "200-Day Simple Moving Average": -0.1568,
             "Shares Outstanding": 104.78,
             "Earnings Date": {
-                $date: 1382387400000
+                $date: 1382387400000,
             },
             "52-Week High": -0.2881,
             "P/Cash": 138.37,
@@ -3188,11 +3189,11 @@ function getChartData() {
             "LT Debt/Equity": 0.93,
             "Average Volume": 905.52,
             "EPS growth this year": 0.07000000000000001,
-            "50-Day Simple Moving Average": -0.0333
+            "50-Day Simple Moving Average": -0.0333,
         },
         {
             _id: {
-                $oid: "52853800bb1177ca391c1826"
+                $oid: "52853800bb1177ca391c1826",
             },
             Ticker: "ACCL",
             "Profit Margin": -0.014,
@@ -3214,7 +3215,7 @@ function getChartData() {
             "200-Day Simple Moving Average": 0.0112,
             "Shares Outstanding": 55.66,
             "Earnings Date": {
-                $date: 1383165000000
+                $date: 1383165000000,
             },
             "52-Week High": -0.07099999999999999,
             "P/Cash": 4.14,
@@ -3257,11 +3258,11 @@ function getChartData() {
             "LT Debt/Equity": 0,
             "Average Volume": 118.95,
             "EPS growth this year": -7.333,
-            "50-Day Simple Moving Average": -0.0226
+            "50-Day Simple Moving Average": -0.0226,
         },
         {
             _id: {
-                $oid: "52853800bb1177ca391c1827"
+                $oid: "52853800bb1177ca391c1827",
             },
             Ticker: "ACCO",
             "Profit Margin": 0.006,
@@ -3285,7 +3286,7 @@ function getChartData() {
             "200-Day Simple Moving Average": -0.1139,
             "Shares Outstanding": 113.6,
             "Earnings Date": {
-                $date: 1383136200000
+                $date: 1383136200000,
             },
             "52-Week High": -0.3291,
             "P/Cash": 9.32,
@@ -3330,11 +3331,11 @@ function getChartData() {
             "LT Debt/Equity": 1.55,
             "Average Volume": 803.36,
             "EPS growth this year": 2.813,
-            "50-Day Simple Moving Average": -0.0822
+            "50-Day Simple Moving Average": -0.0822,
         },
         {
             _id: {
-                $oid: "52853800bb1177ca391c1828"
+                $oid: "52853800bb1177ca391c1828",
             },
             Ticker: "ACCU",
             Sector: "Financial",
@@ -3365,11 +3366,11 @@ function getChartData() {
             "Performance (Month)": -0.0214,
             "Performance (Year)": 0.0587,
             "Average Volume": 14.05,
-            "50-Day Simple Moving Average": 0.0031
+            "50-Day Simple Moving Average": 0.0031,
         },
         {
             _id: {
-                $oid: "52853800bb1177ca391c1829"
+                $oid: "52853800bb1177ca391c1829",
             },
             Ticker: "ACE",
             "Profit Margin": 0.187,
@@ -3392,7 +3393,7 @@ function getChartData() {
             "200-Day Simple Moving Average": 0.0901,
             "Shares Outstanding": 343.8,
             "Earnings Date": {
-                $date: 1382473800000
+                $date: 1382473800000,
             },
             "52-Week High": -0.0065,
             "P/Cash": 43.56,
@@ -3436,11 +3437,11 @@ function getChartData() {
             "LT Debt/Equity": 0,
             "Average Volume": 1158.71,
             "EPS growth this year": 0.748,
-            "50-Day Simple Moving Average": 0.0406
+            "50-Day Simple Moving Average": 0.0406,
         },
         {
             _id: {
-                $oid: "52853800bb1177ca391c182a"
+                $oid: "52853800bb1177ca391c182a",
             },
             Ticker: "ACET",
             "Profit Margin": 0.056,
@@ -3465,7 +3466,7 @@ function getChartData() {
             "200-Day Simple Moving Average": 0.4632,
             "Shares Outstanding": 27.76,
             "Earnings Date": {
-                $date: 1383859800000
+                $date: 1383859800000,
             },
             "52-Week High": -0.0313,
             "P/Cash": 14.48,
@@ -3510,11 +3511,11 @@ function getChartData() {
             "LT Debt/Equity": 0.09,
             "Average Volume": 235.29,
             "EPS growth this year": 0.286,
-            "50-Day Simple Moving Average": 0.2156
+            "50-Day Simple Moving Average": 0.2156,
         },
         {
             _id: {
-                $oid: "52853800bb1177ca391c182b"
+                $oid: "52853800bb1177ca391c182b",
             },
             Ticker: "ACFC",
             "Profit Margin": -0.18,
@@ -3533,7 +3534,7 @@ function getChartData() {
             "200-Day Simple Moving Average": -0.2118,
             "Shares Outstanding": 2.5,
             "Earnings Date": {
-                $date: 1383541200000
+                $date: 1383541200000,
             },
             "52-Week High": -0.4956,
             "P/Cash": 0.1,
@@ -3573,11 +3574,11 @@ function getChartData() {
             "LT Debt/Equity": 0,
             "Average Volume": 2.41,
             "EPS growth this year": 0.354,
-            "50-Day Simple Moving Average": -0.0993
+            "50-Day Simple Moving Average": -0.0993,
         },
         {
             _id: {
-                $oid: "52853800bb1177ca391c182c"
+                $oid: "52853800bb1177ca391c182c",
             },
             Ticker: "ACFN",
             "Institutional Ownership": 0.455,
@@ -3598,7 +3599,7 @@ function getChartData() {
             "200-Day Simple Moving Average": -0.4874,
             "Shares Outstanding": 18.09,
             "Earnings Date": {
-                $date: 1384291800000
+                $date: 1384291800000,
             },
             "52-Week High": -0.6444,
             "P/Cash": 4.53,
@@ -3641,11 +3642,11 @@ function getChartData() {
             "LT Debt/Equity": 0,
             "Average Volume": 280.12,
             "EPS growth this year": -3.906,
-            "50-Day Simple Moving Average": -0.2451
+            "50-Day Simple Moving Average": -0.2451,
         },
         {
             _id: {
-                $oid: "52853800bb1177ca391c182d"
+                $oid: "52853800bb1177ca391c182d",
             },
             Ticker: "ACG",
             "Institutional Ownership": 0.22,
@@ -3702,11 +3703,11 @@ function getChartData() {
             "LT Debt/Equity": 0,
             "Average Volume": 897.03,
             "EPS growth this year": 0.293,
-            "50-Day Simple Moving Average": 0.007
+            "50-Day Simple Moving Average": 0.007,
         },
         {
             _id: {
-                $oid: "52853800bb1177ca391c182e"
+                $oid: "52853800bb1177ca391c182e",
             },
             Ticker: "ACGL",
             "Profit Margin": 0.152,
@@ -3729,7 +3730,7 @@ function getChartData() {
             "200-Day Simple Moving Average": 0.1099,
             "Shares Outstanding": 131.5,
             "Earnings Date": {
-                $date: 1382992200000
+                $date: 1382992200000,
             },
             "52-Week High": -0.0103,
             "P/Cash": 17.62,
@@ -3773,11 +3774,11 @@ function getChartData() {
             "LT Debt/Equity": 0.08,
             "Average Volume": 331.9,
             "EPS growth this year": 0.357,
-            "50-Day Simple Moving Average": 0.0535
+            "50-Day Simple Moving Average": 0.0535,
         },
         {
             _id: {
-                $oid: "52853800bb1177ca391c182f"
+                $oid: "52853800bb1177ca391c182f",
             },
             Ticker: "ACH",
             "Profit Margin": -0.051,
@@ -3798,7 +3799,7 @@ function getChartData() {
             "200-Day Simple Moving Average": -0.0544,
             "Shares Outstanding": 540.98,
             "Earnings Date": {
-                $date: 1299042000000
+                $date: 1299042000000,
             },
             "52-Week High": -0.3369,
             "P/Cash": 2.77,
@@ -3839,11 +3840,11 @@ function getChartData() {
             "LT Debt/Equity": 1.19,
             "Average Volume": 81.56999999999999,
             "EPS growth this year": 0.839,
-            "50-Day Simple Moving Average": -0.0421
+            "50-Day Simple Moving Average": -0.0421,
         },
         {
             _id: {
-                $oid: "52853800bb1177ca391c1830"
+                $oid: "52853800bb1177ca391c1830",
             },
             Ticker: "ACHC",
             "Profit Margin": 0.054,
@@ -3868,7 +3869,7 @@ function getChartData() {
             "200-Day Simple Moving Average": 0.3042,
             "Shares Outstanding": 50.04,
             "Earnings Date": {
-                $date: 1383078600000
+                $date: 1383078600000,
             },
             "52-Week High": 0.0027,
             "P/Cash": 556.1900000000001,
@@ -3910,11 +3911,11 @@ function getChartData() {
             "LT Debt/Equity": 1.23,
             "Average Volume": 213.49,
             "EPS growth this year": 1.299,
-            "50-Day Simple Moving Average": 0.1108
+            "50-Day Simple Moving Average": 0.1108,
         },
         {
             _id: {
-                $oid: "52853800bb1177ca391c1831"
+                $oid: "52853800bb1177ca391c1831",
             },
             Ticker: "ACHN",
             "Institutional Ownership": 0.91,
@@ -3935,7 +3936,7 @@ function getChartData() {
             "200-Day Simple Moving Average": -0.6035,
             "Shares Outstanding": 96.58,
             "Earnings Date": {
-                $date: 1384146000000
+                $date: 1384146000000,
             },
             "52-Week High": -0.7325,
             "P/Cash": 1.94,
@@ -3975,11 +3976,11 @@ function getChartData() {
             "LT Debt/Equity": 0,
             "Average Volume": 2761.17,
             "EPS growth this year": 0.07199999999999999,
-            "50-Day Simple Moving Average": -0.3574
+            "50-Day Simple Moving Average": -0.3574,
         },
         {
             _id: {
-                $oid: "52853800bb1177ca391c1832"
+                $oid: "52853800bb1177ca391c1832",
             },
             Ticker: "ACI",
             "Profit Margin": -0.173,
@@ -4001,7 +4002,7 @@ function getChartData() {
             "200-Day Simple Moving Average": -0.1177,
             "Shares Outstanding": 212.11,
             "Earnings Date": {
-                $date: 1383049800000
+                $date: 1383049800000,
             },
             "52-Week High": -0.4702,
             "P/Cash": 0.66,
@@ -4045,11 +4046,11 @@ function getChartData() {
             "LT Debt/Equity": 1.97,
             "Average Volume": 9000.5,
             "EPS growth this year": -5.378,
-            "50-Day Simple Moving Average": -0.0482
+            "50-Day Simple Moving Average": -0.0482,
         },
         {
             _id: {
-                $oid: "52853800bb1177ca391c1833"
+                $oid: "52853800bb1177ca391c1833",
             },
             Ticker: "ACIM",
             Sector: "Financial",
@@ -4080,11 +4081,11 @@ function getChartData() {
             "Performance (Month)": 0.0251,
             "Performance (Year)": 0.2843,
             "Average Volume": 0.97,
-            "50-Day Simple Moving Average": 0.0215
+            "50-Day Simple Moving Average": 0.0215,
         },
         {
             _id: {
-                $oid: "52853800bb1177ca391c1834"
+                $oid: "52853800bb1177ca391c1834",
             },
             Ticker: "ACIW",
             "Profit Margin": 0.078,
@@ -4109,7 +4110,7 @@ function getChartData() {
             "200-Day Simple Moving Average": 0.2698,
             "Shares Outstanding": 39.13,
             "Earnings Date": {
-                $date: 1383831000000
+                $date: 1383831000000,
             },
             "52-Week High": -0.0023,
             "P/Cash": 14.55,
@@ -4154,11 +4155,11 @@ function getChartData() {
             "LT Debt/Equity": 1.52,
             "Average Volume": 329.22,
             "EPS growth this year": -0.09,
-            "50-Day Simple Moving Average": 0.1412
+            "50-Day Simple Moving Average": 0.1412,
         },
         {
             _id: {
-                $oid: "52853800bb1177ca391c1835"
+                $oid: "52853800bb1177ca391c1835",
             },
             Ticker: "ACLS",
             "Profit Margin": -0.179,
@@ -4181,7 +4182,7 @@ function getChartData() {
             "200-Day Simple Moving Average": 0.3133,
             "Shares Outstanding": 109.07,
             "Earnings Date": {
-                $date: 1383773400000
+                $date: 1383773400000,
             },
             "52-Week High": -0.0867,
             "P/Cash": 5.26,
@@ -4224,11 +4225,11 @@ function getChartData() {
             "LT Debt/Equity": 0.09,
             "Average Volume": 677.59,
             "EPS growth this year": -7.4,
-            "50-Day Simple Moving Average": 0.0045
+            "50-Day Simple Moving Average": 0.0045,
         },
         {
             _id: {
-                $oid: "52853800bb1177ca391c1836"
+                $oid: "52853800bb1177ca391c1836",
             },
             Ticker: "ACM",
             "Profit Margin": -0.008,
@@ -4251,7 +4252,7 @@ function getChartData() {
             "200-Day Simple Moving Average": -0.0495,
             "Shares Outstanding": 99.26000000000001,
             "Earnings Date": {
-                $date: 1384263000000
+                $date: 1384263000000,
             },
             "52-Week High": -0.1683,
             "P/Cash": 5.66,
@@ -4295,11 +4296,11 @@ function getChartData() {
             "LT Debt/Equity": 0.57,
             "Average Volume": 637.61,
             "EPS growth this year": -1.223,
-            "50-Day Simple Moving Average": -0.0578
+            "50-Day Simple Moving Average": -0.0578,
         },
         {
             _id: {
-                $oid: "52853800bb1177ca391c1837"
+                $oid: "52853800bb1177ca391c1837",
             },
             Ticker: "ACMP",
             "Profit Margin": 0.229,
@@ -4324,7 +4325,7 @@ function getChartData() {
             "200-Day Simple Moving Average": 0.1934,
             "Shares Outstanding": 178.04,
             "Earnings Date": {
-                $date: 1383078600000
+                $date: 1383078600000,
             },
             "52-Week High": -0.0327,
             "P/Cash": 455.06,
@@ -4368,11 +4369,11 @@ function getChartData() {
             "LT Debt/Equity": 0.77,
             "Average Volume": 316.71,
             "EPS growth this year": -0.168,
-            "50-Day Simple Moving Average": 0.07199999999999999
+            "50-Day Simple Moving Average": 0.07199999999999999,
         },
         {
             _id: {
-                $oid: "52853800bb1177ca391c1838"
+                $oid: "52853800bb1177ca391c1838",
             },
             Ticker: "ACN",
             "Profit Margin": 0.108,
@@ -4397,7 +4398,7 @@ function getChartData() {
             "200-Day Simple Moving Average": 0.0299,
             "Shares Outstanding": 642.3,
             "Earnings Date": {
-                $date: 1380227400000
+                $date: 1380227400000,
             },
             "52-Week High": -0.07290000000000001,
             "P/Cash": 8.82,
@@ -4443,11 +4444,11 @@ function getChartData() {
             "LT Debt/Equity": 0.01,
             "Average Volume": 3213.71,
             "EPS growth this year": 0.284,
-            "50-Day Simple Moving Average": 0.0453
+            "50-Day Simple Moving Average": 0.0453,
         },
         {
             _id: {
-                $oid: "52853800bb1177ca391c1839"
+                $oid: "52853800bb1177ca391c1839",
             },
             Ticker: "ACNB",
             "Profit Margin": 0.236,
@@ -4469,7 +4470,7 @@ function getChartData() {
             "200-Day Simple Moving Average": 0.0815,
             "Shares Outstanding": 5.97,
             "Earnings Date": {
-                $date: 1382328000000
+                $date: 1382328000000,
             },
             "52-Week High": 0.0017,
             "P/Cash": 2.48,
@@ -4510,11 +4511,11 @@ function getChartData() {
             "LT Debt/Equity": 0.52,
             "Average Volume": 3.71,
             "EPS growth this year": 0.042,
-            "50-Day Simple Moving Average": 0.0559
+            "50-Day Simple Moving Average": 0.0559,
         },
         {
             _id: {
-                $oid: "52853800bb1177ca391c183a"
+                $oid: "52853800bb1177ca391c183a",
             },
             Ticker: "ACO",
             "Profit Margin": 0.029,
@@ -4539,7 +4540,7 @@ function getChartData() {
             "200-Day Simple Moving Average": -0.0167,
             "Shares Outstanding": 32.5,
             "Earnings Date": {
-                $date: 1382704200000
+                $date: 1382704200000,
             },
             "52-Week High": -0.1517,
             "P/Cash": 26.78,
@@ -4584,11 +4585,11 @@ function getChartData() {
             "LT Debt/Equity": 0.62,
             "Average Volume": 84.76000000000001,
             "EPS growth this year": 0.081,
-            "50-Day Simple Moving Average": -0.0477
+            "50-Day Simple Moving Average": -0.0477,
         },
         {
             _id: {
-                $oid: "52853800bb1177ca391c183b"
+                $oid: "52853800bb1177ca391c183b",
             },
             Ticker: "ACOR",
             "Profit Margin": 0.441,
@@ -4613,7 +4614,7 @@ function getChartData() {
             "200-Day Simple Moving Average": -0.0021,
             "Shares Outstanding": 40.32,
             "Earnings Date": {
-                $date: 1383222600000
+                $date: 1383222600000,
             },
             "52-Week High": -0.1745,
             "P/Cash": 3.86,
@@ -4657,11 +4658,11 @@ function getChartData() {
             "LT Debt/Equity": 0,
             "Average Volume": 321.38,
             "EPS growth this year": 4.053,
-            "50-Day Simple Moving Average": -0.0132
+            "50-Day Simple Moving Average": -0.0132,
         },
         {
             _id: {
-                $oid: "52853800bb1177ca391c183c"
+                $oid: "52853800bb1177ca391c183c",
             },
             Ticker: "ACPW",
             "Profit Margin": -0.016,
@@ -4683,7 +4684,7 @@ function getChartData() {
             "200-Day Simple Moving Average": -0.2732,
             "Shares Outstanding": 19.3,
             "Earnings Date": {
-                $date: 1384146000000
+                $date: 1384146000000,
             },
             "52-Week High": -0.4257,
             "P/Cash": 3.85,
@@ -4726,11 +4727,11 @@ function getChartData() {
             "LT Debt/Equity": 0,
             "Average Volume": 108.05,
             "EPS growth this year": 0.773,
-            "50-Day Simple Moving Average": -0.037
+            "50-Day Simple Moving Average": -0.037,
         },
         {
             _id: {
-                $oid: "52853800bb1177ca391c183d"
+                $oid: "52853800bb1177ca391c183d",
             },
             Ticker: "ACRE",
             "Profit Margin": 0.19,
@@ -4751,7 +4752,7 @@ function getChartData() {
             "200-Day Simple Moving Average": -0.0321,
             "Shares Outstanding": 10.22,
             "Earnings Date": {
-                $date: 1384318800000
+                $date: 1384318800000,
             },
             "52-Week High": -0.1775,
             "P/Cash": 3.43,
@@ -4794,11 +4795,11 @@ function getChartData() {
             "LT Debt/Equity": 0.43,
             "Average Volume": 303.57,
             "EPS growth this year": 2.5,
-            "50-Day Simple Moving Average": 0.09320000000000001
+            "50-Day Simple Moving Average": 0.09320000000000001,
         },
         {
             _id: {
-                $oid: "52853800bb1177ca391c183e"
+                $oid: "52853800bb1177ca391c183e",
             },
             Ticker: "ACRX",
             "Institutional Ownership": 0.731,
@@ -4819,7 +4820,7 @@ function getChartData() {
             "200-Day Simple Moving Average": -0.0167,
             "Shares Outstanding": 37.26,
             "Earnings Date": {
-                $date: 1383687000000
+                $date: 1383687000000,
             },
             "52-Week High": -0.4081,
             "P/Cash": 8.6,
@@ -4857,11 +4858,11 @@ function getChartData() {
             "LT Debt/Equity": 0.75,
             "Average Volume": 662.66,
             "EPS growth this year": -0.302,
-            "50-Day Simple Moving Average": -0.1244
+            "50-Day Simple Moving Average": -0.1244,
         },
         {
             _id: {
-                $oid: "52853800bb1177ca391c183f"
+                $oid: "52853800bb1177ca391c183f",
             },
             Ticker: "ACST",
             Sector: "Healthcare",
@@ -4900,11 +4901,11 @@ function getChartData() {
             "Performance (Month)": -0.1894,
             "Performance (Year)": -0.07539999999999999,
             "Average Volume": 55.42,
-            "50-Day Simple Moving Average": -0.1544
+            "50-Day Simple Moving Average": -0.1544,
         },
         {
             _id: {
-                $oid: "52853800bb1177ca391c1840"
+                $oid: "52853800bb1177ca391c1840",
             },
             Ticker: "ACT",
             "Profit Margin": -0.075,
@@ -4927,7 +4928,7 @@ function getChartData() {
             "200-Day Simple Moving Average": 0.3615,
             "Shares Outstanding": 132.5,
             "Earnings Date": {
-                $date: 1383049800000
+                $date: 1383049800000,
             },
             "52-Week High": 0.001,
             "P/Cash": 57.78,
@@ -4971,11 +4972,11 @@ function getChartData() {
             "LT Debt/Equity": 1.52,
             "Average Volume": 1470.98,
             "EPS growth this year": -0.631,
-            "50-Day Simple Moving Average": 0.1264
+            "50-Day Simple Moving Average": 0.1264,
         },
         {
             _id: {
-                $oid: "52853800bb1177ca391c1841"
+                $oid: "52853800bb1177ca391c1841",
             },
             Ticker: "ACTG",
             "Profit Margin": -0.073,
@@ -4998,7 +4999,7 @@ function getChartData() {
             "200-Day Simple Moving Average": -0.3876,
             "Shares Outstanding": 47.61,
             "Earnings Date": {
-                $date: 1382040000000
+                $date: 1382040000000,
             },
             "52-Week High": -0.5495,
             "P/Cash": 2.42,
@@ -5042,11 +5043,11 @@ function getChartData() {
             "LT Debt/Equity": 0,
             "Average Volume": 629.35,
             "EPS growth this year": 1.431,
-            "50-Day Simple Moving Average": -0.2523
+            "50-Day Simple Moving Average": -0.2523,
         },
         {
             _id: {
-                $oid: "52853800bb1177ca391c1842"
+                $oid: "52853800bb1177ca391c1842",
             },
             Ticker: "ACTS",
             "Profit Margin": 0.003,
@@ -5068,7 +5069,7 @@ function getChartData() {
             "200-Day Simple Moving Average": -0.0774,
             "Shares Outstanding": 68.70999999999999,
             "Earnings Date": {
-                $date: 1383744600000
+                $date: 1383744600000,
             },
             "52-Week High": -0.2735,
             "P/Cash": 0.79,
@@ -5110,11 +5111,11 @@ function getChartData() {
             "LT Debt/Equity": 0,
             "Average Volume": 50.98,
             "EPS growth this year": -1.75,
-            "50-Day Simple Moving Average": -0.0141
+            "50-Day Simple Moving Average": -0.0141,
         },
         {
             _id: {
-                $oid: "52853800bb1177ca391c1843"
+                $oid: "52853800bb1177ca391c1843",
             },
             Ticker: "ACTV",
             "Profit Margin": -0.08699999999999999,
@@ -5137,7 +5138,7 @@ function getChartData() {
             "200-Day Simple Moving Average": 0.7542,
             "Shares Outstanding": 62.76,
             "Earnings Date": {
-                $date: 1383165000000
+                $date: 1383165000000,
             },
             "52-Week High": -0.0007,
             "P/Cash": 8.800000000000001,
@@ -5180,11 +5181,11 @@ function getChartData() {
             "LT Debt/Equity": 0,
             "Average Volume": 2015.06,
             "EPS growth this year": -0.431,
-            "50-Day Simple Moving Average": 0.1064
+            "50-Day Simple Moving Average": 0.1064,
         },
         {
             _id: {
-                $oid: "52853800bb1177ca391c1844"
+                $oid: "52853800bb1177ca391c1844",
             },
             Ticker: "ACU",
             "Profit Margin": 0.044,
@@ -5209,7 +5210,7 @@ function getChartData() {
             "200-Day Simple Moving Average": 0.1142,
             "Shares Outstanding": 3.19,
             "Earnings Date": {
-                $date: 1382101200000
+                $date: 1382101200000,
             },
             "52-Week High": -0.0516,
             "P/Cash": 3.96,
@@ -5252,11 +5253,11 @@ function getChartData() {
             "LT Debt/Equity": 0.72,
             "Average Volume": 4.77,
             "EPS growth this year": 0.242,
-            "50-Day Simple Moving Average": -0.003
+            "50-Day Simple Moving Average": -0.003,
         },
         {
             _id: {
-                $oid: "52853800bb1177ca391c1845"
+                $oid: "52853800bb1177ca391c1845",
             },
             Ticker: "ACUR",
             "Institutional Ownership": 0.653,
@@ -5277,7 +5278,7 @@ function getChartData() {
             "200-Day Simple Moving Average": -0.1681,
             "Shares Outstanding": 47.46,
             "Earnings Date": {
-                $date: 1383600600000
+                $date: 1383600600000,
             },
             "52-Week High": -0.6289,
             "P/Cash": 4.04,
@@ -5314,11 +5315,11 @@ function getChartData() {
             "LT Debt/Equity": 0,
             "Average Volume": 445.96,
             "EPS growth this year": -1.909,
-            "50-Day Simple Moving Average": -0.0058
+            "50-Day Simple Moving Average": -0.0058,
         },
         {
             _id: {
-                $oid: "52853800bb1177ca391c1846"
+                $oid: "52853800bb1177ca391c1846",
             },
             Ticker: "ACW",
             "Profit Margin": -0.315,
@@ -5340,7 +5341,7 @@ function getChartData() {
             "200-Day Simple Moving Average": -0.3335,
             "Shares Outstanding": 47.59,
             "Earnings Date": {
-                $date: 1383309000000
+                $date: 1383309000000,
             },
             "52-Week High": -0.5182,
             "P/Cash": 5.59,
@@ -5383,11 +5384,11 @@ function getChartData() {
             "LT Debt/Equity": 11.76,
             "Average Volume": 336.81,
             "EPS growth this year": 0.054,
-            "50-Day Simple Moving Average": -0.2964
+            "50-Day Simple Moving Average": -0.2964,
         },
         {
             _id: {
-                $oid: "52853800bb1177ca391c1847"
+                $oid: "52853800bb1177ca391c1847",
             },
             Ticker: "ACWI",
             Sector: "Financial",
@@ -5419,11 +5420,11 @@ function getChartData() {
             "Performance (Month)": 0.0275,
             "Performance (Year)": 0.2607,
             "Average Volume": 1091.25,
-            "50-Day Simple Moving Average": 0.0285
+            "50-Day Simple Moving Average": 0.0285,
         },
         {
             _id: {
-                $oid: "52853801bb1177ca391c1848"
+                $oid: "52853801bb1177ca391c1848",
             },
             Ticker: "ACWX",
             Sector: "Financial",
@@ -5455,11 +5456,11 @@ function getChartData() {
             "Performance (Month)": 0.0051,
             "Performance (Year)": 0.1964,
             "Average Volume": 337.81,
-            "50-Day Simple Moving Average": 0.012
+            "50-Day Simple Moving Average": 0.012,
         },
         {
             _id: {
-                $oid: "52853801bb1177ca391c1849"
+                $oid: "52853801bb1177ca391c1849",
             },
             Ticker: "ACXM",
             "Profit Margin": 0.239,
@@ -5484,7 +5485,7 @@ function getChartData() {
             "200-Day Simple Moving Average": 0.4046,
             "Shares Outstanding": 73.78,
             "Earnings Date": {
-                $date: 1383773400000
+                $date: 1383773400000,
             },
             "52-Week High": -0.0317,
             "P/Cash": 11.26,
@@ -5529,11 +5530,11 @@ function getChartData() {
             "LT Debt/Equity": 0.37,
             "Average Volume": 463.18,
             "EPS growth this year": 0.389,
-            "50-Day Simple Moving Average": 0.1181
+            "50-Day Simple Moving Average": 0.1181,
         },
         {
             _id: {
-                $oid: "52853801bb1177ca391c184a"
+                $oid: "52853801bb1177ca391c184a",
             },
             Ticker: "ACY",
             "Profit Margin": 0.225,
@@ -5555,7 +5556,7 @@ function getChartData() {
             "200-Day Simple Moving Average": -0.0924,
             "Shares Outstanding": 1.54,
             "Earnings Date": {
-                $date: 1384146000000
+                $date: 1384146000000,
             },
             "52-Week High": -0.2063,
             "P/Cash": 3.64,
@@ -5597,11 +5598,11 @@ function getChartData() {
             "LT Debt/Equity": 1.37,
             "Average Volume": 4.34,
             "EPS growth this year": 4.532,
-            "50-Day Simple Moving Average": -0.1228
+            "50-Day Simple Moving Average": -0.1228,
         },
         {
             _id: {
-                $oid: "52853801bb1177ca391c184b"
+                $oid: "52853801bb1177ca391c184b",
             },
             Ticker: "ADAT",
             "Institutional Ownership": 0.26,
@@ -5622,7 +5623,7 @@ function getChartData() {
             "200-Day Simple Moving Average": 0.2309,
             "Shares Outstanding": 31.21,
             "Earnings Date": {
-                $date: 1384464600000
+                $date: 1384464600000,
             },
             "52-Week High": -0.2011,
             "P/Cash": 10.97,
@@ -5662,11 +5663,11 @@ function getChartData() {
             "LT Debt/Equity": 0,
             "Average Volume": 63.53,
             "EPS growth this year": -0.286,
-            "50-Day Simple Moving Average": 0.1581
+            "50-Day Simple Moving Average": 0.1581,
         },
         {
             _id: {
-                $oid: "52853801bb1177ca391c184c"
+                $oid: "52853801bb1177ca391c184c",
             },
             Ticker: "ADBE",
             "Profit Margin": 0.107,
@@ -5691,7 +5692,7 @@ function getChartData() {
             "200-Day Simple Moving Average": 0.2404,
             "Shares Outstanding": 504.12,
             "Earnings Date": {
-                $date: 1386883800000
+                $date: 1386883800000,
             },
             "52-Week High": -0.0094,
             "P/Cash": 9.17,
@@ -5736,11 +5737,11 @@ function getChartData() {
             "LT Debt/Equity": 0.22,
             "Average Volume": 3850.08,
             "EPS growth this year": 0.006,
-            "50-Day Simple Moving Average": 0.0973
+            "50-Day Simple Moving Average": 0.0973,
         },
         {
             _id: {
-                $oid: "52853801bb1177ca391c184d"
+                $oid: "52853801bb1177ca391c184d",
             },
             Ticker: "ADC",
             "Profit Margin": 0.444,
@@ -5763,7 +5764,7 @@ function getChartData() {
             "200-Day Simple Moving Average": 0.0717,
             "Shares Outstanding": 12.98,
             "Earnings Date": {
-                $date: 1382992200000
+                $date: 1382992200000,
             },
             "52-Week High": -0.0571,
             "P/Cash": 70.16,
@@ -5808,11 +5809,11 @@ function getChartData() {
             "LT Debt/Equity": 0.79,
             "Average Volume": 59.51,
             "EPS growth this year": -0.11,
-            "50-Day Simple Moving Average": 0.0408
+            "50-Day Simple Moving Average": 0.0408,
         },
         {
             _id: {
-                $oid: "52853801bb1177ca391c184e"
+                $oid: "52853801bb1177ca391c184e",
             },
             Ticker: "ADEP",
             "Profit Margin": -0.288,
@@ -5835,7 +5836,7 @@ function getChartData() {
             "200-Day Simple Moving Average": 1.1437,
             "Shares Outstanding": 10.12,
             "Earnings Date": {
-                $date: 1383859800000
+                $date: 1383859800000,
             },
             "52-Week High": -0.1583,
             "P/Cash": 16.26,
@@ -5877,11 +5878,11 @@ function getChartData() {
             "LT Debt/Equity": 0.03,
             "Average Volume": 231.2,
             "EPS growth this year": -1.475,
-            "50-Day Simple Moving Average": 0.2443
+            "50-Day Simple Moving Average": 0.2443,
         },
         {
             _id: {
-                $oid: "52853801bb1177ca391c184f"
+                $oid: "52853801bb1177ca391c184f",
             },
             Ticker: "ADES",
             "Profit Margin": -0.055,
@@ -5902,7 +5903,7 @@ function getChartData() {
             "200-Day Simple Moving Average": 0.401,
             "Shares Outstanding": 10.08,
             "Earnings Date": {
-                $date: 1383859800000
+                $date: 1383859800000,
             },
             "52-Week High": -0.0253,
             "P/Cash": 32.71,
@@ -5945,11 +5946,11 @@ function getChartData() {
             "Performance (Year)": 1.997,
             "Average Volume": 83.09999999999999,
             "EPS growth this year": 0.54,
-            "50-Day Simple Moving Average": 0.2179
+            "50-Day Simple Moving Average": 0.2179,
         },
         {
             _id: {
-                $oid: "52853801bb1177ca391c1850"
+                $oid: "52853801bb1177ca391c1850",
             },
             Ticker: "ADGE",
             "Profit Margin": -0.721,
@@ -5971,7 +5972,7 @@ function getChartData() {
             "200-Day Simple Moving Average": 0.0568,
             "Shares Outstanding": 48.62,
             "Earnings Date": {
-                $date: 1384435800000
+                $date: 1384435800000,
             },
             "52-Week High": -0.2672,
             "P/Cash": 8.369999999999999,
@@ -6013,11 +6014,11 @@ function getChartData() {
             "LT Debt/Equity": 1.99,
             "Average Volume": 22.37,
             "EPS growth this year": -0.75,
-            "50-Day Simple Moving Average": 0.1123
+            "50-Day Simple Moving Average": 0.1123,
         },
         {
             _id: {
-                $oid: "52853801bb1177ca391c1851"
+                $oid: "52853801bb1177ca391c1851",
             },
             Ticker: "ADHD",
             "Institutional Ownership": 0.142,
@@ -6062,11 +6063,11 @@ function getChartData() {
             "LT Debt/Equity": 0,
             "Average Volume": 61.88,
             "EPS growth this year": 0.6,
-            "50-Day Simple Moving Average": -0.07290000000000001
+            "50-Day Simple Moving Average": -0.07290000000000001,
         },
         {
             _id: {
-                $oid: "52853801bb1177ca391c1852"
+                $oid: "52853801bb1177ca391c1852",
             },
             Ticker: "ADI",
             "Profit Margin": 0.246,
@@ -6091,7 +6092,7 @@ function getChartData() {
             "200-Day Simple Moving Average": 0.0925,
             "Shares Outstanding": 309.12,
             "Earnings Date": {
-                $date: 1385501400000
+                $date: 1385501400000,
             },
             "52-Week High": -0.001,
             "P/Cash": 3.5,
@@ -6137,11 +6138,11 @@ function getChartData() {
             "LT Debt/Equity": 0.19,
             "Average Volume": 1768.56,
             "EPS growth this year": -0.237,
-            "50-Day Simple Moving Average": 0.0518
+            "50-Day Simple Moving Average": 0.0518,
         },
         {
             _id: {
-                $oid: "52853801bb1177ca391c1853"
+                $oid: "52853801bb1177ca391c1853",
             },
             Ticker: "ADK",
             "Profit Margin": -0.066,
@@ -6161,7 +6162,7 @@ function getChartData() {
             "200-Day Simple Moving Average": -0.1096,
             "Shares Outstanding": 14.73,
             "Earnings Date": {
-                $date: 1384464600000
+                $date: 1384464600000,
             },
             "52-Week High": -0.3609,
             "P/Cash": 5.78,
@@ -6203,11 +6204,11 @@ function getChartData() {
             "LT Debt/Equity": 18.77,
             "Average Volume": 27.37,
             "EPS growth this year": -1.104,
-            "50-Day Simple Moving Average": -0.0008
+            "50-Day Simple Moving Average": -0.0008,
         },
         {
             _id: {
-                $oid: "52853801bb1177ca391c1854"
+                $oid: "52853801bb1177ca391c1854",
             },
             Ticker: "ADM",
             "Profit Margin": 0.016,
@@ -6232,7 +6233,7 @@ function getChartData() {
             "200-Day Simple Moving Average": 0.2162,
             "Shares Outstanding": 664,
             "Earnings Date": {
-                $date: 1383049800000
+                $date: 1383049800000,
             },
             "52-Week High": 0.0024,
             "P/Cash": 7.87,
@@ -6278,11 +6279,11 @@ function getChartData() {
             "LT Debt/Equity": 0.33,
             "Average Volume": 4023.57,
             "EPS growth this year": -0.429,
-            "50-Day Simple Moving Average": 0.1079
+            "50-Day Simple Moving Average": 0.1079,
         },
         {
             _id: {
-                $oid: "52853801bb1177ca391c1855"
+                $oid: "52853801bb1177ca391c1855",
             },
             Ticker: "ADNC",
             "Profit Margin": 0.051,
@@ -6307,7 +6308,7 @@ function getChartData() {
             "200-Day Simple Moving Average": -0.2318,
             "Shares Outstanding": 21.64,
             "Earnings Date": {
-                $date: 1383251400000
+                $date: 1383251400000,
             },
             "52-Week High": -0.4076,
             "P/Cash": 1.69,
@@ -6347,11 +6348,11 @@ function getChartData() {
             "LT Debt/Equity": 0,
             "Average Volume": 125.19,
             "EPS growth this year": -0.5679999999999999,
-            "50-Day Simple Moving Average": -0.1264
+            "50-Day Simple Moving Average": -0.1264,
         },
         {
             _id: {
-                $oid: "52853801bb1177ca391c1856"
+                $oid: "52853801bb1177ca391c1856",
             },
             Ticker: "ADP",
             "Profit Margin": 0.124,
@@ -6376,7 +6377,7 @@ function getChartData() {
             "200-Day Simple Moving Average": 0.1219,
             "Shares Outstanding": 480.1,
             "Earnings Date": {
-                $date: 1383136200000
+                $date: 1383136200000,
             },
             "52-Week High": 0.0048,
             "P/Cash": 21.71,
@@ -6422,11 +6423,11 @@ function getChartData() {
             "LT Debt/Equity": 0,
             "Average Volume": 1621.1,
             "EPS growth this year": 0,
-            "50-Day Simple Moving Average": 0.0435
+            "50-Day Simple Moving Average": 0.0435,
         },
         {
             _id: {
-                $oid: "52853801bb1177ca391c1857"
+                $oid: "52853801bb1177ca391c1857",
             },
             Ticker: "ADRA",
             Sector: "Financial",
@@ -6458,11 +6459,11 @@ function getChartData() {
             "Performance (Month)": -0.0132,
             "Performance (Year)": 0.257,
             "Average Volume": 0.89,
-            "50-Day Simple Moving Average": -0.0077
+            "50-Day Simple Moving Average": -0.0077,
         },
         {
             _id: {
-                $oid: "52853801bb1177ca391c1858"
+                $oid: "52853801bb1177ca391c1858",
             },
             Ticker: "ADRD",
             Sector: "Financial",
@@ -6494,11 +6495,11 @@ function getChartData() {
             "Performance (Month)": 0.0235,
             "Performance (Year)": 0.2796,
             "Average Volume": 4.79,
-            "50-Day Simple Moving Average": 0.0176
+            "50-Day Simple Moving Average": 0.0176,
         },
         {
             _id: {
-                $oid: "52853801bb1177ca391c1859"
+                $oid: "52853801bb1177ca391c1859",
             },
             Ticker: "ADRE",
             Sector: "Financial",
@@ -6530,11 +6531,11 @@ function getChartData() {
             "Performance (Month)": -0.0288,
             "Performance (Year)": -0.0048,
             "Average Volume": 29.88,
-            "50-Day Simple Moving Average": -0.0058
+            "50-Day Simple Moving Average": -0.0058,
         },
         {
             _id: {
-                $oid: "52853801bb1177ca391c185a"
+                $oid: "52853801bb1177ca391c185a",
             },
             Ticker: "ADRU",
             Sector: "Financial",
@@ -6566,11 +6567,11 @@ function getChartData() {
             "Performance (Month)": 0.0212,
             "Performance (Year)": 0.2378,
             "Average Volume": 4.36,
-            "50-Day Simple Moving Average": 0.0201
+            "50-Day Simple Moving Average": 0.0201,
         },
         {
             _id: {
-                $oid: "52853801bb1177ca391c185b"
+                $oid: "52853801bb1177ca391c185b",
             },
             Ticker: "ADS",
             "Profit Margin": 0.111,
@@ -6594,7 +6595,7 @@ function getChartData() {
             "200-Day Simple Moving Average": 0.3458,
             "Shares Outstanding": 48.7,
             "Earnings Date": {
-                $date: 1382013000000
+                $date: 1382013000000,
             },
             "52-Week High": 0.0095,
             "P/Cash": 15.43,
@@ -6639,11 +6640,11 @@ function getChartData() {
             "LT Debt/Equity": 9.369999999999999,
             "Average Volume": 395.63,
             "EPS growth this year": 0.207,
-            "50-Day Simple Moving Average": 0.1305
+            "50-Day Simple Moving Average": 0.1305,
         },
         {
             _id: {
-                $oid: "52853801bb1177ca391c185c"
+                $oid: "52853801bb1177ca391c185c",
             },
             Ticker: "ADSK",
             "Profit Margin": 0.097,
@@ -6668,7 +6669,7 @@ function getChartData() {
             "200-Day Simple Moving Average": 0.1553,
             "Shares Outstanding": 223.1,
             "Earnings Date": {
-                $date: 1385069400000
+                $date: 1385069400000,
             },
             "52-Week High": 0.008200000000000001,
             "P/Cash": 4.86,
@@ -6713,11 +6714,11 @@ function getChartData() {
             "LT Debt/Equity": 0.36,
             "Average Volume": 3501.17,
             "EPS growth this year": -0.123,
-            "50-Day Simple Moving Average": 0.0866
+            "50-Day Simple Moving Average": 0.0866,
         },
         {
             _id: {
-                $oid: "52853801bb1177ca391c185d"
+                $oid: "52853801bb1177ca391c185d",
             },
             Ticker: "ADT",
             "Profit Margin": 0.127,
@@ -6742,7 +6743,7 @@ function getChartData() {
             "200-Day Simple Moving Average": 0.0094,
             "Shares Outstanding": 217,
             "Earnings Date": {
-                $date: 1384954200000
+                $date: 1384954200000,
             },
             "52-Week High": -0.1359,
             "P/Cash": 34.1,
@@ -6786,11 +6787,11 @@ function getChartData() {
             "LT Debt/Equity": 0.72,
             "Average Volume": 2352.66,
             "EPS growth this year": 0.018,
-            "50-Day Simple Moving Average": 0.0479
+            "50-Day Simple Moving Average": 0.0479,
         },
         {
             _id: {
-                $oid: "52853801bb1177ca391c185e"
+                $oid: "52853801bb1177ca391c185e",
             },
             Ticker: "ADTN",
             "Profit Margin": 0.061,
@@ -6815,7 +6816,7 @@ function getChartData() {
             "200-Day Simple Moving Average": 0.0026,
             "Shares Outstanding": 57.95,
             "Earnings Date": {
-                $date: 1381321800000
+                $date: 1381321800000,
             },
             "52-Week High": -0.1563,
             "P/Cash": 7.29,
@@ -6861,11 +6862,11 @@ function getChartData() {
             "LT Debt/Equity": 0.08,
             "Average Volume": 563.67,
             "EPS growth this year": -0.651,
-            "50-Day Simple Moving Average": -0.07770000000000001
+            "50-Day Simple Moving Average": -0.07770000000000001,
         },
         {
             _id: {
-                $oid: "52853801bb1177ca391c185f"
+                $oid: "52853801bb1177ca391c185f",
             },
             Ticker: "ADUS",
             "Profit Margin": 0.099,
@@ -6890,7 +6891,7 @@ function getChartData() {
             "200-Day Simple Moving Average": 0.4043,
             "Shares Outstanding": 10.79,
             "Earnings Date": {
-                $date: 1383859800000
+                $date: 1383859800000,
             },
             "52-Week High": -0.2012,
             "P/Cash": 7,
@@ -6935,11 +6936,11 @@ function getChartData() {
             "LT Debt/Equity": 0,
             "Average Volume": 121.86,
             "EPS growth this year": 0.103,
-            "50-Day Simple Moving Average": -0.0447
+            "50-Day Simple Moving Average": -0.0447,
         },
         {
             _id: {
-                $oid: "52853801bb1177ca391c1860"
+                $oid: "52853801bb1177ca391c1860",
             },
             Ticker: "ADVS",
             "Profit Margin": 0.068,
@@ -6962,7 +6963,7 @@ function getChartData() {
             "200-Day Simple Moving Average": 0.3309,
             "Shares Outstanding": 51.58,
             "Earnings Date": {
-                $date: 1382992200000
+                $date: 1382992200000,
             },
             "52-Week High": -0.0435,
             "P/Cash": 43.07,
@@ -7005,11 +7006,11 @@ function getChartData() {
             "Performance (Year)": 1.1445,
             "Average Volume": 324.71,
             "EPS growth this year": 0.115,
-            "50-Day Simple Moving Average": 0.0653
+            "50-Day Simple Moving Average": 0.0653,
         },
         {
             _id: {
-                $oid: "52853801bb1177ca391c1861"
+                $oid: "52853801bb1177ca391c1861",
             },
             Ticker: "ADX",
             "Institutional Ownership": 0.2,
@@ -7030,7 +7031,7 @@ function getChartData() {
             "200-Day Simple Moving Average": 0.0906,
             "Shares Outstanding": 92.69,
             "Earnings Date": {
-                $date: 1381291200000
+                $date: 1381291200000,
             },
             "52-Week High": 0.0036,
             "P/Cash": 6061.73,
@@ -7071,7 +7072,7 @@ function getChartData() {
             "LT Debt/Equity": 0,
             "Average Volume": 91.78,
             "EPS growth this year": 4.366,
-            "50-Day Simple Moving Average": 0.0409
-        }
+            "50-Day Simple Moving Average": 0.0409,
+        },
     ];
 }

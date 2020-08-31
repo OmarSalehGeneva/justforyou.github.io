@@ -1,11 +1,11 @@
 /*Font Awesome Free Icon*/
 
-@import url('https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css');
+@import url("https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css");
 
 /*Google fonts*/
 
-@import url('https://fonts.googleapis.com/css?family=Montserrat:400,500,600,700&display=swap');
-@import url('https://fonts.googleapis.com/css?family=Rubik:500,700,900&display=swap');
+@import url("https://fonts.googleapis.com/css?family=Montserrat:400,500,600,700&display=swap");
+@import url("https://fonts.googleapis.com/css?family=Rubik:500,700,900&display=swap");
 
 /*General Style*/
 
@@ -13,7 +13,7 @@ body {
     margin: 0;
     line-height: 1.5;
     font-size: 16px;
-    font-family: 'Montserrat', sans-serif;
+    font-family: "Montserrat", sans-serif;
     font-weight: 400;
 }
 
@@ -33,7 +33,7 @@ body {
 input,
 textarea,
 select {
-    font-family: 'Montserrat', sans-serif;
+    font-family: "Montserrat", sans-serif;
 }
 
 .section {
@@ -102,14 +102,14 @@ select {
 .section-title h2 {
     font-size: 40px;
     color: #302e4d;
-    font-family: 'Rubik', sans-serif;
+    font-family: "Rubik", sans-serif;
     font-weight: 700;
     margin: 0;
     position: relative;
 }
 
 .section-title h2::before {
-    content: '';
+    content: "";
     height: 4px;
     width: 50px;
     position: absolute;
@@ -118,7 +118,7 @@ select {
 }
 
 .section-title h2::after {
-    content: '';
+    content: "";
     height: 4px;
     width: 25px;
     position: absolute;
@@ -155,7 +155,7 @@ select {
 
 .btn {
     font-size: 16px;
-    font-family: 'Rubik', sans-serif;
+    font-family: "Rubik", sans-serif;
     font-weight: 500;
     padding: 12px 35px;
     color: #ffffff;
@@ -268,7 +268,7 @@ select {
 .aside .logo a {
     font-size: 40px;
     color: #302e4d;
-    font-family: 'Rubik', sans-serif;
+    font-family: "Rubik", sans-serif;
     font-weight: 700;
     text-decoration: none;
     display: inline-block;
@@ -278,7 +278,7 @@ select {
 }
 
 .aside .logo a::before {
-    content: '';
+    content: "";
     height: 20px;
     width: 20px;
     position: absolute;
@@ -287,7 +287,7 @@ select {
 }
 
 .aside .logo a::after {
-    content: '';
+    content: "";
     height: 20px;
     width: 20px;
     position: absolute;
@@ -329,7 +329,7 @@ select {
 }
 
 .aside .nav-toggler span::before {
-    content: '';
+    content: "";
     height: 2px;
     width: 18px;
     position: absolute;
@@ -344,7 +344,7 @@ select {
 }
 
 .aside .nav-toggler span::after {
-    content: '';
+    content: "";
     height: 2px;
     width: 18px;
     position: absolute;
@@ -401,10 +401,15 @@ select {
     min-height: 100vh;
     display: -ms-flexbox;
     display: flex;
+    background-image: url(../images/genevamainbgbg.jpg);
 }
 
 .home .intro {
     text-align: center;
+}
+
+.home img {
+    filter: brightness(50%);
 }
 
 .home .intro img {
@@ -418,7 +423,7 @@ select {
 .home .intro h1 {
     font-size: 30px;
     color: #302e4d;
-    font-family: 'Rubik', sans-serif;
+    font-family: "Rubik", sans-serif;
     font-weight: 700;
     margin: 20px 0 5px;
 }
@@ -622,7 +627,7 @@ select {
 }
 
 .about .about-content .timeline .timeline-item::before {
-    content: '';
+    content: "";
     width: 1px;
     position: absolute;
     height: 100%;
@@ -695,6 +700,7 @@ select {
 .service .service-item .service-item-inner:hover {
     -webkit-box-shadow: 0 0 20px rgba(48, 46, 77, 0.15);
     box-shadow: 0 0 20px rgba(48, 46, 77, 0.15);
+    background-color: #fdf9ff;
 }
 
 .service .service-item .service-item-inner .icon {
@@ -926,7 +932,7 @@ select {
 }
 
 .lightbox.open .lightbox-content {
-    animation: lightboxImage .5s ease;
+    animation: lightboxImage 0.5s ease;
 }
 
 @-webkit-keyframes lightboxImage {
@@ -1043,6 +1049,7 @@ select {
 .blog .blog-item-inner .blog-img {
     position: relative;
     overflow: hidden;
+    height: 195px;
 }
 
 .blog .blog-item-inner .blog-img img {
@@ -1068,9 +1075,14 @@ select {
     bottom: 15px;
 }
 
+.blog .blog-item-inner .blog-img .blog-date a {
+    color: white;
+}
+
 .blog .blog-item-inner .blog-info {
     padding: 30px 15px;
     background-color: #fdf9ff;
+    height: 300px;
 }
 
 .blog .blog-item-inner .blog-info .blog-title {

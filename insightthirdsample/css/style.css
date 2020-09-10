@@ -619,7 +619,7 @@ select {
 .about .about-content .timeline .timeline-item {
     position: relative;
     padding-left: 37px;
-    padding-bottom: 50px;
+    padding-bottom: 7px;
 }
 
 .about .about-content .timeline .timeline-item:last-child {
@@ -648,7 +648,8 @@ select {
 .about .about-content .timeline .timeline-date {
     font-size: 14px;
     font-weight: 400;
-    margin-bottom: 12px;
+    margin-bottom: 15px;
+    margin-top: 13px;
     color: #504e70;
 }
 
@@ -669,6 +670,59 @@ select {
     line-height: 25px;
     color: #504e70;
     margin: 0;
+}
+
+.read-more-state {
+    display: none;
+}
+
+.read-more-target-1,
+.read-more-target-2,
+.read-more-target-3,
+.read-more-target-4,
+.read-more-target-5,
+.read-more-target-6,
+.read-more-target-7,
+.read-more-target-8 {
+    opacity: 0;
+    max-height: 0;
+    font-size: 0;
+    transition: .5s ease;
+}
+
+.read-more-state:checked~.read-more-wrap .read-more-target-1,
+.read-more-state:checked~.read-more-wrap .read-more-target-2,
+.read-more-state:checked~.read-more-wrap .read-more-target-3,
+.read-more-state:checked~.read-more-wrap .read-more-target-4,
+.read-more-state:checked~.read-more-wrap .read-more-target-5,
+.read-more-state:checked~.read-more-wrap .read-more-target-6,
+.read-more-state:checked~.read-more-wrap .read-more-target-7,
+.read-more-state:checked~.read-more-wrap .read-more-target-8 {
+    opacity: 1;
+    font-size: inherit;
+    max-height: 999em;
+}
+
+.read-more-state~.read-more-trigger:before {
+    content: '+';
+    z-index: 1;
+}
+
+.read-more-state:checked~.read-more-trigger:before {
+    content: '-';
+    z-index: 1;
+}
+
+.read-more-trigger {
+    cursor: pointer;
+    display: inline-block;
+    padding: 0px 7px;
+    color: #fff;
+    font-size: .9em;
+    line-height: 2;
+    border: 1px solid #ddd;
+    border-radius: .25em;
+    background-color: #ec1839;
 }
 
 
@@ -744,6 +798,107 @@ select {
 
 
 /* Portfolio Section */
+
+.accordion .accordion-item {
+    border-bottom: 1px solid #e5e5e5;
+}
+
+.accordion .accordion-item button[aria-expanded=true] {
+    border-bottom: 1px solid #ec1839;
+}
+
+.accordion button {
+    position: relative;
+    display: block;
+    text-align: left;
+    width: 100%;
+    padding: 1em 0;
+    color: #000;
+    font-size: 1.15rem;
+    font-weight: 400;
+    border: none;
+    background: none;
+    outline: none;
+}
+
+.accordion button:hover,
+.accordion button:focus {
+    cursor: pointer;
+    color: #ec1839;
+}
+
+.accordion button:hover::after,
+.accordion button:focus::after {
+    cursor: pointer;
+    color: #ec1839;
+    border: 1px solid #ec1839;
+}
+
+.accordion button .accordion-title {
+    padding: 1em 1.5em 1em 0;
+}
+
+.accordion button .icon {
+    display: inline-block;
+    position: absolute;
+    top: 18px;
+    right: 0;
+    width: 22px;
+    height: 22px;
+    border: 1px solid;
+    border-radius: 22px;
+}
+
+.accordion button .icon::before {
+    display: block;
+    position: absolute;
+    content: "";
+    top: 9px;
+    left: 5px;
+    width: 10px;
+    height: 2px;
+    background: currentColor;
+}
+
+.accordion button .icon::after {
+    display: block;
+    position: absolute;
+    content: "";
+    top: 5px;
+    left: 9px;
+    width: 2px;
+    height: 10px;
+    background: currentColor;
+}
+
+.accordion button[aria-expanded=true] {
+    color: #ec1839;
+}
+
+.accordion button[aria-expanded=true] .icon::after {
+    width: 0;
+}
+
+.accordion button[aria-expanded=true]+.accordion-content {
+    opacity: 1;
+    max-height: 38em;
+    transition: all 200ms linear;
+    will-change: opacity, max-height;
+}
+
+.accordion .accordion-content {
+    opacity: 0;
+    max-height: 0;
+    overflow: hidden;
+    transition: opacity 200ms linear, max-height 200ms linear;
+    will-change: opacity, max-height;
+}
+
+.accordion .accordion-content p {
+    font-size: 1rem;
+    font-weight: 300;
+    margin: 2em 0;
+}
 
 .portfolio .container {
     padding-bottom: 40px;

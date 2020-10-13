@@ -18,6 +18,8 @@
     <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@300&family=Roboto+Mono:ital,wght@1,200&family=Sansita+Swashed:wght@300&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="css/styleSwitcher.css" type="text/css">
     <script src="https://kit.fontawesome.com/7b56ccf840.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src="https://kit.fontawesome.com/a076d05399.js"></script>
 
 
 
@@ -56,6 +58,8 @@
                     <li><a href="#portfolio"><i class="fa fa-comments"></i> FAQ</a></li>
                     <li><a href="#blog"><i class="fa fa-user"></i> About</a></li>
                     <li><a href="#contact"><i class="fa fa-envelope"></i> Contact</a></li>
+                    <li><a href="#cgv"><i class="fa fa-envelope"></i> CGV</a></li> <!-- Accès à la page confidentialité (to delete) -->
+                    <li><a href="#cgpc"><i class="fa fa-envelope"></i> CGPC</a></li> <!-- Accès à la page confidentialité (to delete) -->
                 </ul>
                 <!-- Copyright -->
                 <div class="copyright-text">
@@ -350,120 +354,71 @@
                         </div>
                     </div>
                 </div> <!-- FIN Container -->
+                
                 <!-- DEBUT FOOTER -->
-                <footer class="footer-section">
-                    <div class="container-footer">
-                        <div class="footer-cta pt-5 pb-5">
-                            <div class="row-footer">
-                                <div class="col-xl-4 col-md-4 mb-30">
-                                    <div class="single-cta">
-                                        <i class="fas fa-map-marker-alt"></i>
-                                        <div class="cta-text">
-                                            <h4>Adresse</h4>
-                                            <span>Route de Thonon 152A, 1222 Vésenaz</span>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="col-xl-4 col-md-4 mb-30">
-                                    <div class="single-cta">
-                                        <i class="fas fa-phone"></i>
-                                        <div class="cta-text">
-                                            <h4>Téléphone</h4>
-                                            <span>058 255 28 00</span>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="col-xl-4 col-md-4 mb-30">
-                                    <div class="single-cta">
-                                        <i class="far fa-envelope-open"></i>
-                                        <div class="cta-text">
-                                            <h4>Email</h4>
-                                            <span>info@insightsolutions.com</span>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
+                <div class="footer">
+                    <div class="inner-footer">
+
+                        <!--  Nom Insight + Newsletter -->
+                        <div class="footer-items">
+                            <h1>Insight Solutions</h1>
+                            <p>La version moderne de l'audit sur l'humain.</p>
+                                <form action="#">
+                                    <input type="email" id="emailAddress" placeholder="adresse@email.com" autofocus />
+                                    <button type="button" class="btn-newsletter">Newsletter</button>
+                                </form>
                         </div>
-                        <div class="footer-content pt-5 pb-5">
-                            <div class="row-footer">
-                                <div class="col-xl-4 col-lg-4 mb-50">
-                                    <div class="footer-widget">
-                                        <div class="footer-logo">
-                                            <a href="index.html"><img src="./images/is3.png" class="img-fluid" alt="logo"></a>
-                                        </div>
-                                        <div class="footer-text">
-                                            <p>Lorem ipsum dolor sit amet, consec tetur adipisicing elit, sed do eiusmod tempor incididuntut consec tetur adipisicing
-                                            elit,Lorem ipsum dolor sit amet.</p>
-                                        </div>
-                                        <div class="footer-social-icon">
-                                            <span>Suivez-nous</span>
-                                            <a href="#"><i class="fab fa-facebook-f facebook-bg"></i></a>
-                                            <a href="#"><i class="fab fa-linkedin-in linkedin-bg"></i></a>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="col-xl-4 col-lg-4 col-md-6 mb-30">
-                                    <div class="footer-widget">
-                                        <div class="footer-widget-heading">
-                                            <h3>Liens utiles</h3>
-                                        </div>
-                                        <ul>
-                                            <li><a href="#">Accueil</a></li>
-                                            <li><a href="#">Qui sommes-nous?</a></li>
-                                            <li><a href="#">Solutions</a></li>
-                                            <li><a href="#">Objectifs</a></li>
-                                            <li><a href="#">Contact</a></li>
-                                            <li><a href="#">FAQ</a></li>
-                                            <li><a href="#">Nos Services</a></li>
-                                            <li><a href="#">Notre Équipe</a></li>
-                                            <li><a href="#">Insight</a></li>
-                                            <li><a href="#">Dernières News</a></li>
-                                        </ul>
-                                    </div>
-                                </div>
-                                <div class="col-xl-4 col-lg-4 col-md-6 mb-50">
-                                    <div class="footer-widget">
-                                        <div class="footer-widget-heading">
-                                            <h3>Newsletter</h3>
-                                        </div>
-                                        <div class="footer-text mb-25">
-                                            <p>Abonnez-vous à la newsletter en entrant votre adresse mail ci-dessous:</p>
-                                        </div>
-                                        <div class="subscribe-form">
-                                            <form action="#">
-                                                <input type="text" placeholder="Email">
-                                                <button><i class="fab fa-telegram-plane"></i></button>
-                                            </form>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
+  
+                        <!--  Partie Menu  -->
+                        <div class="footer-items">
+                            <h3>Menu</h3>
+                            <div class="footer-border1"></div> <!-- Barre rouge sous titre -->
+                            <ul>
+                                <a href="#"><li>Accueil</li></a>
+                                <a href="#"><li>Missions</li></a>
+                                <a href="#"><li>Solutions</li></a>
+                                <a href="#"><li>FAQ</li></a>
+                                <a href="#"><li>About</li></a>
+                                <a href="#"><li>Contact</li></a>
+                            </ul>
                         </div>
-                   </div>
-                    <div class="copyright-area">
-                       <div class="container-footer">
-                            <div class="row-footer">
-                                <div class="col-xl-6 col-lg-6 text-center text-lg-left">
-                                    <div class="copyright-text">
-                                        <p>Copyright &copy; 2020. Tout droits réservés <a href="#">Insight Solutions</a></p>
-                                    </div>
-                                </div>
-                                <div class="col-xl-6 col-lg-6 d-none d-lg-block text-right">
-                                    <div class="footer-menu">
-                                        <ul>
-                                            <li><a href="#">Accueil</a></li>
-                                            <li><a href="#">Termes</a></li>
-                                            <li><a href="#">Confidentialité</a></li>
-                                            <li><a href="#">Politique</a></li>
-                                            <li><a href="#">Contact</a></li>
-                                        </ul>
-                                    </div>
-                                </div>
-                            </div>
+  
+                        <!--  Partie Liens Utiles -->
+                        <div class="footer-items">
+                            <h3>Liens utiles</h3>
+                            <div class="footer-border1"></div>  <!-- Barre rouge sous titre -->
+                            <ul>
+                                <a href="#"><li>Termes</li></a>
+                                <a href="#confidentialite"><li>Confidentialité</li></a>
+                                <a href="#"><li>Politique</li></a>
+                            </ul>
+                        </div>
+  
+                        <!--  Partie Contact -->
+                        <div class="footer-items">
+                            <h3>Contact</h3>
+                            <div class="footer-border1"></div> <!-- Barre rouge sous titre -->
+                            <ul>
+                                <li><i class="fa fa-map-marker" aria-hidden="true"></i>Route de Thonon 152A, 1222 Vésenaz</li>
+                                <li><i class="fa fa-phone" aria-hidden="true"></i>058 255 28 00</li>
+                                <li><i class="fa fa-envelope" aria-hidden="true"></i>info@insightsolutions.com</li>
+                            </ul> 
+        
+                            <!--   Partie Social Icons -->
+                            <div class="footer-social-media">
+                                <a href="#"><i class="fab fa-facebook"></i></a>
+                                <a href="#"><i class="fab fa-linkedin"></i></a>
+                            </div> 
                         </div>
                     </div>
-                </footer>
-                <!-- End Footer-->
+    
+                    <!--  Copyright en bas de page -->
+                    <div class="footer-bottom">
+                        Copyright &copy; 2020, Insight Solutions. Tout droit réservé.
+                    </div>
+                </div>
+                <!--   FOOTER END -->
+
             </section>
             <!-- About Section End-->
 
@@ -534,7 +489,69 @@
                         <!-- Service Item End -->
                     </div>
                 </div>
-                
+                <!-- DEBUT FOOTER -->
+                <div class="footer">
+                    <div class="inner-footer">
+
+                        <!--  Nom Insight + Newsletter -->
+                        <div class="footer-items">
+                            <h1>Insight Solutions</h1>
+                            <p>La version moderne de l'audit sur l'humain.</p>
+                                <form action="#">
+                                    <input type="email" id="emailAddress" placeholder="adresse@email.com" autofocus />
+                                    <button type="button" class="btn-newsletter">Newsletter</button>
+                                </form>
+                        </div>
+  
+                        <!--  Partie Menu  -->
+                        <div class="footer-items">
+                            <h3>Menu</h3>
+                            <div class="footer-border1"></div> <!-- Barre rouge sous titre -->
+                            <ul>
+                                <a href="#"><li>Accueil</li></a>
+                                <a href="#"><li>Missions</li></a>
+                                <a href="#"><li>Solutions</li></a>
+                                <a href="#"><li>FAQ</li></a>
+                                <a href="#"><li>About</li></a>
+                                <a href="#"><li>Contact</li></a>
+                            </ul>
+                        </div>
+  
+                        <!--  Partie Liens Utiles -->
+                        <div class="footer-items">
+                            <h3>Liens utiles</h3>
+                            <div class="footer-border1"></div>  <!-- Barre rouge sous titre -->
+                            <ul>
+                                <a href="#"><li>Termes</li></a>
+                                <a href="#"><li>Confidentialité</li></a>
+                                <a href="#"><li>Politique</li></a>
+                            </ul>
+                        </div>
+  
+                        <!--  Partie Contact -->
+                        <div class="footer-items">
+                            <h3>Contact</h3>
+                            <div class="footer-border1"></div> <!-- Barre rouge sous titre -->
+                            <ul>
+                                <li><i class="fa fa-map-marker" aria-hidden="true"></i>Route de Thonon 152A, 1222 Vésenaz</li>
+                                <li><i class="fa fa-phone" aria-hidden="true"></i>058 255 28 00</li>
+                                <li><i class="fa fa-envelope" aria-hidden="true"></i>info@insightsolutions.com</li>
+                            </ul> 
+        
+                            <!--   Partie Social Icons -->
+                            <div class="footer-social-media">
+                                <a href="#"><i class="fab fa-facebook"></i></a>
+                                <a href="#"><i class="fab fa-linkedin"></i></a>
+                            </div> 
+                        </div>
+                    </div>
+    
+                    <!--  Copyright en bas de page -->
+                    <div class="footer-bottom">
+                        Copyright &copy; 2020, Insight Solutions. Tout droit réservé.
+                    </div>
+                </div>
+                <!--   FOOTER END -->
             </section>
             <!-- Service Section End-->
 
@@ -684,7 +701,69 @@
                         </div>
                     </div>
                 </div>
+                <!-- DEBUT FOOTER -->
+                <div class="footer">
+                    <div class="inner-footer">
 
+                        <!--  Nom Insight + Newsletter -->
+                        <div class="footer-items">
+                            <h1>Insight Solutions</h1>
+                            <p>La version moderne de l'audit sur l'humain.</p>
+                                <form action="#">
+                                    <input type="email" id="emailAddress" placeholder="adresse@email.com" autofocus />
+                                    <button type="button" class="btn-newsletter">Newsletter</button>
+                                </form>
+                        </div>
+  
+                        <!--  Partie Menu  -->
+                        <div class="footer-items">
+                            <h3>Menu</h3>
+                            <div class="footer-border1"></div> <!-- Barre rouge sous titre -->
+                            <ul>
+                                <a href="#"><li>Accueil</li></a>
+                                <a href="#"><li>Missions</li></a>
+                                <a href="#"><li>Solutions</li></a>
+                                <a href="#"><li>FAQ</li></a>
+                                <a href="#"><li>About</li></a>
+                                <a href="#"><li>Contact</li></a>
+                            </ul>
+                        </div>
+  
+                        <!--  Partie Liens Utiles -->
+                        <div class="footer-items">
+                            <h3>Liens utiles</h3>
+                            <div class="footer-border1"></div>  <!-- Barre rouge sous titre -->
+                            <ul>
+                                <a href="#"><li>Termes</li></a>
+                                <a href="#"><li>Confidentialité</li></a>
+                                <a href="#"><li>Politique</li></a>
+                            </ul>
+                        </div>
+  
+                        <!--  Partie Contact -->
+                        <div class="footer-items">
+                            <h3>Contact</h3>
+                            <div class="footer-border1"></div> <!-- Barre rouge sous titre -->
+                            <ul>
+                                <li><i class="fa fa-map-marker" aria-hidden="true"></i>Route de Thonon 152A, 1222 Vésenaz</li>
+                                <li><i class="fa fa-phone" aria-hidden="true"></i>058 255 28 00</li>
+                                <li><i class="fa fa-envelope" aria-hidden="true"></i>info@insightsolutions.com</li>
+                            </ul> 
+        
+                            <!--   Partie Social Icons -->
+                            <div class="footer-social-media">
+                                <a href="#"><i class="fab fa-facebook"></i></a>
+                                <a href="#"><i class="fab fa-linkedin"></i></a>
+                            </div> 
+                        </div>
+                    </div>
+    
+                    <!--  Copyright en bas de page -->
+                    <div class="footer-bottom">
+                        Copyright &copy; 2020, Insight Solutions. Tout droit réservé.
+                    </div>
+                </div>
+                <!--   FOOTER END -->
             </section>
             <!-- Portfolio Section End-->
 
@@ -756,6 +835,69 @@
                         <!-- Blog Item End -->
                     </div>
                 </div>
+                <!-- DEBUT FOOTER -->
+                <div class="footer">
+                    <div class="inner-footer">
+
+                        <!--  Nom Insight + Newsletter -->
+                        <div class="footer-items">
+                            <h1>Insight Solutions</h1>
+                            <p>La version moderne de l'audit sur l'humain.</p>
+                                <form action="#">
+                                    <input type="email" id="emailAddress" placeholder="adresse@email.com" autofocus />
+                                    <button type="button" class="btn-newsletter">Newsletter</button>
+                                </form>
+                        </div>
+  
+                        <!--  Partie Menu  -->
+                        <div class="footer-items">
+                            <h3>Menu</h3>
+                            <div class="footer-border1"></div> <!-- Barre rouge sous titre -->
+                            <ul>
+                                <a href="#"><li>Accueil</li></a>
+                                <a href="#"><li>Missions</li></a>
+                                <a href="#"><li>Solutions</li></a>
+                                <a href="#"><li>FAQ</li></a>
+                                <a href="#"><li>About</li></a>
+                                <a href="#"><li>Contact</li></a>
+                            </ul>
+                        </div>
+  
+                        <!--  Partie Liens Utiles -->
+                        <div class="footer-items">
+                            <h3>Liens utiles</h3>
+                            <div class="footer-border1"></div>  <!-- Barre rouge sous titre -->
+                            <ul>
+                                <a href="#"><li>Termes</li></a>
+                                <a href="#"><li>Confidentialité</li></a>
+                                <a href="#"><li>Politique</li></a>
+                            </ul>
+                        </div>
+  
+                        <!--  Partie Contact -->
+                        <div class="footer-items">
+                            <h3>Contact</h3>
+                            <div class="footer-border1"></div> <!-- Barre rouge sous titre -->
+                            <ul>
+                                <li><i class="fa fa-map-marker" aria-hidden="true"></i>Route de Thonon 152A, 1222 Vésenaz</li>
+                                <li><i class="fa fa-phone" aria-hidden="true"></i>058 255 28 00</li>
+                                <li><i class="fa fa-envelope" aria-hidden="true"></i>info@insightsolutions.com</li>
+                            </ul> 
+        
+                            <!--   Partie Social Icons -->
+                            <div class="footer-social-media">
+                                <a href="#"><i class="fab fa-facebook"></i></a>
+                                <a href="#"><i class="fab fa-linkedin"></i></a>
+                            </div> 
+                        </div>
+                    </div>
+    
+                    <!--  Copyright en bas de page -->
+                    <div class="footer-bottom">
+                        Copyright &copy; 2020, Insight Solutions. Tout droit réservé.
+                    </div>
+                </div>
+                <!--   FOOTER END -->
             </section>
 
             <!-- Blog Section End-->
@@ -831,9 +973,612 @@
                     </div>
                     <!-- Contact Form End-->
                 </div>
+                <!-- DEBUT FOOTER -->
+                <div class="footer">
+                    <div class="inner-footer">
+
+                        <!--  Nom Insight + Newsletter -->
+                        <div class="footer-items">
+                            <h1>Insight Solutions</h1>
+                            <p>La version moderne de l'audit sur l'humain.</p>
+                                <form action="#">
+                                    <input type="email" id="emailAddress" placeholder="adresse@email.com" autofocus />
+                                    <button type="button" class="btn-newsletter">Newsletter</button>
+                                </form>
+                        </div>
+  
+                        <!--  Partie Menu  -->
+                        <div class="footer-items">
+                            <h3>Menu</h3>
+                            <div class="footer-border1"></div> <!-- Barre rouge sous titre -->
+                            <ul>
+                                <a href="#"><li>Accueil</li></a>
+                                <a href="#"><li>Missions</li></a>
+                                <a href="#"><li>Solutions</li></a>
+                                <a href="#"><li>FAQ</li></a>
+                                <a href="#"><li>About</li></a>
+                                <a href="#"><li>Contact</li></a>
+                            </ul>
+                        </div>
+  
+                        <!--  Partie Liens Utiles -->
+                        <div class="footer-items">
+                            <h3>Liens utiles</h3>
+                            <div class="footer-border1"></div>  <!-- Barre rouge sous titre -->
+                            <ul>
+                                <a href="#"><li>Termes</li></a>
+                                <a href="#"><li>Confidentialité</li></a>
+                                <a href="#"><li>Politique</li></a>
+                            </ul>
+                        </div>
+  
+                        <!--  Partie Contact -->
+                        <div class="footer-items">
+                            <h3>Contact</h3>
+                            <div class="footer-border1"></div> <!-- Barre rouge sous titre -->
+                            <ul>
+                                <li><i class="fa fa-map-marker" aria-hidden="true"></i>Route de Thonon 152A, 1222 Vésenaz</li>
+                                <li><i class="fa fa-phone" aria-hidden="true"></i>058 255 28 00</li>
+                                <li><i class="fa fa-envelope" aria-hidden="true"></i>info@insightsolutions.com</li>
+                            </ul> 
+        
+                            <!--   Partie Social Icons -->
+                            <div class="footer-social-media">
+                                <a href="#"><i class="fab fa-facebook"></i></a>
+                                <a href="#"><i class="fab fa-linkedin"></i></a>
+                            </div> 
+                        </div>
+                    </div>
+    
+                    <!--  Copyright en bas de page -->
+                    <div class="footer-bottom">
+                        Copyright &copy; 2020, Insight Solutions. Tout droit réservé.
+                    </div>
+                </div>
+                <!--   FOOTER END -->
             </section>
             <!-- Contact Section End -->
 
+
+            <!-- CGV Section Start -->
+            <section class="about section" id="cgv">
+                <div class="container">
+                    <div class="row">
+                        <div class="section-title padd-15">
+                            <h2>Conditions générales de vente</h2>
+                            <br />
+                            <p>Genève, le 23.09.2020 </p>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="about-content padd-15">
+                            <div class="row">
+                                <div class="about-text padd-15">
+                                    <h3 class="cgv-partie1">Introduction</h3>
+                                    <p>
+                                        Les présentes conditions générales de vente (ci-après les « CG ») constituent un contrat de vente au sens des art. 184 ss CO entre l’acheteur et Insight Solutions Sàrl ou le Vendeur. 
+                                    </p>
+                                    <br />
+                                    <p>
+                                        Les clients et utilisateurs en utilisant ou en commandant via le site de vente en ligne proposé par Insight Solutions Sàrl, par email ou directement par oral, s’engagent à respecter toutes les dispositions utiles du droit fédéral et du droit cantonal.
+                                    </p>
+                                    <br />
+                                    <p>
+                                        Les commandes réceptionnées oralement, par email ou par le site web Insight Solutions par les représentants de Insight Solutions Sàrl sont soumises au présentes conditions générales de vente lorsqu’il y est fait référence. 
+                                    </p>
+                                    <br />
+                                    <h1 class="cgv-black">L’activité de Insight Solutions Sàrl est basée en Suisse.</h1>
+                                </div>
+                                <div class="about-text padd-15">
+                                    <h3 class="cgv-partie">1. Parties au contrat</h3>
+                                    <p class="cgv-red-p">
+                                        Le client confirme par sa commande être âgé d’au moins 18 ans. 
+                                    </p>
+                                </div>
+                                <div class="about-text padd-15">
+                                    <h3 class="cgv-partie">2. For & droit applicable</h3>
+                                    <p class="cgv-red-p">
+                                        Le For juridique est sis dans le canton de Genève. 
+                                    </p>
+                                    <br />
+                                    <p>
+                                        Le droit applicable en cas de litige ou tout autre prétention en lien avec le présent contrat sont soumises exclusivement au droit suisse. 
+                                    </p>
+                                    <br />
+                                    <p>
+                                        Si pour quelque raison que cela soit, la Cours compétente estime certaines provisions inapplicables en tout ou en partie, le reste des termes continuera à déployer tous ses effets. 
+                                    </p>
+                                </div>
+                                <div class="about-text padd-15">
+                                    <h3 class="cgv-partie">3. Conclusion du contrat</h3>
+                                    <p >
+                                        Les produits présentés à la vente dans la boutique du site constituent <span class="cgv-red-p-underline">une invitation à faire une offre dont l’acceptation est subordonnée à la condition suivante :</span>
+                                    </p>
+                                    <br />
+                                    <p class="cgv-red-p">
+                                        La commande est réputée acceptée tacitement par Insight Solutions Sàrl si : 
+                                    </p>
+                                    <br />
+                                    <p class="cgv-red-p-2">
+                                        1) La condition précédente soit respectée ; 
+                                    </p>
+                                    <br />
+                                    <p>
+                                        Par ailleurs, l’email de confirmation de commande, qui est généré automatiquement, ne constitue une preuve de la conclusion du contrat seulement sous réserve d’une acceptation tacite et de la non-réalisation des conditions résolutoire précitées.
+                                    </p>
+                                    <br />
+                                    <p>
+                                        Insight Solutions Sàrl se réserve le droit de refuser la commande d’un client à sa discrétion.
+                                    </p>
+                                </div>
+                                <div class="about-text padd-15">
+                                    <h3 class="cgv-partie">4. Information du Client</h3>
+                                    <p>
+                                        Le client confirme par sa commande l’exactitude des données fournies, comme les indications fournies quant à son nom, nom de société, son adresse, ses coordonnées de paiement, ainsi que son adresse e-mail.
+                                    </p>
+                                </div>
+                                <div class="about-text padd-15">
+                                    <h3 class="cgv-partie">5. Objet de la vente</h3>
+                                    <p>
+                                        L’objet de la vente est décrit en détail dans l’onglet de description du produit sélectionné.                                  
+                                    </p>
+                                    <br>
+                                    <p>
+                                        Les renseignements figurant ailleurs, par exemple sur les notices explicatives ne sont donnés qu'à titre indicatif et ne constituent pas des documents contractuels.  
+                                    </p>
+                                    <br>
+                                    <p>
+                                        Les images présentées sur le site ne sont pas non plus contractuelles mais seulement illustratives.
+                                    </p>
+                                </div>
+                                <div class="about-text padd-15">
+                                    <h3 class="cgv-partie">6. Prix</h3>
+                                    <p>
+                                        Les prix sont libellés en francs suisses (CHF). 
+                                    </p>
+                                    <br>
+                                    <p>
+                                        La TVA de 7,7% est incluse dans le prix.
+                                    </p>
+                                    <br>
+                                    <p>
+                                        Les prix n’incluent en principe pas des tâches préparatrices faite en amont de l’achat du produit / service.
+                                    </p>
+                                </div>
+                                <div class="about-text padd-15">
+                                    <h3 class="cgv-partie">7. Paiement du prix</h3>
+                                    <p>
+                                        Le paiement du prix doit être effectué immédiatement au moment de la commande. 
+                                    </p>
+                                    <br>
+                                    <p>
+                                        En cas de défaut de paiement de l’acheteur, un intérêt moratoire de 8% est applicable.
+                                    </p>
+                                    <br>
+                                    <p>
+                                        Les méthodes des paiements comprennent le virement bancaire et TWINT. 
+                                    </p>
+                                    <br>
+                                    <p>
+                                        Les prix et frais de transports peuvent être modifiés à tout moment à la discrétion de Insight Solutions Sàrl.
+                                    </p>
+                                </div>
+                                <div class="about-text padd-15">
+                                    <h3 class="cgv-partie">8. Livraison</h3>
+                                    <p>
+                                        La livraison est effectuée soit par Insight Solutions Sàrl directement. 
+                                    </p>
+                                    <br>
+                                    <p>
+                                        Dans cette dernière hypothèse, les risques et profits passent à l’acheteur au moment du dessaisissement et de l’individualisation de l’objet par le Vendeur.
+                                    </p>
+                                    <br>
+                                    <p>
+                                        <span class="cgv-red-p">La livraison est effectuée dans un délai fluctuant entre un 1 et jusqu’à 40 jours, en fonction de la date de la commande et des livraisons prévues.</span>
+                                        Ce délai est calculé dès la réception d’une commande dont le paiement a été entièrement réglé.
+                                    </p>
+                                    <br>
+                                    <p>
+                                        Les dates de livraisons convenues ou indiquées à l’intérieur de ce délai ne le sont qu’à titre informatifs et ne modifient pas le moment de l’exigibilité. Partant, un « retard » de livraison ne donne pas lieu à une compensation ou autre indemnisation de la part du Vendeur.
+                                    </p>
+                                    <br>
+                                    <p class="cgv-red-p">
+                                        En cas d’absence, justifiée ou non, ou d’impossibilité de livraison répétées, soit plus de deux essais infructueux, due à l’acheteur, des frais de livraisons supplémentaires pourront être facturés. Aucune livraison ne sera retentée tant que l’entier des frais supplémentaires n’auront pas été réglés par l’acheteur. A défaut, Five O’Clock se réserve le droit de résilier le contrat et de faire valoir des frais administratifs.
+                                    </p>
+                                    <br>
+                                    <p>
+                                        <span class="cgv-red-p">Five O’Clock ou tout tiers mandaté, se réserve le droit de demander la preuve que le destinataire de la marchandise est âgé de plus de 18 ans.</span>
+                                        Le cas échéant, la livraison pourra être refusée si cette preuve ne peut pas être apporter ou qu’un doute subsiste.
+                                    </p>
+                                    <br>
+                                    <p>
+                                        Le lieu de la livraison est convenu au moment de la commande entre les parties. La livraison et la vente n’est possible que dans les cantons où Five O’Clock est autorisée à exercer son activité :
+                                    </p>
+                                    <br>
+                                    <ul class="cgv-liste">
+                                        <li>Canton de Genève,</li>
+                                        <li>Canton de Vaud,</li>
+                                    </ul> 
+                                </div>
+                                <div class="about-text padd-15">
+                                    <h3 class="cgv-partie">9. Impossibilité subséquente</h3>
+                                    <p class="cgv-red-p">
+                                        Dans les cas d’une impossibilité subséquente au sens de l’art. 119 CO entraînant l’empêchement pour Five O’Clock ou ses auxiliaires d’exécuter ses obligations, le Vendeur peut, sans engager sa responsabilité et à son gré, résilier le contrat en tout ou en partie ou modifier en conséquence le délai de livraison. 
+                                    </p>
+                                    <br>
+                                    <p class="cgv-red-p">
+                                        Dans l’éventualité d’une impossibilité au sens de l’art. 119 CO, les risques sont à la charge de l’acheteur dès le moment de la conclusion du contrat.
+                                    </p>
+                                </div>
+                                <div class="about-text padd-15">
+                                    <h3 class="cgv-partie">10. Garantie en cas de défaut</h3>
+                                    <p>
+                                        Il incombe au client de vérifier la marchandise immédiatement lors de la livraison et de faire toutes les réserves et réclamations quant à d’éventuels défauts ou non-conformités.
+                                    </p>
+                                    <br>
+                                    <p>
+                                        En cas de défaut imputable au Vendeur, l’avis des défauts doit être fait de manière immédiate, <span class="cgv-red-p">c’est-à-dire jusqu’à deux jours depuis la date de la livraison effective, et de manière documentée avec photos et motifs, par email <span class="cgv-red-p-underline">info@insightsolutions.ch</span>.</span>
+                                    </p>
+                                </div>
+                                <div class="about-text padd-15">
+                                    <h3 class="cgv-partie">11. Exclusion de responsabilité </h3>
+                                    <p class="cgv-red-p">
+                                        Insight Solutions Sàrl entend s’exonérer de toute responsabilité pré-contractuelle, contractuelle et extracontractuelle, hormis les cas impératifs prévus par le droit suisse, résultant de l’exécution, de l’inexécution ou en lien avec le présent contrat, pour tout type de dommage et dans toute l’ampleur permise par le droit suisse. 
+                                    </p>
+                                    <br>
+                                    <p>
+                                        En particuliers, Insight Solutions Sàrl entend exclure toute responsabilité pour d’éventuelles erreurs ou omissions liées aux dessins, images ou schémas, ou informations figurant sur le site. En outre, Insight Solutions Sàrl exclut toute responsabilité pour les fautes commises par ses auxiliaires. 
+                                    </p>
+                                </div>
+                                <div class="about-text padd-15">
+                                    <h3 class="cgv-partie">12. Changement utiles</h3>
+                                    <p>
+                                        Le Client informe Insight Solutions Sàrl en temps utile de tout changement, en particuliers des détails de livraison, qui pourraient influer sur la présente relation contractuelle.  
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div> <!-- FIN Container -->
+                
+                <!-- DEBUT FOOTER -->
+                <div class="footer">
+                    <div class="inner-footer">
+
+                        <!--  Nom Insight + Newsletter -->
+                        <div class="footer-items">
+                            <h1>Insight Solutions</h1>
+                            <p>La version moderne de l'audit sur l'humain.</p>
+                                <form action="#">
+                                    <input type="email" id="emailAddress" placeholder="adresse@email.com" autofocus />
+                                    <button type="button" class="btn-newsletter">Newsletter</button>
+                                </form>
+                        </div>
+  
+                        <!--  Partie Menu  -->
+                        <div class="footer-items">
+                            <h3>Menu</h3>
+                            <div class="footer-border1"></div> <!-- Barre rouge sous titre -->
+                            <ul>
+                                <a href="#"><li>Accueil</li></a>
+                                <a href="#"><li>Missions</li></a>
+                                <a href="#"><li>Solutions</li></a>
+                                <a href="#"><li>FAQ</li></a>
+                                <a href="#"><li>About</li></a>
+                                <a href="#"><li>Contact</li></a>
+                            </ul>
+                        </div>
+  
+                        <!--  Partie Liens Utiles -->
+                        <div class="footer-items">
+                            <h3>Liens utiles</h3>
+                            <div class="footer-border1"></div>  <!-- Barre rouge sous titre -->
+                            <ul>
+                                <a href="#"><li>Termes</li></a>
+                                <a href="#"><li>Confidentialité</li></a>
+                                <a href="#"><li>Politique</li></a>
+                            </ul>
+                        </div>
+  
+                        <!--  Partie Contact -->
+                        <div class="footer-items">
+                            <h3>Contact</h3>
+                            <div class="footer-border1"></div> <!-- Barre rouge sous titre -->
+                            <ul>
+                                <li><i class="fa fa-map-marker" aria-hidden="true"></i>Route de Thonon 152A, 1222 Vésenaz</li>
+                                <li><i class="fa fa-phone" aria-hidden="true"></i>058 255 28 00</li>
+                                <li><i class="fa fa-envelope" aria-hidden="true"></i>info@insightsolutions.com</li>
+                            </ul> 
+        
+                            <!--   Partie Social Icons -->
+                            <div class="footer-social-media">
+                                <a href="#"><i class="fab fa-facebook"></i></a>
+                                <a href="#"><i class="fab fa-linkedin"></i></a>
+                            </div> 
+                        </div>
+                    </div>
+    
+                    <!--  Copyright en bas de page -->
+                    <div class="footer-bottom">
+                        Copyright &copy; 2020, Insight Solutions. Tout droit réservé.
+                    </div>
+                </div>
+                <!--   FOOTER END -->
+
+            </section>
+            <!-- CGV Section End-->
+
+            <!-- CGPC Section Start -->
+            <section class="about section" id="cgpc">
+                    <div class="container">
+                        <div class="row">
+                            <div class="section-title padd-15">
+                                <h2>Conditions générales & Politique de confidentialité</h2>
+                                <br />
+                                <p>Daté du 21.06.2020 </p>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="about-content padd-15">
+                                <div class="row">
+                                    <div class="about-text padd-15">
+                                        <h3 class="cgv-partie-non-underline">CONSULTEZ CE DOCUMENT AVANT L’UTILISATION DU SITE, SI VOUS N’ACCEPTEZ PAS LES PRESENTES CONDITIONS GENERALES & LA POLITIQUES DE CONFIDENTIALITE N’UTILISEZ PAS LE PRESENT SITE OU SES SERVICES.</h3>
+                                        <h3 class="cgpc-partie-big">I. Conditions générales d’utilisation</h3>
+                                        <h3 class="cgpc-partie1">1. Introduction</h3>
+                                        <p>
+                                            1. Insight Solutions Sàrl est une société organisée selon le droit suisse. 
+                                        </p>
+                                        <br />
+                                        <p>
+                                            2. Ce document contient les règles de base de l’utilisation du site web de Insight Solutions Sàrl ainsi que de ses services.
+                                        </p>
+                                        <br />
+                                        <p>
+                                            <span class="cgv-red-p-bold">3. En accédant au site ou en utilisant ses services, vous consentez au présent document.</span>
+                                        </p>
+                                        <br>
+                                    </div>
+                                    <div class="about-text padd-15">
+                                        <h3 class="cgpc-partie1">2. Modifications</h3>
+                                        <p>
+                                            1. L’administrateur du site se réserve le droit de modifier à tout instant, et à sa seule discrétion, les conditions générales d’utilisation et la politique de protection des données. 
+                                        </p>
+                                        <br>
+                                        <p>
+                                            2. L’utilisation continue de ce site à la suite de modifications constitue un consentement à ces changements. 
+                                        </p>
+                                        <br>
+                                        <p>
+                                            3. Tout utilisateur est prié de consulter périodiquement cette section du site pour y observer ses éventuels amendements.
+                                        </p>
+                                        <br>
+                                        <p>
+                                            4. Le présent document prévaut sur tout accord verbal et ne peut être modifié que par accord écrit émanant de Insight Solutions Sàrl.
+                                        </p>
+                                        <br>
+                                    </div>
+                                    <div class="about-text padd-15">
+                                        <h3 class="cgpc-partie1">3. For & droit applicable</h3>
+                                        <p>
+                                            1. Le for est sis en Suisse, sans égards aux règles de conflits de loi qui pourraient trouver application provenant d’une autre juridiction. 
+                                        </p>
+                                        <br />
+                                        <p>
+                                            2. Le droit applicable est le droit suisse.
+                                        </p>
+                                        <br />
+                                        <p>
+                                            3. Si pour quelque raison que cela soit, la Cours compétente estime certaines provisions inapplicables en tout ou en partie, le reste des termes continuera à déployer tous ses effets.
+                                        </p>
+                                        <br>
+                                        <p class="cgv-red-p-bold">
+                                            4. Pour toute dispute ou tout événement qui naîtrait de l’utilisation ou en relation avec le présent site web, vous acceptez la compétence exclusive des tribunaux cantonaux genevois, respectivement celle des tribunaux fédéraux suisses, et l’application du droit suisse.
+                                        </p>
+                                    </div>
+                                    <div class="about-text padd-15">
+                                        <br>
+                                        <h3 class="cgpc-partie1">4. Limite de responsabilité & indemnisation</h3>
+                                        <p class="cgv-red-p-bold">
+                                            1. Insight Solutions Sàrl est fourni "as is" et "as available". Il ne fait aucune représentation ou garantie de quelque nature que ce soit, expresse ou implicite, quant au fonctionnement du site ou aux informations, contenus ou matériels inclus sur ce site ou postés par les administrateurs, dans toute la mesure permise par la loi applicable.
+                                        </p>
+                                        <br />
+                                        <p class="cgv-red-p-bold">
+                                            2. Insight Solutions Sàrl décline toute garantie, expresse ou implicite, y compris, mais sans s'y limiter, aux garanties implicites de qualité marchande et d'adéquation à un usage particulier.
+                                        </p>
+                                        <br />
+                                        <p>
+                                            3. Insight Solutions Sàrl ne sera pas tenue responsable des dommages de quelque nature que ce soit découlant de l'utilisation ou de l'incapacité d'utiliser ce site. Vous acceptez expressément d'utiliser ce site uniquement à vos propres risques. En aucun cas Insight Solutions Sàrl ou ses fournisseurs ne seront responsables de tout dommage direct, spécial, accessoire, indirect, économique ou consécutif (y compris, mais sans s'y limiter, la perte de données ou les dommages liés à la perte d'utilisation ou de bénéfices) découlant de ou lié au site (y compris, mais sans s'y limiter, son fonctionnement, son contenu ou les informations ou matériels qu'il contient, ou l'utilisation ou l'incapacité d'utiliser tout autre site lié au site, ou tout contenu contenu de ce site, ou les présentes conditions, ou la politique de confidentialité applicable à ce site) même si Insight Solutions Sàrl, ses fournisseurs ont été informés de la possibilité d’un dommage.
+                                        </p>
+                                        <br />
+                                        <p>
+                                            4. En ce qui concerne les liens présents sur le site renvoyant à un site interne ou externe, vous acceptez que Insight Solutions Sàrl ne porte pas de responsabilité pour le contenu auquel vous accédez ou des dommages causés à partir de son propre site ou d'un site tiers.
+                                        </p>
+                                        <br />
+                                        <p class="cgv-red-p-bold">
+                                            5.	La responsabilité respective de Insight Solutions Sàrl, de ses fournisseurs est limitée dans la plus grande mesure permise par la loi applicable.
+                                        </p>
+                                        <br>
+                                        <p class="cgv-red-p-bold">
+                                            6. Tout utilisateur reconnait et accepte d'indemniser et de dégager Insight Solutions Sàrl, ses filiales, ses dirigeants, ses employés et ses agents, de toute responsabilité, y compris les coûts et les frais d'avocats, de toute réclamation ou demande faite par un tiers en raison de ou découlant de votre utilisation de Insight Solutions Sàrl ou des Services, de votre violation du présent document, ou de la violation par vous ou faite sous votre compte, de toute propriété intellectuelle ou autre droit de toute personne ou entité.
+                                        </p>
+                                        <br>
+                                        <p>
+                                            7. Vous déclarez et garantissez que vous n'utiliserez aucun logiciel de type virus qui pourraient être nocifs, comme par exeple qui envoie des requêtes répétées à Insight Solutions Sàrl, ou qui envoie des requêtes automatisées de quelque nature que ce soit. 
+                                        </p>
+                                        <br>
+                                        <p>
+                                            8. Le fait que Insight Solutions Sàrl n'exerce pas ou ne fasse pas respecter un droit ou une disposition du présent document ne doit pas être considéré comme une renonciation à ce droit ou à cette disposition.
+                                        </p>
+                                    </div>
+                                    <div class="about-text padd-15">
+                                        <br>
+                                        <h3 class="cgpc-partie-big">II. Politique de protection des données</h3>
+                                        <h3 class="cgpc-partie1">5.	Destinataires du site</h3>
+                                        <p class="cgv-red-p-bold">
+                                            1. Ce site est destiné à des individus de plus de 18 ans exclusivement. Nous ne collecterons pas sciemment de données personnelles auprès d’individus de moins de 18 ans. Cependant sous accord de la part d’un responsable légal nous collecterons des données au près d’individus de moins de 18 ans.
+                                        </p>
+                                        <br>
+                                        <p>
+                                            2. Si vous êtes le parent ou le tuteur légal d'un individu de moins de 18 ans qui, selon vous, a soumis des informations personnelles sur ce site, veuillez nous contacter immédiatement.
+                                        </p>
+                                    </div>
+                                    <div class="about-text padd-15">
+                                        <br>
+                                        <h3 class="cgpc-partie1">6. Traitement des données : en général</h3>
+                                        <p>
+                                            1.	Lorsque vous naviguez (surfez), lisez ou téléchargez des informations sur le site Insight Solutions Sàrl, des données peuvent être recueillies, notamment votre adresse IP, la requête URL, le type de navigateur, ainsi que la date et l'heure de votre requête.
+                                        </p>
+                                        <br>
+                                        <p>
+                                            2.	Le but de la collection de ces données est d’améliorer nos services ainsi que l’expériences utilisateurs, comme par exemple au travers - mais non limité à – l’analyse d’audience (p.ex. via le programme Google Analytics). Partant, vous acceptez que les données relevées à votre sujet puissent être retransmises à un tiers, comme un serveur de Google basé aux Etats-Unis, où elles pourraient être enregistrées et traitées. Ces informations collectées garantissent également qu’Insight Solutions Sàrl puisse mener à bien ses services. 
+                                        </p>
+                                        <br>
+                                    </div>
+                                    <div class="about-text padd-15">
+                                        <h3 class="cgpc-partie1">7.	Traitement des données : en particuliers lors de la commande</h3>
+                                        <p>
+                                            1.	Dans le cadre de la soumission d’une commande, nous saisissons, enregistrons et traitons vos données afin de mener à bien votre commande et assurer les éventuelles prestations de garantie, pour nos services, pour la gestion technique ainsi que pour nos propres opérations de marketing.
+                                        </p>
+                                        <br>
+                                        <p>
+                                            2.	Vos informations personnelles ne sont transmises à des tiers que dans le cas où ceci est nécessaire à l'exécution du contrat ou à la facturation, ou si vous l’avez préalablement autorisé. 
+                                        </p>
+                                        <br>
+                                        <p>
+                                            3.	Dans le cadre de l’exécution de la commande, les prestataires de service que nous mandatons reçoivent, par exemple, les données nécessaires à la commande et à son exécution. Nos prestataires de service n’ont le droit d’utiliser les données ainsi transmises que pour accomplir la tâche qui leur a été confiée. Toute autre utilisation des informations est formellement interdite.
+                                        </p>
+                                        <br>
+                                        <p>
+                                            4.	Vous êtes considéré comme ayant accepté que Insight Solutions Sàrl utilise les informations que vous avez communiquées et les autres données enregistrées dans votre compte client, ainsi que les données d’utilisation sous forme pseudonymique, afin que nous puissions vous adresser de la publicité personnalisée et/ou vous présenter des offres et des services particuliers. Si vous ne souhaitez pas recevoir de publicité personnalisée, vous pouvez la refuser. Pour cela, il vous suffit de nous en informer par e-mail.
+                                        </p>
+                                        <br>
+                                    </div>
+                                    <div class="about-text padd-15">
+                                        <h3 class="cgpc-partie1">8.	Droits de propriété intellectuelle</h3>
+                                        <p>
+                                            1.	Tous les documents et médias, par exemple - mais non limité - aux marques, noms, titres, logos, images, graphismes, textes et autres éléments, présents sur le site web sont la propriété de Insight Solutions Sàrl ou sont reproduits avec la permission d'autres propriétaires de droits de propriété intellectuelle. Tous les droits sont réservés.
+                                        </p>
+                                        <br>
+                                        <p>
+                                            2.	Les documents présents sur ce site web peuvent être récupérés et téléchargés uniquement à des fins non-commerciales, sauf accord écrit préalable. Aucun autre matériel ne peut être copié, modifié, publié, diffusé ou distribué sans l'autorisation du propriétaire.
+                                        </p>
+                                        <br>
+                                    </div>
+                                    <div class="about-text padd-15">
+                                        <h3 class="cgpc-partie1">9.	Protection des données</h3>
+                                        <p>
+                                            1.	Le site met en place des mesures afin de sécuriser les données que nous traitons.  Toutefois, aucune garantie de confidentialité ne peut être garantie par Insight Solutions Sàrl.
+                                        </p>
+                                        <br>
+                                        <p>
+                                            2.	Insight Solutions Sàrl ne pourra pas être tenu responsable pour les préjudices que vous ou toute autre personne pourriez subir suite à une violation de vos données dans votre utilisation de Insight Solutions Sàrl ou d’un site auquel il amène via un lien externe.
+                                        </p>
+                                        <br>
+                                    </div>
+                                    <div class="about-text padd-15">
+                                        <h3 class="cgpc-partie1">10. Newsletter</h3>
+                                        <p>
+                                            1. L’inscription à la Newsletter s’effectue en cas de demande d’activation (opt-in) de l’utilisateur à celle-ci, ainsi qu’en cas de commande d’un client.
+                                        </p>
+                                        <br>
+                                        <p>
+                                            2.	Si vous ne voulez plus recevoir de newsletter de notre part, vous avez à tout moment la possibilité de résilier ce service. Vous trouvez dans chaque newsletter un lien vous permettant de vous désabonner. Vous pouvez également demander par la suite la réactivation de l’envoi de la newsletter.
+                                        </p>
+                                        <br>
+                                    </div>
+                                    <div class="about-text padd-15">
+                                        <h3 class="cgpc-partie1">11. Commentaires</h3>
+                                        <p>
+                                            1.	La soumission d’un commentaire ne donne pas de droit à être publié. Insight Solutions Sàrl se réserve à sa seule discrétion la possibilité de publier, de retirer ou de modifier tout commentaire.
+                                        </p>
+                                        <br>
+                                        <p>
+                                            2.	En soumettant un commentaire, vous déclarez et garantissez en outre que : Vous êtes qui vous dites être, que vous n'avez pas soumis d'informations fictives, fausses ou inexactes vous concernant, que toutes les informations contenues dans le contenu publié sont vraies, exacts, et que vous êtes autorisé à soumettre le contenu publié et qu’il ne contient aucun matériel menaçant, harcelant, diffamatoire, faux, offensant, obscène ou pornographique, ou tout autre matériel qui violerait toute autre loi applicable, notamment de propriété intellectuelle. Vous vous engagez à ne pas fournir sciemment et avec l'intention de frauder des éléments ou des informations trompeuses. Vous renoncé à tous les « droits moraux » que vous pourriez avoir sur ledit contenu. Vous attestez que vous n’avez pas été payé ou avez reçu une rétribution par tout tiers non approuvé. Vous reconnaissez que c'est vous, et non Insight Solutions Sàrl, qui êtes responsable du contenu de votre contribution. Aucune partie du contenu que vous envoyez ne sera sujette à une obligation de confidentialité de la part de Insight Solutions Sàrl, de ses agents, filiales, partenaires ou prestataires de services tiers ainsi que leurs directeurs, représentants et employés respectifs.
+                                        </p>
+                                        <br>
+                                        <p>
+                                            3.	En soumettant un commentaire, vous acceptez que ce dernier puisse être mis en exergue ou réutiliser de manière pseudonymisée dans le cadre d’une activité publicitaire de Insight Solutions Sàrl. En particuliers, pour tout contenu que vous soumettez, vous accordez à Insight Solutions Sàrl le droit perpétuel, irrévocable, sans droit d’auteur, transférable d'utiliser, copier, modifier, supprimer dans son intégralité, adapter, publier, traduire, créer des œuvres dérivées de ce contenu et/ou le vendre et/ou le distribuer et/ou l'intégrer sous n'importe quelle forme, sur tout support ou dans toute technologie à travers le monde sans qu’une compensation vous soit attribuée.
+                                        </p>
+                                        <br>
+                                        <p>
+                                            4.	Vous acceptez d'indemniser et de dégager Insight Solutions Sàrl (et ses cadres, directeurs, agents, filiales, entreprises conjointes, employés et prestataires de services tiers, de toute responsabilité dans la totalité des réclamations, demandes et dommages (directs et indirects) de toute sorte et de toute nature, connus et inconnus, y compris les honoraires d'avocat raisonnables, du fait d'une violation de vos déclarations et garanties ci-dessus, ou de la violation par vous de toute loi ou des droits d'un tiers.
+                                        </p>
+                                        <br>
+                                        <p>
+                                            5.	Insight Solutions Sàrl ne garantit pas que vous aurez un recours pour modifier ou supprimer tout contenu que vous aurez envoyé. 
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div> <!-- FIN Container -->
+                    
+                    <!-- DEBUT FOOTER -->
+                    <div class="footer">
+                        <div class="inner-footer">
+    
+                            <!--  Nom Insight + Newsletter -->
+                            <div class="footer-items">
+                                <h1>Insight Solutions</h1>
+                                <p>La version moderne de l'audit sur l'humain.</p>
+                                    <form action="#">
+                                        <input type="email" id="emailAddress" placeholder="adresse@email.com" autofocus />
+                                        <button type="button" class="btn-newsletter">Newsletter</button>
+                                    </form>
+                            </div>
+      
+                            <!--  Partie Menu  -->
+                            <div class="footer-items">
+                                <h3>Menu</h3>
+                                <div class="footer-border1"></div> <!-- Barre rouge sous titre -->
+                                <ul>
+                                    <a href="#"><li>Accueil</li></a>
+                                    <a href="#"><li>Missions</li></a>
+                                    <a href="#"><li>Solutions</li></a>
+                                    <a href="#"><li>FAQ</li></a>
+                                    <a href="#"><li>About</li></a>
+                                    <a href="#"><li>Contact</li></a>
+                                </ul>
+                            </div>
+      
+                            <!--  Partie Liens Utiles -->
+                            <div class="footer-items">
+                                <h3>Liens utiles</h3>
+                                <div class="footer-border1"></div>  <!-- Barre rouge sous titre -->
+                                <ul>
+                                    <a href="#"><li>Termes</li></a>
+                                    <a href="#"><li>Confidentialité</li></a>
+                                    <a href="#"><li>Politique</li></a>
+                                </ul>
+                            </div>
+      
+                            <!--  Partie Contact -->
+                            <div class="footer-items">
+                                <h3>Contact</h3>
+                                <div class="footer-border1"></div> <!-- Barre rouge sous titre -->
+                                <ul>
+                                    <li><i class="fa fa-map-marker" aria-hidden="true"></i>Route de Thonon 152A, 1222 Vésenaz</li>
+                                    <li><i class="fa fa-phone" aria-hidden="true"></i>058 255 28 00</li>
+                                    <li><i class="fa fa-envelope" aria-hidden="true"></i>info@insightsolutions.com</li>
+                                </ul> 
+            
+                                <!--   Partie Social Icons -->
+                                <div class="footer-social-media">
+                                    <a href="#"><i class="fab fa-facebook"></i></a>
+                                    <a href="#"><i class="fab fa-linkedin"></i></a>
+                                </div> 
+                            </div>
+                        </div>
+        
+                        <!--  Copyright en bas de page -->
+                        <div class="footer-bottom">
+                            Copyright &copy; 2020, Insight Solutions. Tout droit réservé.
+                        </div>
+                    </div>
+                    <!--   FOOTER END -->
+    
+                </section>
+                <!-- CGPC Section End-->
         </div>
         <!-- Main Content End-->
     </div>

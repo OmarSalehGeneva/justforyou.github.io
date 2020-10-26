@@ -50,21 +50,25 @@
             <div class="aside-inner">
                 <!-- Logo -->
                 <div class="logo">
-                    <a href="./index.html"><img src="./images/blackislogo.png" alt="blacklogois" width="180px"></a>
+                    <a href="./index.html"><img src="./images/blackislogo.png" alt="blacklogois" id="blacklogois" width="180px"></a>
+                    <a href="./index.html"><img src="./images/whiteislogo.png" alt="whitelogois" id="whitelogois" width="180px"></a>
                 </div>
                 <ul class="nav">
                     <li><a href="#home" class="active" type="button" id="homebtn" onclick="ExistingLogic()"><i
                                 class="fa fa-home"></i> Accueil</a></li>
-                    <li><a href="#about" class="active" type="button" id="aboutbtn" onclick="ExistingLogic()"><i
+                    <li><a href="#about" type="button" id="aboutbtn" onclick="ExistingLogic()"><i
                                 class="fa fa-briefcase"></i> Mission</a></li>
-                    <li><a href="#services" class="active" type="button" id="servicesbtn" onclick="ExistingLogic()"><i
+                    <li><a href="#services" type="button" id="servicesbtn" onclick="ExistingLogic()"><i
                                 class="fa fa-list"></i> Solutions</a></li>
-                    <li><a href="#portfolio" class="active" type="button" id="portfoliobtn" onclick="ExistingLogic()"><i
+                    <li><a href="#portfolio" type="button" id="portfoliobtn" onclick="ExistingLogic()"><i
                                 class="fa fa-comments"></i> FAQ</a></li>
-                    <li><a href="#blog" class="active" type="button" id="blogbtn" onclick="ExistingLogic()"><i
-                                class="fa fa-user"></i> About</a></li>
-                    <li><a href="#contact" class="active" type="button" id="contactbtn" onclick="ExistingLogic()"><i
+                    <li><a href="#blog" type="button" id="blogbtn" onclick="ExistingLogic()"><i class="fa fa-user"></i>
+                            About</a></li>
+                    <li><a href="#contact" type="button" id="contactbtn" onclick="ExistingLogic()"><i
                                 class="fa fa-envelope"></i> Contact</a></li>
+                    <li><a href="#qsn" type="button" id="quisommenousbtn" onclick="ExistingLogic()" style="display: none;"><i class="fa fa-envelope"></i>Qui sommes-nous?</a></li>
+                    <li><a href="#mecanique" type="button" id="mecabtn" onclick="ExistingLogic()" style="display: none;"><i class="fa fa-envelope"></i>L'entreprise comme la méca..</a></li>
+                    <li><a href="#histoire" type="button" id="histoirebtn" onclick="ExistingLogic()" style="display: none;"><i class="fa fa-envelope"></i>Notre Histoire</a></li>
                     <li><a href="#cgv" type="button" id="cvgbtnone" onclick="ExistingLogic()" style="display: none;"><i
                                 class="fa fa-envelope"></i> CGV</a>
                     </li>
@@ -387,7 +391,7 @@
                             </div> -->
 
                         <!--  Partie Menu TEST -->
-                        <div class="footer-items">
+                        <div class="footer-items footer-image">
 
                             <img src="./images/Logowhiteis.png" alt="whitelogois" style="width: 150px;">
 
@@ -578,7 +582,7 @@
                             </div> -->
 
                         <!--  Partie Menu TEST -->
-                        <div class="footer-items">
+                        <div class="footer-items footer-image">
 
                             <img src="./images/Logowhiteis.png" alt="whitelogois" style="width: 150px;">
 
@@ -710,7 +714,7 @@
                                 <p> En général, presque toutes les victimes du Burn-out font preuve d’un engagement croissant dans leur travail alors que leur productivité stagne voir décrois. Tout cela au détriment de leur vie privée à laquelle les victimes
                                     ne prêtent plus attention. </p>
 
-                                <p> <b> Troubles émotionnels: </b> </p>
+                                <p style="text-decoration: underline;"> <b> Troubles émotionnels: </b> </p>
 
                                 Cynisme
                                 <br />Irritabilité, colère
@@ -719,14 +723,14 @@
                                 <br />Frustration Perte de sens du travail
                                 <br /> Perte de la joie de vivre Pensées suicidaires
 
-                                <p> <b> Troubles intellectuels </b> </p>
+                                <p style="text-decoration: underline;"> <b> Troubles intellectuels: </b> </p>
 
                                 Perte de mémoire et de concentration
                                 <br /> Inefficacité, Travaille de plus en plus mais avec moins en moins de rendement
                                 <br />Indécision
                                 <br />Tâches quotidiennes difficilement exécutées
 
-                                <p> <b> Troubles physiques </b> </p>
+                                <p style="text-decoration: underline;"> <b> Troubles physiques: </b> </p>
 
                                 Troubles du sommeil, fatigue chronique
                                 <br />Problèmes cutané
@@ -737,7 +741,7 @@
                                 <br />Maladies cardiovasculaires, Hypertension, Infarctus
                                 <br />Troubles sexuels
 
-                                <p> <b> Troubles comportementaux </b></p>
+                                <p style="text-decoration: underline;"> <b> Troubles comportementaux: </b></p>
 
                                 Absentéisme
                                 <br />Isolement
@@ -838,7 +842,7 @@
                             </div> -->
 
                         <!--  Partie Menu TEST -->
-                        <div class="footer-items">
+                        <div class="footer-items footer-image">
 
                             <img src="./images/Logowhiteis.png" alt="whitelogois" style="width: 150px;">
 
@@ -949,14 +953,17 @@
                                 <div class="blog-img">
                                     <img src="images/maninfrontofcar.jpg" alt="blog">
                                     <div class="blog-date">
-                                        <a href="#"> En savoir plus</a>
+                                        <a href="#" type="button" id="quisommesnoustwo" onclick="document.getElementById('quisommenousbtn').click()"> En savoir
+                                            plus
+                                        </a>
                                     </div>
                                 </div>
                                 <div class="blog-info">
                                     <h4 class="blog-title">Insight Solutions c'est quoi ?</h4>
                                     <p class="blog-description">Insight Solutions est un groupe d’entrepreneurs convaincus que notre monde est à un tournant capital, que cela soit au niveau écologique, humain et économique...
                                     </p>
-                                    <p class="blog-tags">Tags : <a href="#">Insight Solutions</a></p>
+                                    <p class="blog-tags">Tags : <a href="#">Insight
+                                            Solutions</a></p>
                                 </div>
                             </div>
                         </div>
@@ -967,7 +974,7 @@
                                 <div class="blog-img">
                                     <img src="images/maxresdefault.jpg" alt="blog">
                                     <div class="blog-date">
-                                        <a href="#"> En savoir plus</a>
+                                        <a href="#" type="button" id="mecatwo" onclick="document.getElementById('mecabtn').click()"> En savoir plus</a>
                                     </div>
                                 </div>
                                 <div class="blog-info">
@@ -989,7 +996,7 @@
                                 <div class="blog-img">
                                     <img src="images/postitmancover.jpg" alt="blog">
                                     <div class="blog-date">
-                                        <a href="#"> En savoir plus</a>
+                                        <a href="#" type="button" id="histoiretwo" onclick="document.getElementById('histoirebtn').click()"> En savoir plus</a>
                                     </div>
                                 </div>
                                 <div class="blog-info">
@@ -1017,7 +1024,7 @@
                             </div> -->
 
                         <!--  Partie Menu TEST -->
-                        <div class="footer-items">
+                        <div class="footer-items footer-image">
 
                             <img src="./images/Logowhiteis.png" alt="whitelogois" style="width: 150px;">
 
@@ -1187,7 +1194,7 @@
                 </div>
                 <!-- DEBUT FOOTER -->
                 <div class="footer">
-                    <div class="inner-footer">
+                    <div class="inner-footer footer-image">
 
                         <!--  Nom Insight + Newsletter -->
                         <!-- <div class="footer-items">
@@ -1512,7 +1519,7 @@
 
                 <!-- DEBUT FOOTER -->
                 <div class="footer">
-                    <div class="inner-footer">
+                    <div class="inner-footer footer-image">
 
                         <!--  Nom Insight + Newsletter -->
                         <!-- <div class="footer-items">
@@ -1862,7 +1869,7 @@
 
                 <!-- DEBUT FOOTER -->
                 <div class="footer">
-                    <div class="inner-footer">
+                    <div class="inner-footer footer-image">
 
                         <!--  Nom Insight + Newsletter -->
                         <!-- <div class="footer-items">
@@ -1971,67 +1978,206 @@
 
             </section>
             <!-- CGPC Section End-->
+
+
+
+            <!-- Qui Sommes-Nous ? Section START-->
+
+            <section class="about section" id="qsn">
+                <div class="container">
+                    <div class="row">
+                        <div class="section-title padd-15">
+                            <h2>Qui sommes-nous?</h2>
+                            <br />
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="about-content padd-15">
+                            <div class="row">
+                                <div class="about-text padd-15">
+                                    <h3 class="cgv-partie1">Insight Solutions, c'est quoi?</h3>
+                                    <p>
+                                        Insight Solutions est un groupe d’entrepreneurs convaincus que notre monde est à un tournant capital, que cela soit au niveau écologique, humain et économique.
+                                    </p>
+                                    <br />
+                                    <p>
+                                        Insight Solutions imagine et crée des solutions digitales pour aider les entreprises à maîtriser et à quantifier leur état de situation, avec un focus sur les enjeux humains, qui sont au centre de la performance réelle des entreprises. Ces solutions,
+                                        faciles et rapides à mettre en place et adaptables à chaque client afin de lui donner un diagnostic et une lecture aussi précise que possible de la réalité de son entreprise.
+                                    </p>
+                                    <br />
+                                    <p>
+                                        De façon plus concrète, nous analysons, par le biais d’un questionnaire, toutes les défaillances qu’une entreprise pourrait avoir et les conséquences de celles-ci sur les autres éléments grâce à un Dashboard spécialement conçu pour permettre à ses lecteurs
+                                        de corriger le problème.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- FIN Container -->
+                </div>
+            </section>
+            <!-- Qui sommes-nous Section END-->
+
+            <!-- L'entreprise comme la méca d'une Horloge Section START-->
+
+            <section class="about section" id="mecanique">
+                <div class="container">
+                    <div class="row">
+                        <div class="section-title padd-15">
+                            <h2>L'entreprise comme la mécanique d'une horloge</h2>
+                            <br />
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="about-content padd-15">
+                            <div class="row">
+                                <div class="about-text padd-15">
+                                    <p>
+                                        D‘une certaine façon, une entreprise fonctionne comme la mécanique d’une horloge. Les rouages, quand leurs tâches sont bien définies, fonctionnent en harmonie pour atteindre un objectif commun.
+                                    </p>
+                                    <br />
+                                    <p>
+                                        À l’inverse, si l’un des éléments manque ou devient défaillant, une réaction en chaîne se met en place, l’efficacité diminue, les problèmes surgissent, le système se grippe et compromet la mission.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- FIN Container -->
+                </div>
+            </section>
+
+
+            <!-- L'entreprise comme la méca d'une Horloge Section END-->
+
+
+            <!-- Notre Histoire Section START-->
+
+            <section class="about section" id="histoire">
+                <div class="container">
+                    <div class="row">
+                        <div class="section-title padd-15">
+                            <h2>Notre Histoire</h2>
+                            <br />
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="about-content padd-15">
+                            <div class="row">
+                                <div class="about-text padd-15">
+                                    <p>
+                                        Insight solutions est le fruit d’une collaboration de plusieurs entrepreneurs devant faire face aux mêmes problèmes mais sous des angles différents.
+                                    </p>
+                                    <br />
+                                    <p>
+                                        Nous avons, par exemple, des directeurs d’entreprises dépourvus de moyens qui ne savaient pas comment réagir face à l’augmentation des situations de Burn-out au sein de leur structure.
+                                    </p>
+                                    <p>
+                                        De l’autre côté, nous avions les médecins lassés d’intervenir au bout de file et frustrés de ne pas pouvoir agir concrètement.
+                                    </p>
+                                    <br />
+                                    <p>
+                                        Ensemble, ils ont décidés de trouver et de créer une solution dans l’ère du temps, concrète et permettant aux autres directeurs d’entreprises de donner le moyen à leurs collaborateurs de se « dépister » et ainsi, d’intervenir en amont du problème. Insight
+                                        Solutions est né !
+                                    </p>
+                                    <br />
+                                    <p>
+                                        Après avoir vu les premiers résultats, ce même groupe d’entrepreneurs décide d’approfondir le sujet afin d’apporter la solution à d’autres thématiques liées au Burn-out comme par exemple, le stress. C’est grâce à ce travail que le pack « santé en entreprise
+                                        » a vu le jour.
+                                    </p>
+                                    <br />
+                                    <p>
+                                        Ce dernier est utile pour prévenir toutes situations de santé qui peuvent engendrer des coûts pour l’entreprise mais ne servent pas dans tous les cas à en comprendre l’origine.
+                                    </p>
+                                    <br />
+                                    <p>
+                                        C’est dans un soucis d’efficacité qu’Insight Solutions s’est penché sur les raisons de ces problèmes modernes en entreprise. Très vite, elle fait le lien entre l’état de santé des collaborateurs et la performance d’une entreprise. C’est pourquoi elle
+                                        développe le pack « performance de l’entreprise », qui met en lien toutes les raisons des défaillances de l’entreprise et lui permet de devenir plus compétitive, plus agile avec des collaborateurs plus engagés qui
+                                        vont doper la productivité et de surcroît l’économie.
+                                    </p>
+                                    <br />
+                                    <p>
+                                        Aujourd’hui, Insight Solutions se concentre sur son travail et essaie de trouver des solutions innovantes pour répondre aux besoins quotidiens des entreprises, constamment challengé par l’évolution du monde moderne, s’efforçant d’évoluer aussi vite que
+                                        possible.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- FIN Container -->
+                </div>
+            </section>
+
+
+            <!-- Notre Histoire Section END-->
+
+
+
+
+
+            <!-- Main Content End-->
         </div>
-        <!-- Main Content End-->
-    </div>
-    <!-- Main Container -->
+        <!-- Main Container -->
 
-    <!-- Lightbox -->
-    <div class="lightbox">
-        <div class="lightbox-content">
-            <div class="lightbox-close">&times;</div>
+        <!-- Lightbox -->
+        <div class="lightbox">
+            <div class="lightbox-content">
+                <div class="lightbox-close">&times;</div>
 
-            <div class="lightbox-caption">
-                <div class="caption-text"></div>
-                <div class="caption-counter"></div>
+                <div class="lightbox-caption">
+                    <div class="caption-text"></div>
+                    <div class="caption-counter"></div>
+                </div>
+            </div>
+            <div class="lightbox-controls">
+                <div class="prev-item" onclick="prevItem()"><i class="fa fa-angle-left"></i></div>
+                <div class="next-item" onclick="nextItem()"><i class="fa fa-angle-right"></i></div>
             </div>
         </div>
-        <div class="lightbox-controls">
-            <div class="prev-item" onclick="prevItem()"><i class="fa fa-angle-left"></i></div>
-            <div class="next-item" onclick="nextItem()"><i class="fa fa-angle-right"></i></div>
+
+        <div class="style-switcher">
+            <div class="toggle-style-switcher">
+                <i class="fa fa-cog fa-spin"></i>
+            </div>
+            <h5>Style Switcher</h5>
+            <ul>
+                <li>
+                    <a href="javascript:void(0);" title="pink" style="background-color: #D52B1E" onclick="setActiveStyle('pink')"></a>
+                </li>
+                <li>
+                    <a href="javascript:void(0);" title="blue" style="background-color: #2196f3" onclick="setActiveStyle('blue')"></a>
+                </li>
+                <li>
+                    <a href="javascript:void(0);" title="orange" style="background-color: #fa5b0f" onclick="setActiveStyle('orange')"></a>
+                </li>
+                <li>
+                    <a href="javascript:void(0);" title="yellow" style="background-color: #ffb400" onclick="setActiveStyle('yellow')"></a>
+                </li>
+                <li>
+                    <a href="javascript:void(0);" title="green" style="background-color: #72b626" onclick="setActiveStyle('green')"></a>
+                </li>
+            </ul>
+            <h5>Body Skin</h5>
+            <label>
+                <input type="radio" class="body-skin" name="body-style" value="light" checked="true">
+                Light
+            </label>
+            <label>
+                <!-- <input type="radio" class="body-skin" name="body-style" value="dark"> -->
+                <input type="radio" class="body-skin" name="body-style" value="dark">
+                Dark
+            </label>
         </div>
-    </div>
-
-    <div class="style-switcher">
-        <div class="toggle-style-switcher">
-            <i class="fa fa-cog fa-spin"></i>
-        </div>
-        <h5>Style Switcher</h5>
-        <ul>
-            <li>
-                <a href="javascript:void(0);" title="pink" style="background-color: #D52B1E" onclick="setActiveStyle('pink')"></a>
-            </li>
-            <li>
-                <a href="javascript:void(0);" title="blue" style="background-color: #2196f3" onclick="setActiveStyle('blue')"></a>
-            </li>
-            <li>
-                <a href="javascript:void(0);" title="orange" style="background-color: #fa5b0f" onclick="setActiveStyle('orange')"></a>
-            </li>
-            <li>
-                <a href="javascript:void(0);" title="yellow" style="background-color: #ffb400" onclick="setActiveStyle('yellow')"></a>
-            </li>
-            <li>
-                <a href="javascript:void(0);" title="green" style="background-color: #72b626" onclick="setActiveStyle('green')"></a>
-            </li>
-        </ul>
-        <h5>Body Skin</h5>
-        <label>
-            <input type="radio" class="body-skin" name="body-style" value="light" checked="true">
-            Light
-        </label>
-        <label>
-            <input type="radio" class="body-skin" name="body-style" value="dark">
-            Dark
-        </label>
-    </div>
 
 
+        <script>
+            window.scrollTo(0, 0);
+        </script>
 
 
+        <script src="js/script.js"></script>
 
-    <script src="js/script.js"></script>
-
-    <script src="js/styleSwitcher.js"></script>
+        <script src="js/styleSwitcher.js"></script>
 
 
 </body>

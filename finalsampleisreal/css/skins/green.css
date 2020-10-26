@@ -1,12 +1,12 @@
 
 .aside .logo a::before{
-	border-top:4px solid #fa5b0f;
-	border-left:4px solid #fa5b0f;
+	border-top:4px solid #72b626;
+	border-left:4px solid #72b626;
 }
 
 .aside .logo a::after{
-	border-right:4px solid #fa5b0f;
-	border-bottom:4px solid #fa5b0f;
+	border-right:4px solid #72b626;
+	border-bottom:4px solid #72b626;
 }
 .contact .contact-info-item .icon .fa,
 .blog .blog-item-inner .blog-info .blog-tags a,
@@ -21,10 +21,10 @@ body.dark .aside .nav li a:hover,
 body.dark .aside .nav li a.active,
 .aside .nav li a:hover,
 .aside .nav li a.active{
- color:#fa5b0f;	
+ color:#72b626;	
 }
 .blog .blog-item-inner .blog-img .blog-date,
-.service .service-item .service-item-inner:hover .icon,
+/* .service .service-item .service-item-inner:hover .icon, */
 .about .about-content .timeline .circle-dot,
 .about .about-content .timeline .timeline-item::before,
 .about .about-content .skills .skill-item .progress .progress-in,
@@ -33,11 +33,26 @@ body.dark .aside .nav li a.active,
 .section-title h2::before,
 .aside .nav-toggler span,
 .aside .nav-toggler span::before,
-.aside .nav-toggler span::after,
-.home .intro .social-links a{
- background-color: #fa5b0f;		
+.aside .nav-toggler span::after
+/* .home .intro .social-links a*/ {
+ background-color: #72b626;		
 }
 
 .portfolio .portfolio-filter button.active{
-	border-color:#fa5b0f;		
+	border-color:#72b626;		
+}
+
+/* Bouton principal "Nos solutions" */
+.cta, .read-more-trigger {
+	background-color: #72b626;
+	border: 2px solid #72b626;		
+}
+
+/* Barre de couleur sous "Menu, Liens utiles, Contact" du Footer */
+.footer-border1 {
+	background: #72b626;
+}
+
+.btn-newsletter {
+	background: #72b626;
 }

@@ -56,3 +56,18 @@ body.dark .aside .nav li a.active,
 .portfolio .portfolio-filter button.active {
     border-color: #D52B1E;
 }
+
+/* Bouton principal "Nos solutions" */
+.cta, .read-more-trigger {
+	background-color: #D52B1E;
+	border: 2px solid #D52B1E;		
+}
+
+/* Barre de couleur sous "Menu, Liens utiles, Contact" du Footer */
+.footer-border1 {
+	background: #D52B1E;
+}
+
+.btn-newsletter {
+	background: #D52B1E;
+}

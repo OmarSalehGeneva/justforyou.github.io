@@ -95,6 +95,12 @@ select {
     /* AJOUTÉ POUR MARGIN ENTRE MAIN CONTENT ET FOOTER */
 }
 
+@media only screen and (max-width: 667px) {
+    .section .container {
+        margin-top: 35px;
+    }
+}
+
 .section-title {
     -ms-flex: 0 0 100%;
     flex: 0 0 100%;
@@ -809,6 +815,11 @@ select {
     border-bottom: 1px solid #e5e5e5;
 }
 
+.accordion .accordion-item b,
+.accordion .accordion-item p {
+    color: #302e4d;
+}
+
 .accordion .accordion-item button[aria-expanded="true"] {
     border-bottom: 1px solid #D52B1E;
 }
@@ -827,20 +838,27 @@ select {
     outline: none;
 }
 
+
 /* Responsive mobile */
+
 @media screen and (min-width: 375px) {
     .accordion button {
         width: 90%;
     }
 }
 
+
 /* responsive only pixel2 */
+
 @media screen and (min-width: 411px) {
     .accordion button {
         width: 94%;
     }
 }
+
+
 /* responsive only iphone 6/7/8 plus */
+
 @media screen and (min-width: 414px) {
     .accordion button {
         width: 93%;
@@ -868,7 +886,8 @@ select {
     display: inline-block;
     position: absolute;
     top: 18px;
-    right: -22px; /* 0 */
+    right: -22px;
+    /* 0 */
     width: 22px;
     height: 22px;
     border: 1px solid;
@@ -1272,7 +1291,6 @@ select {
     font-size: 18px;
     font-weight: 700;
     color: #302e4d;
-    text-transform: capitalize;
     margin-bottom: 10px;
 }
 
@@ -1410,16 +1428,19 @@ body.dark .section-title h2,
 body.dark .home .intro h1,
 body.dark .aside .logo a,
 body.dark .aside .nav li a,
-body.dark .accordion button .icon {
+body.dark .accordion button .icon,
+body.dark .accordion .accordion-item b,
+body.dark .accordion .accordion-item p {
     color: #ffffff;
 }
 
-#whitelogois { /* Supprime le logo blanc quand le style est Light */
+#whitelogois {
+    /* Supprime le logo blanc quand le style est Light */
     display: none;
 }
 
-
-body.dark #whitelogois { /* Ajoute le logo blanc sous le logo noir */
+body.dark #whitelogois {
+    /* Ajoute le logo blanc sous le logo noir */
     display: block;
 }
 
@@ -1434,12 +1455,18 @@ body.dark .about .about-content .skills .skill-item .skill-percent,
 body.dark .about .about-content .personal-info .info-item p span,
 body.dark .about .about-content .about-text p,
 body.dark .home .intro p,
-body.dark .accordion-title /* FAQ texte blanc */
-/* body.dark .accordion .accordion-content p FAQ texte des sous-sections blanc */ {
+body.dark .accordion-title
+/* FAQ texte blanc */
+
+
+/* body.dark .accordion .accordion-content p FAQ texte des sous-sections blanc */
+
+{
     color: #e9e9e9;
 }
 
-body.dark .accordion .accordion-content { /* When DARK MODE -> Couleur du texte pa */
+body.dark .accordion .accordion-content {
+    /* When DARK MODE -> Couleur du texte pa */
     color: #b6b6b6;
 }
 
@@ -1693,13 +1720,12 @@ body.dark .shadow-dark {
         display: flex;
         text-align: start;
     }
-
 }
+
 @media only screen and (max-width: 767px) {
     .footer-border1 {
         margin: 0 auto;
     }
-
 }
 
 .footer-items {
@@ -1765,11 +1791,11 @@ h3 {
 .footer-items ul li {
     margin: 12px 0;
     /* 12px 0; */
-    height: 30px;
+    height: 28px;
 }
 
 .footer-items li i {
-    margin-right: 20px;
+    margin-right: 5px;
 }
 
 .footer-social-media {
@@ -1804,12 +1830,14 @@ h3 {
     text-align: center;
 }
 
-.menupartst {
+
+/* .menupartst {
     margin-right: -138px;
-}
+} */
 
 
 /* for tablet mode view */
+
 
 /* @media screen and (max-width: 1275px) {
     .footer-items {
@@ -1817,7 +1845,9 @@ h3 {
     }
 } */
 
+
 /* special for iPad */
+
 @media screen and (max-width: 768px) {
     .footer-items {
         width: 29%;
@@ -1838,7 +1868,8 @@ h3 {
 
 @media screen and (max-width: 1027px) {
     .footer-items {
-        width: 28%;
+        width: 25%;
+        /* 28% mais avec le -138px d'activé ligne 1820) */
     }
     .footer-image {
         display: none;
@@ -1922,6 +1953,18 @@ input[type="email"] {
     display: flex;
 }
 
+@media screen and (min-width: 767px) {
+    .footer-item-padding {
+        padding-top: 30px;
+    }
+}
+
+@media screen and (max-width: 767px) {
+    .footer-second-menu {
+        padding: 0px 10px !important;
+    }
+}
+
 
 /* CONDITIONS GENERALES DE VENTES */
 
@@ -1993,6 +2036,20 @@ input[type="email"] {
 
 
 /* FIX responsive boutons FAQ */
-@media (max-width: 360px) {
-    
+
+@media (max-width: 360px) {}
+
+
+/* Icônes page retour */
+
+.fa-arrow-alt-circle-left {
+    color: #D52B1E;
+    font-size: 2em;
+    padding-top: 2em;
+}
+
+@media screen and (max-width: 1024px) {
+    .fa-arrow-alt-circle-left {
+        text-align: center;
+    }
 }

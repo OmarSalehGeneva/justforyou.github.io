@@ -50,31 +50,29 @@
             <div class="aside-inner">
                 <!-- Logo -->
                 <div class="logo">
-                    <a href="./index.html"><img src="./images/blackislogo.png" alt="blacklogois" id="blacklogois" width="180px"></a>
-                    <a href="./index.html"><img src="./images/whiteislogo.png" alt="whitelogois" id="whitelogois" width="180px"></a>
+                    <a href="./index.html"><img src="./images/blackislogo.png" alt="blacklogois" id="blacklogois" width="180px"><img src="./images/whiteislogo.png" alt="whitelogois" id="whitelogois" width="180px"></a>
                 </div>
                 <ul class="nav">
-                    <li><a href="#home" class="active" type="button" id="homebtn" onclick="ExistingLogic()"><i
-                                class="fa fa-home"></i> Accueil</a></li>
-                    <li><a href="#about" type="button" id="aboutbtn" onclick="ExistingLogic()"><i
-                                class="fa fa-briefcase"></i> Mission</a></li>
-                    <li><a href="#services" type="button" id="servicesbtn" onclick="ExistingLogic()"><i
-                                class="fa fa-list"></i> Solutions</a></li>
-                    <li><a href="#portfolio" type="button" id="portfoliobtn" onclick="ExistingLogic()"><i
-                                class="fa fa-comments"></i> FAQ</a></li>
-                    <li><a href="#blog" type="button" id="blogbtn" onclick="ExistingLogic()"><i class="fa fa-user"></i>
-                            About</a></li>
-                    <li><a href="#contact" type="button" id="contactbtn" onclick="ExistingLogic()"><i
-                                class="fa fa-envelope"></i> Contact</a></li>
-                    <li><a href="#qsn" type="button" id="quisommenousbtn" onclick="ExistingLogic()" style="display: none;"><i class="fa fa-envelope"></i>Qui sommes-nous?</a></li>
-                    <li><a href="#mecanique" type="button" id="mecabtn" onclick="ExistingLogic()" style="display: none;"><i class="fa fa-envelope"></i>L'entreprise comme la méca..</a></li>
-                    <li><a href="#histoire" type="button" id="histoirebtn" onclick="ExistingLogic()" style="display: none;"><i class="fa fa-envelope"></i>Notre Histoire</a></li>
-                    <li><a href="#cgv" type="button" id="cvgbtnone" onclick="ExistingLogic()" style="display: none;"><i
+                    <li><a href="#" class="active" type="button" data-reveal="#home"><i class="fa fa-home"></i>
+                            Accueil</a></li>
+                    <li><a href="#" type="button" data-reveal="#about"><i class="fa fa-briefcase"></i> Mission</a></li>
+                    <li><a href="#" type="button" data-reveal="#services"><i class="fa fa-list"></i> Solutions</a></li>
+                    <li><a href="#" type="button" data-reveal="#portfolio"><i class="fa fa-comments"></i> FAQ</a></li>
+                    <li><a href="#" type="button" data-reveal="#blog"><i class="fa fa-user"></i> About</a></li>
+                    </li>
+                    <li><a href="#" type="button" data-reveal="#contact"><i class="fa fa-envelope"></i> Contact</a></li>
+                    <li><a href="#" type="button" data-reveal="#qsn" style="display: none;"><i
+                                class="fa fa-envelope"></i>Qui sommes-nous?</a></li>
+                    <li><a href="#" type="button" data-reveal="#mecanique" style="display: none;"><i
+                                class="fa fa-envelope"></i>L'entreprise comme la méca..</a></li>
+                    <li><a href="#" type="button" data-reveal="#histoire" style="display: none;"><i
+                                class="fa fa-envelope"></i>Notre Histoire</a></li>
+                    <li><a href="#" type="button" data-reveal="#cgv" style="display: none;"><i
                                 class="fa fa-envelope"></i> CGV</a>
                     </li>
                     <!-- Accès à la page confidentialité (to delete) -->
                     <li>
-                        <a href="#cgpc" type="button" id="cgpcbtnone" onclick="ExistingLogic()" style="display: none;">
+                        <a href="#" type="button" data-reveal="#cgpc" style="display: none;">
                             <i class="fa fa-envelope"></i> CGPC</a>
                     </li>
                     <!-- Accès à la page confidentialité (to delete) -->
@@ -104,7 +102,7 @@
                                     <h1>Insight Solutions. <span></span></h1>
                                     <h1> <em> <u> La version moderne de l'audit du capital humain </u> </em>
                                         <span></span></h1>
-                                    <a href="#" type="button" id="servicesbtnthree" onclick="document.getElementById('servicesbtn').click()" class="cta">Nos
+                                    <a href="#" type="button" data-reveal="#services" class="cta">Nos
                                         Solutions</a>
                                 </div>
                             </div>
@@ -127,6 +125,7 @@
                         <div class="section-title padd-15">
                             <h2>Notre Mission</h2>
                         </div>
+
                     </div>
                     <div class="row">
                         <div class="about-content padd-15">
@@ -164,7 +163,7 @@
                                         </div>
                                         <div class="info-item padd-15">
 
-                                            <p>Email : <span>info@insightsolutions.com</span></p>
+                                            <p>Email : <span>info@insightsolutions.ch</span></p>
 
                                         </div>
                                         <div class="info-item padd-15">
@@ -402,27 +401,27 @@
                             <!-- Barre rouge sous titre -->
 
                             <ul>
-                                <li><a href="#" type="button" id="homebtntwo" onclick="document.getElementById('homebtn').click()">Accueil</a></li>
-                                <li><a href="#" type="button" id="aboutbtntwo" onclick="document.getElementById('aboutbtn').click()">Missions</a></li>
-                                <li><a href="#" type="button" id="servicesbtntwo" onclick="document.getElementById('servicesbtn').click()">Solutions</a></li>
+                                <li><a href="#" type="button" data-reveal="#home">Accueil</a></li>
+                                <li><a href="#" type="button" data-reveal="#about">Missions</a></li>
+                                <li><a href="#" type="button" data-reveal="#services">Solutions</a></li>
                             </ul>
                         </div>
 
-                        <div class="footer-items ">
-                            <ul style="padding-top: 30px;">
+                        <div class="footer-items footer-second-menu">
+                            <ul class="footer-item-padding">
 
                                 <li>
-                                    <a href="#" type="button" id="portfoliobtntwo" onclick="document.getElementById('portfoliobtn').click()">FAQ
+                                    <a href="#" type="button" data-reveal="#portfolio">FAQ
                                     </a>
                                 </li>
 
                                 <li>
-                                    <a href="#" type="button" id="blogbtntwo" onclick="document.getElementById('blogbtn').click()">About
+                                    <a href="#" type="button" data-reveal="#blog">About
                                     </a>
                                 </li>
 
                                 <li>
-                                    <a href="#" type="button" id="contactbtntwo" onclick="document.getElementById('contactbtn').click()">Contact </a>
+                                    <a href="#" type="button" data-reveal="#contact">Contact </a>
                                 </li>
 
 
@@ -436,14 +435,12 @@
                             <!-- Barre rouge sous titre -->
                             <ul>
                                 <li>
-                                    <a href="#" type="button" id="cgvbtntwo" onclick="document.getElementById('cvgbtnone').click()">Termes </a>
+                                    <a href="#" type="button" data-reveal="#cgv">Termes </a>
                                 </li>
                                 <li>
-                                    <a href="#" type="button" id="cgpcbtntwo" onclick="document.getElementById('cgpcbtnone').click()">Confidentialité </a>
+                                    <a href="#" type="button" data-reveal="#cgpc">Confidentialité </a>
                                 </li>
-                                <li>
-                                    <a href="#">Politique </a>
-                                </li>
+                                <!--   -->
 
 
                             </ul>
@@ -455,10 +452,10 @@
                             <div class="footer-border1"></div>
                             <!-- Barre rouge sous titre -->
                             <ul>
-                                <li><i class="fa fa-map-marker" aria-hidden="true"></i>Route de Thonon 152A, 1222 Vésenaz
+                                <li style="display: inline-flex;"><i class="fa fa-map-marker" aria-hidden="true"></i>Route de Thonon 152A, 1222 Vésenaz
                                 </li>
                                 <li><i class="fa fa-phone" aria-hidden="true"></i>058 255 28 00</li>
-                                <li><i class="fa fa-envelope" aria-hidden="true"></i>info@insightsolutions.com</li>
+                                <li style="display: inline-flex;"><i class="fa fa-envelope" aria-hidden="true"></i>info@insightsolutions.ch</li>
                             </ul>
 
                             <!--   Partie Social Icons -->
@@ -593,27 +590,27 @@
                             <!-- Barre rouge sous titre -->
 
                             <ul>
-                                <li><a href="#" type="button" id="homebtntwo" onclick="document.getElementById('homebtn').click()">Accueil</a></li>
-                                <li><a href="#" type="button" id="aboutbtntwo" onclick="document.getElementById('aboutbtn').click()">Missions</a></li>
-                                <li><a href="#" type="button" id="servicesbtntwo" onclick="document.getElementById('servicesbtn').click()">Solutions</a></li>
+                                <li><a href="#" type="button" data-reveal="#home">Accueil</a></li>
+                                <li><a href="#" type="button" data-reveal="#about">Missions</a></li>
+                                <li><a href="#" type="button" data-reveal="#services">Solutions</a></li>
                             </ul>
                         </div>
 
-                        <div class="footer-items ">
-                            <ul style="padding-top: 30px;">
+                        <div class="footer-items footer-second-menu">
+                            <ul class="footer-item-padding">
 
                                 <li>
-                                    <a href="#" type="button" id="portfoliobtntwo" onclick="document.getElementById('portfoliobtn').click()">FAQ
+                                    <a href="#" type="button" data-reveal="#portfolio">FAQ
                                     </a>
                                 </li>
 
                                 <li>
-                                    <a href="#" type="button" id="blogbtntwo" onclick="document.getElementById('blogbtn').click()">About
+                                    <a href="#" type="button" data-reveal="#blog">About
                                     </a>
                                 </li>
 
                                 <li>
-                                    <a href="#" type="button" id="contactbtntwo" onclick="document.getElementById('contactbtn').click()">Contact </a>
+                                    <a href="#" type="button" data-reveal="#contact">Contact </a>
                                 </li>
 
 
@@ -627,14 +624,12 @@
                             <!-- Barre rouge sous titre -->
                             <ul>
                                 <li>
-                                    <a href="#" type="button" id="cgvbtntwo" onclick="document.getElementById('cvgbtnone').click()">Termes </a>
+                                    <a href="#" type="button" data-reveal="#cgv">Termes </a>
                                 </li>
                                 <li>
-                                    <a href="#" type="button" id="cgpcbtntwo" onclick="document.getElementById('cgpcbtnone').click()">Confidentialité </a>
+                                    <a href="#" type="button" data-reveal="#cgpc">Confidentialité </a>
                                 </li>
-                                <li>
-                                    <a href="#">Politique </a>
-                                </li>
+
 
 
                             </ul>
@@ -646,10 +641,10 @@
                             <div class="footer-border1"></div>
                             <!-- Barre rouge sous titre -->
                             <ul>
-                                <li><i class="fa fa-map-marker" aria-hidden="true"></i>Route de Thonon 152A, 1222 Vésenaz
+                                <li style="display: inline-flex;"><i class="fa fa-map-marker" aria-hidden="true"></i>Route de Thonon 152A, 1222 Vésenaz
                                 </li>
                                 <li><i class="fa fa-phone" aria-hidden="true"></i>058 255 28 00</li>
-                                <li><i class="fa fa-envelope" aria-hidden="true"></i>info@insightsolutions.com</li>
+                                <li style="display: inline-flex;"><i class="fa fa-envelope" aria-hidden="true"></i>info@insightsolutions.ch</li>
                             </ul>
 
                             <!--   Partie Social Icons -->
@@ -853,27 +848,27 @@
                             <!-- Barre rouge sous titre -->
 
                             <ul>
-                                <li><a href="#" type="button" id="homebtntwo" onclick="document.getElementById('homebtn').click()">Accueil</a></li>
-                                <li><a href="#" type="button" id="aboutbtntwo" onclick="document.getElementById('aboutbtn').click()">Missions</a></li>
-                                <li><a href="#" type="button" id="servicesbtntwo" onclick="document.getElementById('servicesbtn').click()">Solutions</a></li>
+                                <li><a href="#" type="button" data-reveal="#home">Accueil</a></li>
+                                <li><a href="#" type="button" data-reveal="#about">Missions</a></li>
+                                <li><a href="#" type="button" data-reveal="#services">Solutions</a></li>
                             </ul>
                         </div>
 
-                        <div class="footer-items ">
-                            <ul style="padding-top: 30px;">
+                        <div class="footer-items footer-second-menu">
+                            <ul class="footer-item-padding">
 
                                 <li>
-                                    <a href="#" type="button" id="portfoliobtntwo" onclick="document.getElementById('portfoliobtn').click()">FAQ
+                                    <a href="#" type="button" data-reveal="#portfolio">FAQ
                                     </a>
                                 </li>
 
                                 <li>
-                                    <a href="#" type="button" id="blogbtntwo" onclick="document.getElementById('blogbtn').click()">About
+                                    <a href="#" type="button" data-reveal="#blog">About
                                     </a>
                                 </li>
 
                                 <li>
-                                    <a href="#" type="button" id="contactbtntwo" onclick="document.getElementById('contactbtn').click()">Contact </a>
+                                    <a href="#" type="button" data-reveal="#contact">Contact </a>
                                 </li>
 
 
@@ -887,14 +882,12 @@
                             <!-- Barre rouge sous titre -->
                             <ul>
                                 <li>
-                                    <a href="#" type="button" id="cgvbtntwo" onclick="document.getElementById('cvgbtnone').click()">Termes </a>
+                                    <a href="#" type="button" data-reveal="#cgv">Termes </a>
                                 </li>
                                 <li>
-                                    <a href="#" type="button" id="cgpcbtntwo" onclick="document.getElementById('cgpcbtnone').click()">Confidentialité </a>
+                                    <a href="#" type="button" data-reveal="#cgpc">Confidentialité </a>
                                 </li>
-                                <li>
-                                    <a href="#">Politique </a>
-                                </li>
+
 
 
                             </ul>
@@ -906,10 +899,10 @@
                             <div class="footer-border1"></div>
                             <!-- Barre rouge sous titre -->
                             <ul>
-                                <li><i class="fa fa-map-marker" aria-hidden="true"></i>Route de Thonon 152A, 1222 Vésenaz
+                                <li style="display: inline-flex;"><i class="fa fa-map-marker" aria-hidden="true"></i>Route de Thonon 152A, 1222 Vésenaz
                                 </li>
                                 <li><i class="fa fa-phone" aria-hidden="true"></i>058 255 28 00</li>
-                                <li><i class="fa fa-envelope" aria-hidden="true"></i>info@insightsolutions.com</li>
+                                <li style="display: inline-flex;"><i class="fa fa-envelope" aria-hidden="true"></i>info@insightsolutions.ch</li>
                             </ul>
 
                             <!--   Partie Social Icons -->
@@ -949,11 +942,11 @@
                     <div class="row">
                         <!-- Blog Item -->
                         <div class="blog-item padd-15">
-                            <div class="blog-item-inner shadow-dark">
+                            <div class="blog-item-inner shadow-dark" style="cursor: pointer;" data-reveal="#qsn">
                                 <div class="blog-img">
                                     <img src="images/maninfrontofcar.jpg" alt="blog">
                                     <div class="blog-date">
-                                        <a href="#" type="button" id="quisommesnoustwo" onclick="document.getElementById('quisommenousbtn').click()"> En savoir
+                                        <a href="#" type="button" data-reveal="#qsn"> En savoir
                                             plus
                                         </a>
                                     </div>
@@ -970,11 +963,11 @@
                         <!-- Blog Item End -->
                         <!-- Blog Item -->
                         <div class="blog-item padd-15">
-                            <div class="blog-item-inner shadow-dark">
+                            <div class="blog-item-inner shadow-dark" style="cursor: pointer;" data-reveal="#mecanique">
                                 <div class="blog-img">
                                     <img src="images/maxresdefault.jpg" alt="blog">
                                     <div class="blog-date">
-                                        <a href="#" type="button" id="mecatwo" onclick="document.getElementById('mecabtn').click()"> En savoir plus</a>
+                                        <a href="#" type="button" data-reveal="#mecanique"> En savoir plus</a>
                                     </div>
                                 </div>
                                 <div class="blog-info">
@@ -992,11 +985,11 @@
                         <!-- Blog Item End -->
                         <!-- Blog Item -->
                         <div class="blog-item padd-15">
-                            <div class="blog-item-inner shadow-dark">
+                            <div class="blog-item-inner shadow-dark" style="cursor: pointer;" data-reveal="#histoire">
                                 <div class="blog-img">
                                     <img src="images/postitmancover.jpg" alt="blog">
                                     <div class="blog-date">
-                                        <a href="#" type="button" id="histoiretwo" onclick="document.getElementById('histoirebtn').click()"> En savoir plus</a>
+                                        <a href="#" type="button" data-reveal="#histoire"> En savoir plus</a>
                                     </div>
                                 </div>
                                 <div class="blog-info">
@@ -1035,27 +1028,27 @@
                             <!-- Barre rouge sous titre -->
 
                             <ul>
-                                <li><a href="#" type="button" id="homebtntwo" onclick="document.getElementById('homebtn').click()">Accueil</a></li>
-                                <li><a href="#" type="button" id="aboutbtntwo" onclick="document.getElementById('aboutbtn').click()">Missions</a></li>
-                                <li><a href="#" type="button" id="servicesbtntwo" onclick="document.getElementById('servicesbtn').click()">Solutions</a></li>
+                                <li><a href="#" type="button" data-reveal="#home">Accueil</a></li>
+                                <li><a href="#" type="button" data-reveal="#about">Missions</a></li>
+                                <li><a href="#" type="button" data-reveal="#services">Solutions</a></li>
                             </ul>
                         </div>
 
-                        <div class="footer-items ">
-                            <ul style="padding-top: 30px;">
+                        <div class="footer-items footer-second-menu">
+                            <ul class="footer-item-padding">
 
                                 <li>
-                                    <a href="#" type="button" id="portfoliobtntwo" onclick="document.getElementById('portfoliobtn').click()">FAQ
+                                    <a href="#" type="button" data-reveal="#portfolio">FAQ
                                     </a>
                                 </li>
 
                                 <li>
-                                    <a href="#" type="button" id="blogbtntwo" onclick="document.getElementById('blogbtn').click()">About
+                                    <a href="#" type="button" data-reveal="#blog">About
                                     </a>
                                 </li>
 
                                 <li>
-                                    <a href="#" type="button" id="contactbtntwo" onclick="document.getElementById('contactbtn').click()">Contact </a>
+                                    <a href="#" type="button" data-reveal="#contact">Contact </a>
                                 </li>
 
 
@@ -1069,14 +1062,12 @@
                             <!-- Barre rouge sous titre -->
                             <ul>
                                 <li>
-                                    <a href="#" type="button" id="cgvbtntwo" onclick="document.getElementById('cvgbtnone').click()">Termes </a>
+                                    <a href="#" type="button" data-reveal="#cgv">Termes </a>
                                 </li>
                                 <li>
-                                    <a href="#" type="button" id="cgpcbtntwo" onclick="document.getElementById('cgpcbtnone').click()">Confidentialité </a>
+                                    <a href="#" type="button" data-reveal="#cgpc">Confidentialité </a>
                                 </li>
-                                <li>
-                                    <a href="#">Politique </a>
-                                </li>
+
 
 
                             </ul>
@@ -1088,10 +1079,10 @@
                             <div class="footer-border1"></div>
                             <!-- Barre rouge sous titre -->
                             <ul>
-                                <li><i class="fa fa-map-marker" aria-hidden="true"></i>Route de Thonon 152A, 1222 Vésenaz
+                                <li style="display: inline-flex;"><i class="fa fa-map-marker" aria-hidden="true"></i>Route de Thonon 152A, 1222 Vésenaz
                                 </li>
                                 <li><i class="fa fa-phone" aria-hidden="true"></i>058 255 28 00</li>
-                                <li><i class="fa fa-envelope" aria-hidden="true"></i>info@insightsolutions.com</li>
+                                <li style="display: inline-flex;"><i class="fa fa-envelope" aria-hidden="true"></i>info@insightsolutions.ch</li>
                             </ul>
 
                             <!--   Partie Social Icons -->
@@ -1126,7 +1117,7 @@
                 <div class="container">
                     <div class="row">
                         <div class="section-title padd-15">
-                            <h2>Contactez-Nous</h2>
+                            <h2>Contactez-nous</h2>
                         </div>
                     </div>
                     <div class="row">
@@ -1149,7 +1140,7 @@
                         <div class="contact-info-item padd-15">
                             <div class="icon"><i class="fa fa-envelope"></i></div>
                             <h4>Email</h4>
-                            <p>info@insightsolutions.com</p>
+                            <p>info@insightsolutions.ch</p>
                         </div>
                         <!-- contact-info-item End -->
                     </div>
@@ -1218,27 +1209,27 @@
                             <!-- Barre rouge sous titre -->
 
                             <ul>
-                                <li><a href="#" type="button" id="homebtntwo" onclick="document.getElementById('homebtn').click()">Accueil</a></li>
-                                <li><a href="#" type="button" id="aboutbtntwo" onclick="document.getElementById('aboutbtn').click()">Missions</a></li>
-                                <li><a href="#" type="button" id="servicesbtntwo" onclick="document.getElementById('servicesbtn').click()">Solutions</a></li>
+                                <li><a href="#" type="button" data-reveal="#home">Accueil</a></li>
+                                <li><a href="#" type="button" data-reveal="#about">Missions</a></li>
+                                <li><a href="#" type="button" data-reveal="#services">Solutions</a></li>
                             </ul>
                         </div>
 
-                        <div class="footer-items ">
-                            <ul style="padding-top: 30px;">
+                        <div class="footer-items footer-second-menu">
+                            <ul class="footer-item-padding">
 
                                 <li>
-                                    <a href="#" type="button" id="portfoliobtntwo" onclick="document.getElementById('portfoliobtn').click()">FAQ
+                                    <a href="#" type="button" data-reveal="#portfolio">FAQ
                                     </a>
                                 </li>
 
                                 <li>
-                                    <a href="#" type="button" id="blogbtntwo" onclick="document.getElementById('blogbtn').click()">About
+                                    <a href="#" type="button" data-reveal="#blog">About
                                     </a>
                                 </li>
 
                                 <li>
-                                    <a href="#" type="button" id="contactbtntwo" onclick="document.getElementById('contactbtn').click()">Contact </a>
+                                    <a href="#" type="button" data-reveal="#contact">Contact </a>
                                 </li>
 
 
@@ -1252,14 +1243,12 @@
                             <!-- Barre rouge sous titre -->
                             <ul>
                                 <li>
-                                    <a href="#" type="button" id="cgvbtntwo" onclick="document.getElementById('cvgbtnone').click()">Termes </a>
+                                    <a href="#" type="button" data-reveal="#cgv">Termes </a>
                                 </li>
                                 <li>
-                                    <a href="#" type="button" id="cgpcbtntwo" onclick="document.getElementById('cgpcbtnone').click()">Confidentialité </a>
+                                    <a href="#" type="button" data-reveal="#cgpc">Confidentialité </a>
                                 </li>
-                                <li>
-                                    <a href="#">Politique </a>
-                                </li>
+
 
 
                             </ul>
@@ -1271,10 +1260,10 @@
                             <div class="footer-border1"></div>
                             <!-- Barre rouge sous titre -->
                             <ul>
-                                <li><i class="fa fa-map-marker" aria-hidden="true"></i>Route de Thonon 152A, 1222 Vésenaz
+                                <li style="display: inline-flex;"><i class="fa fa-map-marker" aria-hidden="true"></i>Route de Thonon 152A, 1222 Vésenaz
                                 </li>
                                 <li><i class="fa fa-phone" aria-hidden="true"></i>058 255 28 00</li>
-                                <li><i class="fa fa-envelope" aria-hidden="true"></i>info@insightsolutions.com</li>
+                                <li style="display: inline-flex;"><i class="fa fa-envelope" aria-hidden="true"></i>info@insightsolutions.ch</li>
                             </ul>
 
                             <!--   Partie Social Icons -->
@@ -1543,27 +1532,27 @@
                             <!-- Barre rouge sous titre -->
 
                             <ul>
-                                <li><a href="#" type="button" id="homebtntwo" onclick="document.getElementById('homebtn').click()">Accueil</a></li>
-                                <li><a href="#" type="button" id="aboutbtntwo" onclick="document.getElementById('aboutbtn').click()">Missions</a></li>
-                                <li><a href="#" type="button" id="servicesbtntwo" onclick="document.getElementById('servicesbtn').click()">Solutions</a></li>
+                                <li><a href="#" type="button" data-reveal="#home">Accueil</a></li>
+                                <li><a href="#" type="button" data-reveal="#about">Missions</a></li>
+                                <li><a href="#" type="button" data-reveal="#services">Solutions</a></li>
                             </ul>
                         </div>
 
-                        <div class="footer-items ">
-                            <ul style="padding-top: 30px;">
+                        <div class="footer-items footer-second-menu">
+                            <ul class="footer-item-padding">
 
                                 <li>
-                                    <a href="#" type="button" id="portfoliobtntwo" onclick="document.getElementById('portfoliobtn').click()">FAQ
+                                    <a href="#" type="button" data-reveal="#portfolio">FAQ
                                     </a>
                                 </li>
 
                                 <li>
-                                    <a href="#" type="button" id="blogbtntwo" onclick="document.getElementById('blogbtn').click()">About
+                                    <a href="#" type="button" data-reveal="#blog">About
                                     </a>
                                 </li>
 
                                 <li>
-                                    <a href="#" type="button" id="contactbtntwo" onclick="document.getElementById('contactbtn').click()">Contact </a>
+                                    <a href="#" type="button" data-reveal="#contact">Contact </a>
                                 </li>
 
 
@@ -1577,14 +1566,12 @@
                             <!-- Barre rouge sous titre -->
                             <ul>
                                 <li>
-                                    <a href="#" type="button" id="cgvbtntwo" onclick="document.getElementById('cvgbtnone').click()">Termes </a>
+                                    <a href="#" type="button" data-reveal="#cgv">Termes </a>
                                 </li>
                                 <li>
-                                    <a href="#" type="button" id="cgpcbtntwo" onclick="document.getElementById('cgpcbtnone').click()">Confidentialité </a>
+                                    <a href="#" type="button" data-reveal="#cgpc">Confidentialité </a>
                                 </li>
-                                <li>
-                                    <a href="#">Politique </a>
-                                </li>
+
 
 
                             </ul>
@@ -1596,10 +1583,10 @@
                             <div class="footer-border1"></div>
                             <!-- Barre rouge sous titre -->
                             <ul>
-                                <li><i class="fa fa-map-marker" aria-hidden="true"></i>Route de Thonon 152A, 1222 Vésenaz
+                                <li style="display: inline-flex;"><i class="fa fa-map-marker" aria-hidden="true"></i>Route de Thonon 152A, 1222 Vésenaz
                                 </li>
                                 <li><i class="fa fa-phone" aria-hidden="true"></i>058 255 28 00</li>
-                                <li><i class="fa fa-envelope" aria-hidden="true"></i>info@insightsolutions.com</li>
+                                <li style="display: inline-flex;"><i class="fa fa-envelope" aria-hidden="true"></i>info@insightsolutions.ch</li>
                             </ul>
 
                             <!--   Partie Social Icons -->
@@ -1893,27 +1880,27 @@
                             <!-- Barre rouge sous titre -->
 
                             <ul>
-                                <li><a href="#" type="button" id="homebtntwo" onclick="document.getElementById('homebtn').click()">Accueil</a></li>
-                                <li><a href="#" type="button" id="aboutbtntwo" onclick="document.getElementById('aboutbtn').click()">Missions</a></li>
-                                <li><a href="#" type="button" id="servicesbtntwo" onclick="document.getElementById('servicesbtn').click()">Solutions</a></li>
+                                <li><a href="#" type="button" data-reveal="#home">Accueil</a></li>
+                                <li><a href="#" type="button" data-reveal="#about">Missions</a></li>
+                                <li><a href="#" type="button" data-reveal="#services">Solutions</a></li>
                             </ul>
                         </div>
 
-                        <div class="footer-items ">
-                            <ul style="padding-top: 30px;">
+                        <div class="footer-items footer-second-menu">
+                            <ul class="footer-item-padding">
 
                                 <li>
-                                    <a href="#" type="button" id="portfoliobtntwo" onclick="document.getElementById('portfoliobtn').click()">FAQ
+                                    <a href="#" type="button" data-reveal="#portfolio">FAQ
                                     </a>
                                 </li>
 
                                 <li>
-                                    <a href="#" type="button" id="blogbtntwo" onclick="document.getElementById('blogbtn').click()">About
+                                    <a href="#" type="button" data-reveal="#blog">About
                                     </a>
                                 </li>
 
                                 <li>
-                                    <a href="#" type="button" id="contactbtntwo" onclick="document.getElementById('contactbtn').click()">Contact </a>
+                                    <a href="#" type="button" data-reveal="#contact">Contact </a>
                                 </li>
 
 
@@ -1927,14 +1914,12 @@
                             <!-- Barre rouge sous titre -->
                             <ul>
                                 <li>
-                                    <a href="#" type="button" id="cgvbtntwo" onclick="document.getElementById('cvgbtnone').click()">Termes </a>
+                                    <a href="#" type="button" data-reveal="#cgv">Termes </a>
                                 </li>
                                 <li>
-                                    <a href="#" type="button" id="cgpcbtntwo" onclick="document.getElementById('cgpcbtnone').click()">Confidentialité </a>
+                                    <a href="#" type="button" data-reveal="#cgpc">Confidentialité </a>
                                 </li>
-                                <li>
-                                    <a href="#">Politique </a>
-                                </li>
+
 
 
                             </ul>
@@ -1946,10 +1931,10 @@
                             <div class="footer-border1"></div>
                             <!-- Barre rouge sous titre -->
                             <ul>
-                                <li><i class="fa fa-map-marker" aria-hidden="true"></i>Route de Thonon 152A, 1222 Vésenaz
+                                <li style="display: inline-flex;"><i class="fa fa-map-marker" aria-hidden="true"></i>Route de Thonon 152A, 1222 Vésenaz
                                 </li>
                                 <li><i class="fa fa-phone" aria-hidden="true"></i>058 255 28 00</li>
-                                <li><i class="fa fa-envelope" aria-hidden="true"></i>info@insightsolutions.com</li>
+                                <li style="display: inline-flex;"><i class="fa fa-envelope" aria-hidden="true"></i>info@insightsolutions.ch</li>
                             </ul>
 
                             <!--   Partie Social Icons -->
@@ -2009,6 +1994,8 @@
                                         De façon plus concrète, nous analysons, par le biais d’un questionnaire, toutes les défaillances qu’une entreprise pourrait avoir et les conséquences de celles-ci sur les autres éléments grâce à un Dashboard spécialement conçu pour permettre à ses lecteurs
                                         de corriger le problème.
                                     </p>
+                                    <a href="#qsn"><i class="fas fa-arrow-alt-circle-left" style="display: block;"
+                                            data-reveal="#blog"></i></a>
                                 </div>
                             </div>
                         </div>
@@ -2039,6 +2026,8 @@
                                     <p>
                                         À l’inverse, si l’un des éléments manque ou devient défaillant, une réaction en chaîne se met en place, l’efficacité diminue, les problèmes surgissent, le système se grippe et compromet la mission.
                                     </p>
+                                    <a href="#"><i class="fas fa-arrow-alt-circle-left" style="display: block;"
+                                            data-reveal="#blog"></i></a>
                                 </div>
                             </div>
                         </div>
@@ -2100,6 +2089,8 @@
                                         Aujourd’hui, Insight Solutions se concentre sur son travail et essaie de trouver des solutions innovantes pour répondre aux besoins quotidiens des entreprises, constamment challengé par l’évolution du monde moderne, s’efforçant d’évoluer aussi vite que
                                         possible.
                                     </p>
+                                    <a href="#qsn"><i class="fas fa-arrow-alt-circle-left" style="display: block;"
+                                            data-reveal="#blog"></i></a>
                                 </div>
                             </div>
                         </div>
@@ -2173,7 +2164,7 @@
         <script>
             window.scrollTo(0, 0);
         </script>
-
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js" integrity="sha512-bLT0Qm9VnAYZDflyKcBaQ2gg0hSYNQrJ8RilYldYQ1FxQYoCLtUjuuRuZo+fjqhx/qtq/1itJ0C2ejDxltZVFg==" crossorigin="anonymous"></script>
 
         <script src="js/script.js"></script>
 

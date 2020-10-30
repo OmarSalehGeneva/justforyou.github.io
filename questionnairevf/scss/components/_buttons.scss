@@ -1,0 +1,93 @@
+
+/* Buttons suivant/précédent */
+  a.button3 {
+    display:inline-block;
+    padding:0.3em 1.2em;
+    margin:0 0.3em 0.3em 0;
+    border-radius:2em;
+    box-sizing: border-box;
+    text-decoration:none;
+    font-family:'Poppins';
+    font-weight:300;
+    color: white;
+    background-color: #302e4d; //black
+    text-align:center;
+    transition: all 0.2s;
+    }
+a.button3:hover{
+    background-color: #ce1839; //#9bbcd8;
+	}
+	
+	a.button4 {
+		display:inline-block;
+		padding:0.3em 1.2em;
+		margin:0 0.3em 0.3em 0;
+		border-radius:2em;
+		box-sizing: border-box;
+		text-decoration:none;
+		font-family:'Poppins';
+		font-weight:300;
+		color: white;
+		background-color: #dc444e;
+		text-align:center;
+		transition: all 0.2s;
+		}
+	a.button4:hover{
+		background-color: black;
+		}
+	
+
+.pagination {
+    position: relative;
+    margin: 0 auto;
+}
+
+// Boutons Radios
+
+form {
+	display: flex;
+	flex-wrap: wrap;
+	flex-direction: column;
+}
+
+label {
+	display: flex;
+	cursor: pointer;
+	font-weight: 500;
+	position: relative;
+	overflow: hidden;
+	margin-bottom: 0.375em;
+	
+	input {
+		position: absolute;
+		left: -9999px;
+		&:checked + span {
+			background-color: mix(#fff, #504e70, 84%); // mix(#fff, #9bbcd8, 84%);
+			&:before {
+				box-shadow: inset 0 0 0 0.4375em #ce1839; // inset 0 0 0 0.4375em #9bbcd8;
+			}
+		}
+	}
+	span {
+		display: flex;
+		align-items: center;
+		padding: 0.375em 0.75em 0.375em 0.375em;
+		border-radius: 99em; // or something higher...
+		transition: 0.25s ease;
+		&:hover {
+			background-color: mix(#fff, #504e70, 84%); //mix(#fff, #9bbcd8, 84%);
+		}
+		&:before {
+			display: flex;
+			flex-shrink: 0;
+			content: "";
+			background-color: #fff;
+			width: 1.5em;
+			height: 1.5em;
+			border-radius: 50%;
+			margin-right: 0.375em;
+			transition: 0.25s ease;
+			box-shadow: inset 0 0 0 0.125em #504e70; //inset 0 0 0 0.125em #9bbcd8;
+		}
+	}
+}

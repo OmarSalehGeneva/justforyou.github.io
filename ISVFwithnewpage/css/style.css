@@ -411,8 +411,9 @@ select {
     min-height: 100vh;
     display: -ms-flexbox;
     display: flex;
-    background: linear-gradient(rgba(0, 0, 0, .5), rgba(0, 0, 0, .5)), url(../images/genevamainbgbg.jpg);
-    opacity: 1.1;
+    background: linear-gradient(rgba(0, 0, 0, .4), rgba(0, 0, 0, .4)), url(../images/genevamainbg-blur.jpg);
+    /* background: linear-gradient(rgba(0, 0, 0, .5), rgba(0, 0, 0, .5)), url(../images/genevamainbgbg.jpg); */
+    opacity: 1.1; /* 1.1 */
 }
 
 .home .intro {
@@ -1486,6 +1487,13 @@ body.dark .shadow-dark {
     box-shadow: none;
 }
 
+body.dark .footer {
+    background: #393939;
+}
+
+body.dark .footer-bottom {
+    background: #151515;
+}
 
 /* Responsive */
 
@@ -2051,5 +2059,83 @@ input[type="email"] {
 @media screen and (max-width: 1024px) {
     .fa-arrow-alt-circle-left {
         text-align: center;
+    }
+}
+
+
+/* Page OUTILS */
+.image-diagramme {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+@media screen and (min-width: 1024px) {
+    .image-diagramme {
+        width: 50%;
+    }
+}
+
+/* EACH DEVICE */
+
+/* MOTO G4 & GALAXY S5 */
+@media screen and (max-width: 360px) {
+    .image-diagramme {
+        width: 90%;
+    }
+}
+
+/* PIXEL 2 & PIXEL 2 XL */
+@media screen and (min-width: 410px) {
+    .image-diagramme {
+        width: 95%;
+    }
+}
+
+/* IPHONE 5 SE */
+@media screen and (max-width: 320px) {
+    .image-diagramme {
+        width: 95%;
+    }
+}
+
+/* IPHONE 6 7 8 */
+@media screen and (min-width: 375px) {
+    .image-diagramme {
+        width: 95%;
+    }
+}
+
+/* IPHONE 6 7 8 PLUS */
+@media screen and (max-width: 414px) {
+    .image-diagramme {
+        width: 95%;
+    }
+}
+
+/* IPHONE X */
+@media screen and (max-width: 375px) {
+    .image-diagramme {
+        width: 95%;
+    }
+}
+
+/* IPAD */
+@media screen and (min-width: 767px) {
+    .image-diagramme {
+        width: 50%;
+    }
+}
+
+/* IPAD PRO */
+@media screen and (min-width: 1024px) {
+    .image-diagramme {
+        width: 50%;
+    }
+}
+
+/* GALAXY FOLD */
+@media screen and (min-width: 280px) {
+    .image-diagramme {
+        width: 90%;
     }
 }
